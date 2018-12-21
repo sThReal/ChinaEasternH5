@@ -1,0 +1,16 @@
+html, body, div, p, img, ul, ol, li, label, span, dl, dt, dd, h1, h2, h3, h4, h5, h6, section, canvas, audio, video ,footer, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul, ol {
+	outline: none;
+	list-style:none;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
