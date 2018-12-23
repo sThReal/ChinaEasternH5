@@ -1,0 +1,65 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.page11 .plane {
+	position: absolute;
+	top: 3.94rem;
+	left: 1.18rem;
+	width: 5.46rem;
+	height: 2.28rem;
+	z-index: 1;
+}
+.page11 .plane img {
+	width: 100%;
+}
+.page11 .bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.page11 .bg1 {
+	background: url(../img/page11-bg1.jpg) no-repeat;
+	background-size: 100%;
+	transition: opacity 1s;
+	opacity: 2;
+}
+.page11 .bg2 {
+	background: url(../img/page11-bg2.jpg) no-repeat;
+	background-size: 100%;
+	transition: opacity 2s;
+	opacity: 0;
+}
+.page11 .cloud {
+	position: absolute;
+	width: 100%;
+	height: 10.38rem;
+	top: 0.5rem;
+	background: url(../img/page11-cloud.png) no-repeat;
+	background-size: 100%;
+	opacity: 0;
+	transition: opacity,transform 3s;
+	transition-delay: 1s;
+	transform: translateX(0.2rem);
+}
+
+.page11.animate .bg1 {
+	opacity: 0;
+}
+
+.page11.animate .bg2 {
+	opacity: 1;
+}
+.page11.animate .cloud {
+	opacity: 1;
+	transform: translateX(0);
+}
