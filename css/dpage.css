@@ -10,6 +10,179 @@ html, body {
 	height: 100%;
 	overflow: hidden;
 }
+.arrow {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.38rem;
+	height: 0.3rem;
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 100%;
+	animation: arrow_up 1s infinite;
+}
+
+@keyframes arrow_up {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0.3rem);
+	}
+}
+
+.hide {
+	display: none;
+}
+
+/*@keyframes page9_out {
+	0% {
+		transform: translateY(0);
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+ 		transform: scale(2);
+ 		opacity: 0;
+	}
+}*/
+
+.page9 {
+	/*background: url(../img/page9-bg.jpg) no-repeat;*/
+	background: url(../img/006.jpg) no-repeat;
+	background-size: 100%;
+  transform-origin: 8rem 9.1rem;
+  transition: transform 2s;
+
+}
+.page9.out {
+ 	transform: scale(2);
+	/*animation: page9_out 2s;*/
+}
+
+
+.page9 .stewardess{
+	width: 3.29rem;
+	height: 5.93rem;
+	background:url(../img/page9-stewardess.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 1.21rem;
+	top: 5.97rem;
+	opacity: 0;
+	transform: translateX(-0.3rem);
+	transition: opacity,transform 0.6s;
+}
+.page9.animate .stewardess {
+	opacity: 1;
+	transform: translateX(0);
+}
+.page9 .dialogbox{
+	width: 7.5rem;
+	height: 2.54rem;
+	background:url(../img/page9-box.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left:0;
+	top:9.87rem;
+	font-size: 0.24rem;
+	color: #000;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.4s;
+	transition-delay: 0.6s;
+}
+.page9.animate .dialogbox {
+	opacity: 1;
+}
+
+.page9 .dialogbox p {
+	opacity: 0;
+	margin-left: 1.15rem;
+	margin-top: 1.23rem;
+	transition: opacity 0.4s;
+	transition-delay: 1.5s;
+}
+.page9.animate .dialogbox p {
+	opacity: 1;
+}
+.page9 .text {
+	width: 7.5rem;
+	height: 4.07rem;
+	position: absolute;
+	top:0;
+	left:0;
+	padding-top:0.57rem;
+}
+.page9 .text p {
+	margin:0;
+	color: #fff;
+	text-align: center;
+	font-size: 0.22rem;
+	line-height: 0.44rem;
+	opacity: 0;
+}
+.page9 .text strong {
+	font-size: 0.32rem;
+	font-weight: normal;
+}
+.page9 .text .note1,
+.page9 .text .note2,
+.page9 .text .note3,
+.page9 .text .note4,
+.page9 .text .note5,
+.page9 .text .note6,
+.page9 .text .note7 {
+	opacity: 0;
+	transition: opacity 0.8s;
+}
+.page9 .text .note1 {
+	transition-delay: 2.5s;
+}
+.page9 .text .note2 {
+	transition-delay: 2.8s;
+}
+.page9 .text .note2 {
+	transition-delay: 3.6s;
+}
+.page9 .text .note3 {
+	transition-delay: 4.4s;
+}
+.page9 .text .note4 {
+	transition-delay: 5.2s;
+}
+.page9 .text .note5 {
+	transition-delay: 6s;
+}
+.page9 .text .note6 {
+	transition-delay: 6.8s;
+}
+.page9 .text .note7 {
+	transition-delay: 7.4s;
+}
+.page9.animate .text .note1,
+.page9.animate .text .note2,
+.page9.animate .text .note3,
+.page9.animate .text .note4,
+.page9.animate .text .note5,
+.page9.animate .text .note6,
+.page9.animate .text .note7 {
+	opacity: 1;
+}
+
+.page10 {
+	background: url(../img/page10-bg.jpg) no-repeat;
+	background-size: 100%;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.page10.animate {
+	opacity: 1;
+}
+
+/*飞行*/
+.page10 .plane,
 .page11 .plane {
 	position: absolute;
 	top: 3.94rem;
@@ -18,6 +191,7 @@ html, body {
 	height: 2.28rem;
 	z-index: 1;
 }
+.page10 .plane img,
 .page11 .plane img {
 	width: 100%;
 }
@@ -26,17 +200,9 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-}
-.page11 .bg1 {
-	background: url(../img/page11-bg1.jpg) no-repeat;
+	background: url(../img/page11-bg.jpg) no-repeat;
 	background-size: 100%;
 	transition: opacity 1s;
-	opacity: 2;
-}
-.page11 .bg2 {
-	background: url(../img/page11-bg2.jpg) no-repeat;
-	background-size: 100%;
-	transition: opacity 2s;
 	opacity: 0;
 }
 .page11 .cloud {
@@ -51,12 +217,26 @@ html, body {
 	transition-delay: 1s;
 	transform: translateX(0.2rem);
 }
-
-.page11.animate .bg1 {
-	opacity: 0;
+.page11 .font {
+	position: absolute;
+	top: 1.42rem;
+	left: 2rem;
+	line-height: 0.44rem;
+	font-size: 0.24rem;
+}
+.page11 .font .text1 {
+	
+}
+.page11 .font .text2 {
+	text-align: center;
 }
 
-.page11.animate .bg2 {
+.page11 .font strong {
+	font-size: 0.32rem;
+  font-weight: normal;
+}
+
+.page11.animate .bg {
 	opacity: 1;
 }
 .page11.animate .cloud {

@@ -9,25 +9,65 @@
 	<script type="text/javascript" src="../js/default.js"></script>
 </head>
 <body>
-	<div class="page page11 ">
+	<div class="page page9 animate ">
+		<div class="stewardess"></div>
+		<div class="dialogbox"><p>尊敬的aaaaaaaaaa先生/小姐</p></div>
+		<div class="text">
+		    <p class="note1">尊敬的aaaaaaaaaa先生/小姐</p>
+		    <p class="note2">您 <strong>2018年7月18日</strong> 加入东航会员以来</p>
+		    <p class="note3">您在东航直销渠道的累积飞行<strong>200</strong>次</p>
+		    <p class="note4">累积积分<strong>1350000</strong>分，消耗积分共<strong>111111</strong>分</p>
+		    <p class="note5">会员等级为 <strong>小飞人卡</strong></p>
+		    <p class="note6">飞行过国内<strong>111</strong>个城市，国际共<strong>111</strong>个城市</p>
+		    <p class="note7">坐过的的机型共<strong>3</strong>种</p>
+		</div>
+	</div>
+	
+	<div class="page page10 hide">
 		<div class="plane"><img src="../img/page11-plane.png" alt=""></div>
-		<div class="bg bg1"></div>
-		<div class="bg bg2"></div>
+	</div>
+
+	<div class="page page11 hide">
+		<div class="plane"><img src="../img/page11-plane.png" alt=""></div>
+		<div class="bg"></div>
 		<div class="cloud"></div>
 		<div class="font">
-			<div>
-				2018</br>年您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过16次头等舱，8次商务舱</br>最常乘坐机型为 <strong>空客A380</strong>	
+			<div class="text1 ">
+				2018年</br>您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过<strong>16</strong>次头等舱，<strong>8</strong>次商务舱</br>最常乘坐机型为 <strong>空客A380</strong>	
 			</div>
-			<div>
-				2018</br>年您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过16次头等舱，8次商务舱</br>最常乘坐机型为 <strong>空客A380</strong>	
+			<div class="text2 hide">
+				2018年东航大事记</br>喜提最新机型A350，B787</br>在法庆祝上海-巴黎航线开通20周年</br>保障在上海举办的⾸届中国进博会</br>
 			</div>
 		</div>
 	</div>
+
+	<div class="page page12 hide">
+		<div class="plane"><img src="../img/page11-plane.png" alt=""></div>
+		<div class="bg"></div>
+		<div class="cloud"></div>
+		<div class="font">
+			<div class="text1 ">
+				2018年</br>您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过<strong>16</strong>次头等舱，<strong>8</strong>次商务舱</br>最常乘坐机型为 <strong>空客A380</strong>	
+			</div>
+			<div class="text2 hide">
+				2018年东航大事记</br>喜提最新机型A350，B787</br>在法庆祝上海-巴黎航线开通20周年</br>保障在上海举办的⾸届中国进博会</br>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="arrow"></div>
+
 	<script>
 		window.onload = function() {
 			setTimeout(function() {
-				document.getElementsByClassName('page11')[0].className = 'page page11 animate';
-			}, 1000);
+				document.getElementsByClassName('page9')[0].className = 'page page9 out';
+				setTimeout(function () {
+					document.getElementsByClassName('page9')[0].className = 'page page9 out hide';
+				}, 2000);
+				document.getElementsByClassName('page10')[0].className = 'page page10 animate';
+				// document.getElementsByClassName('page11')[0].className = 'page page11 animate';
+			}, 2000);
 
 		}
 
