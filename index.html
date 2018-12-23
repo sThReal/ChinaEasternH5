@@ -2,30 +2,76 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>东航年度账单</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/zx.css">
+  <link rel="stylesheet" href="css/dpage.css">
 </head>
 <body>
+  <!-- 音频 -->
+  <audio loop="true" sytle="display:none" id="BGM">
+    <source src="bgm.mp3" type="audio/mpeg"></source>
+  </audio>
   <!-- loading -->
-  <div class="pages"></div>
-  <!-- 视频 -->
-  <div class="pages"></div>
-  <!-- 全球期待 -->
-  <div class="pages"></div>
+  <div class="page loadingAndVideo">
+    <div class="page loading">
+      <img src="img/loading/1.png" alt="">
+      <img src="img/loading/2.png" alt="">
+      <img src="img/loading/3.png" alt="">
+      <div class="plane">
+        <img src="img/loading/plane_line.png" alt="">
+        <img src="img/loading/plane.png" alt="">
+      </div>
+      <div class="percent"></div>
+      <div class="txt">Loading...</div>
+    </div>
+    <video id="video" x-webkit-airplay="true" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true" playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video.mp4"></video>
+  </div>
+  <!-- 视频过度 -->
+  <div class="page page5 hide">
+    <img src="img/page5/buildings.png" alt="">
+  </div>
   <!-- 值机登记 -->
-  <div class="pages"></div>
-  <!-- 云端过度 -->
-  <div class="pages"></div>
+  <div class="page hide page6">
+    值机柜台
+  </div>
   <!-- 停机坪 -->
-  <div class="pages"></div>
+  <div class="page hide"></div>
   <!-- 在云端1 -->
-  <div class="pages"></div>
+  <div class="page hide"></div>
   <!-- 在云端2 -->
-  <div class="pages"></div>
+  <div class="page hide"></div>
   <!-- 在云端3，和过渡页 -->
-  <div class="pages"></div>
+  <div class="page hide"></div>
   <!-- 盛典形象 -->
-  <div class="pages"></div>
+  <div class="pages hide"></div>
+  <script src="js/default.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/handleData.js"></script>
+  <script>
+    ;(function(){
+      var startY = 0;
+      $('.page5').on('touchstart',function(e){
+        startY = e.touches[0].clientY;
+      })
+      $('.page5').on('touchmove',function(e){
+        if(startY-e.touches[0].clientY>50){
+          $('.page5 img').css({
+            transform:'translateY(200px)',
+            opacity:0
+          })
+          $('.page5').fadeOut();
+          $('.page6').fadeIn(1000);
+        }
+      })
+    })()
+    
+  </script>
 </body>
 </html>
