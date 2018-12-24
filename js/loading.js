@@ -3,8 +3,8 @@ var load = document.getElementById("loading");
 var imgPath = "img/";
 var myVideo = document.getElementById("video");
 var loadingPage = (function () {
-  var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/plane.png', 'loading/1.png', 'page9-bg.jpg', 'page11-cloud.png', 'page11-plane.png',
-    ];
+  var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/1.png', 'page9-bg.jpg',
+   'page11-cloud.png', 'page11-plane.png'];
   for (var i = 0; i < imgSources.length; i++) {
     imgSources[i] = (imgPath + imgSources[i]);
   };
@@ -31,15 +31,17 @@ var loadingPage = (function () {
   imgLoader(imgSources, function (path, curNum, total) {
     percent = parseInt((curNum / total).toFixed(2) * 100);
     console.log(percent);
-    $('.loading .plane img').eq(1).css('width', `${percent}%`)
     $('.loading .percent').html(`${percent}%`);
+    $('.plane_color').css('opacity',percent/100);
     if (percent == 100) {
       $('.loading .percent').html(`100%`);
+      clearInterval(loadingInterval);
+      $('.loading .txt').html(`点击进入`);
       $('.loading').on('click',function(e){
         $('.loading').fadeOut();
         $('#video').css({
-          width:'100%',
-          height:'100%',
+          width:'7.5rem',
+          height:'15rem',
           'z-index':'2'
         });
         if (myVideo.paused) {
@@ -59,7 +61,7 @@ var loadingPage = (function () {
 })();
 var loadingTimes = 0;
 var loadingTxt = ['.', '..', '...'];
-setInterval(function () {
+var loadingInterval = setInterval(function () {
   $('.loading .txt').html(`Loading${loadingTxt[loadingTimes]}`);
   loadingTimes < 3 && loadingTimes++;
   if (loadingTimes == 3) {
