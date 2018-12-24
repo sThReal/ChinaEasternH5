@@ -22,7 +22,7 @@
 .loading .plane{
   position:absolute;
   width:3.33rem;height:0.92rem;
-  top:43%;left:28%;
+  top:43%;left:2.387rem;
   animation: plane 2s ease infinite;
 }
 .loading .plane img:nth-of-type(2){
@@ -85,7 +85,7 @@
 /* page5 */
 .page5{
   background:url('../img/page5/bg.jpg') top center no-repeat;
-  background-size:7.5rem auto;
+  background-size:100%;
 }
 .page5 img{
   width:100%;
