@@ -23,6 +23,17 @@ html, body {
 	animation: arrow_up 1s infinite;
 }
 
+.arrow_demo{
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	/*transform: translateX(-50%);*/
+	width: 0.38rem;
+	height: 0.3rem;
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 100%;
+}
+
 @keyframes arrow_up {
 	0% {
 		transform: translateY(0);

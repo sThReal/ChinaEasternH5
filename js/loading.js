@@ -4,7 +4,7 @@ var imgPath = "img/";
 var myVideo = document.getElementById("video");
 var loadingPage = (function () {
   var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/plane.png', 'loading/1.png', 'page9-bg.jpg', 'page11-cloud.png', 'page11-plane.png',
-    'page11-bg1.jpg', 'page11-bg2.jpg'];
+    ];
   for (var i = 0; i < imgSources.length; i++) {
     imgSources[i] = (imgPath + imgSources[i]);
   };
