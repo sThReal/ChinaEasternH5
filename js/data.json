@@ -1,3 +1,4 @@
+
 {
   "page1":{
     "name":"赵先生",
@@ -5,7 +6,7 @@
     "totalFlight":100,
     "totalIntegral":54332,
     "spentIntegral":23456,
-    "level":"小飞人卡",
+    "level":"黄金",
     "domesticCityAmount":20,
     "internationalCityAmount":10,
     "airplaneModels":5
@@ -25,55 +26,104 @@
   "page4":{
     "citys:":["西安","大理","墨尔本","纽约","维加斯"]
   },
+
   "page5":{
-    "type":1,     
-    "extra":{}
+    "type":1,
+    "common":{
+      "avgDistance":200,
+      "avgTime":28
+    },
+    "extra":{},
+    "qrcodeUrl":""
   },
-  "page6":{
-    "type":2,     
+  "page5":{
+    "type":2,
+    "common":{
+      "avgDistance":200,
+      "avgTime":28
+    }, 
     "extra":{
       "flightTimes":2
-    }
+    },
+    "qrcodeUrl":""
   },
-  "page7":{
+  "page5":{
     "type":3,     
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },
     "extra":{
-      "firstClassTimes":20
-    }
+      "firstClassTimes":20,
+      "consumptionRatio":0.2,    
+      "integralRatio":0.3        
+    },
+    "qrcodeUrl":""
   },
-  "page8":{
-    "type":4,     
+  "page5":{
+    "type":4,   
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },  
     "extra":{
       "mostOftenLine:":["上海","香港"],
       "times":9
-    }
+    },
+    "qrcodeUrl":""
   },
-  "page9":{
+  "page5":{
     "type":5,     
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    }, 
     "extra":{
       "times":3
-    }
+    },
+    "qrcodeUrl":""
   },
-  "page10":{
-    "type":6,     
+  "page5":{
+    "type":6,
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },
     "extra":{
-      "line":["大阪","香港"],
-      "times":3,
-      "numbers":2
-    }
+      "newPlaceTimes":5,
+      "destination":"上海",
+      "numbers":5             
+    },
+    "qrcodeUrl":""
   },
-  "page11":{
-    "type":7,     
+  "page5":{
+    "type":7,  
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },   
     "extra":{
       "times":9,
       "places":["XX岛","xX岛"]
-    }
+    },
+    "qrcodeUrl":""
   },
-  "page12":{
-    "type":8,     
+  "page5":{
+    "type":8,   
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },  
     "extra":{
       "times":5
-    }
+    },
+    "qrcodeUrl":""
   }
 
 }
