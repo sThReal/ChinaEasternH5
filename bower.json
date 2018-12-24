@@ -1,0 +1,14 @@
+{
+  "name": "ChinaEasternH5",
+  "homepage": "https://github.com/sThReal/ChinaEasternH5",
+  "authors": [
+    "jiangjie404 <404877757@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery2": "^2.0.0"
+  }
+}
