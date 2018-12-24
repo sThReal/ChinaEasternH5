@@ -31,7 +31,22 @@
 }
 
 
-
+.page14 .page14_text{
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    color: #000;
+    text-align: center;
+    font-weight:bold;
+    position: absolute;
+    bottom: 0.96rem;
+    z-index:108;
+    width: 7.5rem;
+    left:50%;
+    margin-left: -3.75rem;
+    opacity: 0;
+    animation: earth-of-14 .4s 1.5s linear forwards 1;
+    -webkit-animation: earth-of-14 .4s 1.5s linear forwards 1;
+}
 .page14 .bg{
     position: absolute;
     width: 100%;
