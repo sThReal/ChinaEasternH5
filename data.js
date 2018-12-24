@@ -62,6 +62,7 @@ var data = {
       "times":9
     },
     "extra":{
+      "level":"金卡",
       "firstClassTimes":20,
       "consumptionRatio":0.2,    //消费金额top，小数，不是百分比
       "integralRatio":0.3        //消费积分top
