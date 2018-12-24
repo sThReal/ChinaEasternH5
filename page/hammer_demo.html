@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>page14</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/dpage.css">
+	<link rel="stylesheet" href="../css/darre.css">
+	<script type="text/javascript" src="../js/default.js"></script>
+	<script type="text/javascript" src="../bower_components/jquery2/jquery.min.js"></script>
+	<script type="text/javascript" src="../bower_components/fullpage.js/dist/fullpage.min.js"></script>
+	<script type="text/javascript" src="../js/hammer.js"></script>
+</head>
+<body>
+	<div class="page page14 ">
+		<div class="arrow_demo" id="arrow"></div>
+	</div>
+	<script type="text/javascript">
+		var _t = document.querySelector("#arrow");
+        var  hammer = new Hammer(_t);
+        //启动垂直方向滑动
+        hammer.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+        hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+        hammer.on('swipeup', function(ev) {
+            console.log(ev,'向上拖动元素');
+        });
+	</script>
+</body>
+</html>
