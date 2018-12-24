@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>page14</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/dpage.css">
+	<link rel="stylesheet" href="../css/darre.css">
+	<script type="text/javascript" src="../js/default.js"></script>
+	<script type="text/javascript" src="../bower_components/jquery2/jquery.min.js"></script>
+	<script type="text/javascript" src="../bower_components/fullpage.js/dist/fullpage.min.js"></script>
+	<script type="text/javascript" src="../js/hammer.js"></script>
+	<script type="text/javascript" src="../js/html2canvas.js"></script>
+	<style>
+		.html2canvas{
+			width: 300px;
+			height: 300px;
+			display: block;
+			background: greenyellow;
+		}
+	</style>
+</head>
+<body>
+
+
+	<!--<div class="page page14 ">-->
+		<!--<div class="arrow_demo" id="arrow"></div>-->
+	<!--</div>-->
+	<!--<script type="text/javascript">-->
+		<!--var _t = document.querySelector("#arrow");-->
+        <!--var  hammer = new Hammer(_t);-->
+        <!--//启动垂直方向滑动-->
+        <!--hammer.get('pan').set({ direction: Hammer.DIRECTION_ALL });-->
+        <!--hammer.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });-->
+        <!--hammer.on('swipeup', function(ev) {-->
+            <!--console.log(ev,'向上拖动元素');-->
+        <!--});-->
+	<!--</script>-->
+
+
+
+
+      <div class="html2canvas" id="html2canvas">
+
+	  </div>
+
+	<img src="" alt="" id="canvasImg" style="display: none">
+
+	<script type="text/javascript">
+		var canvas = document.createElement("canvas");
+        canvas.width = 400;
+        canvas.height = 400;
+		var opts = {
+            canvas: canvas,                       // 将自定义canvas作为配置项
+            // useCORS: true,                        // 允许图片跨域
+        }
+        html2canvas(document.querySelector("#html2canvas"),opts).then(function (canvas) {
+            var  base64ImgSrc = canvas.toDataURL("image/png",.92);
+            console.log(base64ImgSrc);
+            $("#canvasImg").show();
+            $("#html2canvas").hide();
+            $("#canvasImg").attr("src",base64ImgSrc);
+		})
+
+	</script>
+
+
+
+</body>
+</html>
