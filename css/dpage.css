@@ -62,7 +62,7 @@ html, body {
 
 .page9 {
 	/*background: url(../img/page9-bg.jpg) no-repeat;*/
-	background: url(../img/006.jpg) no-repeat;
+	background: url(../img/page9/006.jpg) no-repeat;
 	background-size: 100%;
   transform-origin: 8rem 9.1rem;
   transition: transform 2s;
@@ -77,7 +77,7 @@ html, body {
 .page9 .stewardess{
 	width: 3.29rem;
 	height: 5.93rem;
-	background:url(../img/page9-stewardess.png) no-repeat;
+	background:url(../img/page9/page9-stewardess.png) no-repeat;
 	background-size: 100%;
 	position: absolute;
 	left: 1.21rem;
@@ -93,7 +93,7 @@ html, body {
 .page9 .dialogbox{
 	width: 7.5rem;
 	height: 2.54rem;
-	background:url(../img/page9-box.png) no-repeat;
+	background:url(../img/page9/page9-box.png) no-repeat;
 	background-size: 100%;
 	position: absolute;
 	left:0;
@@ -184,7 +184,7 @@ html, body {
 }
 
 .page10 {
-	background: url(../img/page10-bg.jpg) no-repeat;
+	background: url(../img/page9/page10-bg.jpg) no-repeat;
 	background-size: 100%;
 	transition: opacity 1s;
 	opacity: 0;
@@ -212,7 +212,7 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../img/page11-bg.jpg) no-repeat;
+	background: url(../img/page9/page11-bg.jpg) no-repeat;
 	background-size: 100%;
 	transition: opacity 1s;
 	opacity: 0;
@@ -222,7 +222,7 @@ html, body {
 	width: 100%;
 	height: 10.38rem;
 	top: 0.5rem;
-	background: url(../img/page11-cloud.png) no-repeat;
+	background: url(../img/page9/page11-cloud.png) no-repeat;
 	background-size: 100%;
 	opacity: 0;
 	transition: opacity,transform 3s;
@@ -266,4 +266,92 @@ html, body {
 .page11.animate .cloud {
 	opacity: 1;
 	transform: translateX(0);
+}
+
+/*page12*/
+.page12 .plane {
+	position: absolute;
+	top: 3.94rem;
+	left: 1.18rem;
+	width: 5.46rem;
+	height: 2.28rem;
+	z-index: 1;
+}
+.page12 .plane img {
+	width: 100%;
+}
+.page12 .bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/page9/page11-bg.jpg) no-repeat;
+	background-size: 100%;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.page12 .cloud {
+	position: absolute;
+  width: 11.2rem;
+  height: 10.22rem;
+	top: 0.5rem;
+	background: url(../img/page9/page11-cloud.png) no-repeat;
+	background-size: 100%;
+	transition: transform 3s;
+	transition-delay: 0.5s;
+	transform: translateX(0);
+}
+.page12 .font {
+	width: 100%;
+	line-height: 0.44rem;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+}
+.page12 .font > p {
+	position: absolute;
+	width: 2.3rem;
+	font-size: 0.24rem;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+.page12 .font .p1 {
+	top: 1.6rem;
+	left: 0.74rem;
+	transition-delay: 2s;
+}
+.page12 .font .p2 {
+	top: 2.92rem;
+  right: 0.84rem;
+  transition-delay: 3s;
+}
+.page12 .font .p3 {
+	top: 7.28rem;
+	right: 0.94rem;
+	transition-delay: 4s;
+}
+.page12 .font .p4 {
+  top: 8.5rem;
+  left: 0.44rem;
+  transition-delay: 5s;
+}
+
+.page12 .font strong {
+	font-size: 0.36rem;
+	color: #ebb74f;
+}
+
+.page12.animate .bg {
+	opacity: 1;
+}
+.page12.animate .cloud {
+	opacity: 1;
+	transform: translateX(-1.85rem);
+}
+.page12.animate .font .p1,
+.page12.animate .font .p2,
+.page12.animate .font .p3,
+.page12.animate .font .p4 {
+	opacity: 1;
 }
