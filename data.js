@@ -1,5 +1,9 @@
-
-{
+/**
+ * 数据结构
+ * 如没有，则传0，但key要传过来
+ * 2018-12-24 新增：加入时间，以及最后生成海报的二维码链接地址
+ */
+var data = {
   "page1":{
     "name":"赵先生",
     "joinDate":"2018年7月18日",
@@ -26,7 +30,8 @@
   "page4":{
     "citys:":["西安","大理","墨尔本","纽约","维加斯"]
   },
-
+  // 9种type分别对应9个情况，此处分别列出可能情况，实际上只传一种给我
+  // 御宅一族飞行次数为0
   "page5":{
     "type":1,
     "common":{
@@ -36,6 +41,7 @@
     "extra":{},
     "qrcodeUrl":""
   },
+  // 简单王者
   "page5":{
     "type":2,
     "common":{
@@ -47,6 +53,7 @@
     },
     "qrcodeUrl":""
   },
+  // 飞行豪门
   "page5":{
     "type":3,     
     "common":{
@@ -55,12 +62,14 @@
       "times":9
     },
     "extra":{
+      "level":"金卡",
       "firstClassTimes":20,
-      "consumptionRatio":0.2,    
-      "integralRatio":0.3        
+      "consumptionRatio":0.2,    //消费金额top，小数，不是百分比
+      "integralRatio":0.3        //消费积分top
     },
     "qrcodeUrl":""
   },
+  // 工作狂人，最常飞行航线
   "page5":{
     "type":4,   
     "common":{
@@ -69,11 +78,12 @@
       "times":9
     },  
     "extra":{
-      "mostOftenLine:":["上海","香港"],
+      "mostOftenLine:":["上海","香港"],   // 航线前者是出发地
       "times":9
     },
     "qrcodeUrl":""
   },
+  // 一带一路次数
   "page5":{
     "type":5,     
     "common":{
@@ -86,6 +96,7 @@
     },
     "qrcodeUrl":""
   },
+  // 尝鲜大侠
   "page5":{
     "type":6,
     "common":{
@@ -94,12 +105,13 @@
       "times":9
     },
     "extra":{
-      "newPlaceTimes":5,
-      "destination":"上海",
-      "numbers":5             
+      "newPlaceTimes":5,      // 新开目的地次数
+      "destination":'上海',
+      "numbers":5             // 去过多少个国家
     },
     "qrcodeUrl":""
   },
+  // 海岛
   "page5":{
     "type":7,  
     "common":{
@@ -113,6 +125,7 @@
     },
     "qrcodeUrl":""
   },
+  // 日本次数
   "page5":{
     "type":8,   
     "common":{
