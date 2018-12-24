@@ -18,6 +18,10 @@
     left: 1.88rem;
     top: 3.04rem;
     z-index: 99;
+    transform: translateX(-7.5rem);
+    -webkit-transform: translateX(-7.5rem);
+    animation: aircraft 1s .1s ease-in-out forwards 1;
+    -webkit-animation: aircraft 1s .1s ease-in-out forwards 1;
 }
 .page14 .earth{
     position: absolute;
@@ -27,6 +31,9 @@
     background-size: 7.5rem 8.44rem;
     background-position: 0 6.55rem;
     z-index: 98;
+    animation: earth-of-14 .4s .9s linear forwards 1;
+    -webkit-animation: earth-of-14 .4s .9s linear forwards 1;
+    opacity: 0;
 }
 .page14 .building{
     position: absolute;
@@ -36,4 +43,41 @@
     background-size: 7.5rem 11.75rem;
     background-position:  0 3.24rem;
     z-index: 97;
+    animation: earth-of-14 .4s 1.3s linear forwards 1;
+    -webkit-animation: earth-of-14 .4s 1.3s linear forwards 1;
+    opacity: 0;
+}
+/*飞机左进入*/
+@keyframes aircraft{
+    0%{
+        transform: translateX(-7.5rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+@-webkit-keyframes aircraft{
+    0%{
+        -webkit-transform: translateX(-7.5rem);
+    }
+    100%{
+        -webkit-transform: translateX(0rem);
+    }
+}
+/*地球淡入 建筑物淡入*/
+@keyframes earth-of-14{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes earth-of-14{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
