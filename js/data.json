@@ -25,7 +25,7 @@
     "totalDistance":29384
   },
   "page4":{
-    "citys:":["西安","大理","墨尔本","纽约","维加斯"]
+    "citys":["西安","大理","墨尔本","纽约","维加斯"]
   },
   "page5":{
     "type":1,
@@ -41,14 +41,14 @@
     "common":{
       "avgDistance":200,
       "avgTime":28
-    }, 
+    },
     "extra":{
       "flightTimes":2
     },
     "qrcodeUrl":""
   },
   "page5":{
-    "type":3,     
+    "type":3,
     "common":{
       "distance":200,
       "flightTime":28,
@@ -56,18 +56,18 @@
     },
     "extra":{
       "firstClassTimes":20,
-      "consumptionRatio":0.2,    
-      "integralRatio":0.3        
+      "consumptionRatio":0.2,
+      "integralRatio":0.3
     },
     "qrcodeUrl":""
   },
   "page5":{
-    "type":4,   
+    "type":4,
     "common":{
       "distance":200,
       "flightTime":28,
       "times":9
-    },  
+    },
     "extra":{
       "mostOftenLine:":["上海","香港"],
       "times":9
@@ -75,12 +75,12 @@
     "qrcodeUrl":""
   },
   "page5":{
-    "type":5,     
+    "type":5,
     "common":{
       "distance":200,
       "flightTime":28,
       "times":9
-    }, 
+    },
     "extra":{
       "times":3
     },
@@ -96,17 +96,17 @@
     "extra":{
       "newPlaceTimes":5,
       "destination":"上海",
-      "numbers":5             
+      "numbers":5
     },
     "qrcodeUrl":""
   },
   "page5":{
-    "type":7,  
+    "type":7,
     "common":{
       "distance":200,
       "flightTime":28,
       "times":9
-    },   
+    },
     "extra":{
       "times":9,
       "places":["XX岛","xX岛"]
@@ -114,12 +114,12 @@
     "qrcodeUrl":""
   },
   "page5":{
-    "type":8,   
+    "type":8,
     "common":{
       "distance":200,
       "flightTime":28,
       "times":9
-    },  
+    },
     "extra":{
       "times":5
     },

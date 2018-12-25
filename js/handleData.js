@@ -40,7 +40,7 @@ window.nickArr = [
     }
 ]
 $.ajax({
-  url:'js/data.json',
+  url:'../js/data.json',
   method:'GET',
   success:function(data){
     console.log(data,'server end json');
@@ -54,6 +54,12 @@ $.ajax({
     bindDom('domesticCityAmount',data.page1.domesticCityAmount);
     bindDom('internationalCityAmount',data.page1.internationalCityAmount);
     bindDom('airplaneModels',data.page1.airplaneModels);
+    //地球页面 判断是否有走过城市
+    if(data.page4.citys.length>=1){
+        $("#page14_text_has_data").show()
+    }else{
+        $("#page14_text_no_data").show()
+    }
   }
 })
 function bindDom(name,val){
