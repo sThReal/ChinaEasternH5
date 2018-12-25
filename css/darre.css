@@ -184,10 +184,12 @@
     animation: aircraftLeftIn .9s .3s linear forwards 1;
     -webkit-animation: aircraftLeftIn .9s .3s linear forwards 1;
     transform: translateX(-7.5rem);
+    -webkit-transform: translateX(-7.5rem);
 
 }
 .page15.page15_4_canvas .person.lady{
     transform: translateX(0rem);
+    -webkit-transform: translateX(0rem);
     opacity: 1;
 }
 .page15 .person.lady{
@@ -201,6 +203,7 @@
     animation: ladyIn .5s 1.3s linear forwards 1;
     -webkit-animation: ladyIn .5s 1.3s linear forwards 1;
     transform: translateX(-6.78rem);
+    -webkit-transform: translateX(-6.78rem);
 }
 .page15.page15_4_canvas .page15_text .need_rolate{
     /*transform: translateX(0rem);*/
