@@ -21,7 +21,13 @@ html, body {
 	height: 1.36rem;
 	background: url(../img/arrow.png) no-repeat;
 	background-size: 100%;
+	z-index: 30;
 	animation: arrow_up 1s infinite;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.animate .arrow{
+	opacity: 1;
 }
 .arrow_txt{
 	position:absolute;
@@ -76,12 +82,11 @@ html, body {
 }*/
 
 .page9 {
-  transition: transform 2s;
-
-}
-.page9.out {
- 	transform: scale(2);
-	/*animation: page9_out 2s;*/
+  transform: scale(1);
+  transform-origin: right;
+  transition: opacity,transform 3s;
+  opacity: 0;
+  z-index: 5;
 }
 
 .page9 .bg {
@@ -99,17 +104,17 @@ html, body {
 }
 .page9 .bg2 {
 	background: url(../img/page9/page9-bg2.jpg) no-repeat;
-	background-size: 120%;
-    background-position: 14% 2rem;
+	background-size: 134%;
+    background-position: 40% 2.9rem;
 	opacity: 0;
 	transition: opacity 0.8s;
 	transition-delay: 1.2s;
 }
 .page9 .door {
 	position: absolute;
-	bottom: 0;
+	top: 3.4rem;
 	width: 7.5rem;
-	height: 9.96rem;
+	height: 12.96rem;
 	background: url(../img/page9/page9-door.png) no-repeat;
 	background-size: 100%;
 	z-index: 10;
@@ -121,23 +126,23 @@ html, body {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 9.58rem;
+	height: 100%;
 	background: url(../img/page9/page9-light.png) no-repeat;
-	background-position: -3rem -0.9rem;
-    background-size: 150%;
+	background-position: -2rem -0.9rem;
+    background-size: 138%;
 	z-index: 20;
 	opacity: 0;
-	transition: opacity 0.8s;
-	transition-delay: 2s;
+	transition: opacity 1.2s;
+	transition-delay: 1.6s;
 }
 .page9 .stewardess{
 	width: 3.29rem;
 	height: 5.93rem;
 	background:url(../img/page9/page9-stewardess.png) no-repeat;
-	background-size: 80%;
+	background-size: 100%;
 	position: absolute;
-	left: 1.4rem;
-	top: 5.97rem;
+	left: 0.8rem;
+    top: 6.8rem;
 	opacity: 0;
 	transition: opacity 0.6s;
 	z-index: 12;
@@ -145,7 +150,7 @@ html, body {
 }
 .page9 .plane {
 	position: absolute;
-	top: 4.2rem;
+	top: 4.84rem;
     left: 1.26rem;
     width: 5.46rem;
     height: 2.28rem;
@@ -155,6 +160,9 @@ html, body {
     transform: translateX(0rem) scale(0.6);
     transition: opacity,transform 0.8s;
     transition-delay: 1.2s;
+}
+.page .arrow {
+	transition-delay: 6s;
 }
 .page9.animate .bg1 {
 	opacity: 1;
@@ -173,7 +181,7 @@ html, body {
 }
 .page9.animate .plane {
 	opacity: 1;
-	transform: translateX(1rem) scale(0.6);
+	transform: translateX(1.4rem) scale(0.6);
 }
 
 .page9.animate .stewardess {
@@ -183,10 +191,10 @@ html, body {
 	width: 7.5rem;
 	height: 2.54rem;
 	background:url(../img/page9/page9-box.png) no-repeat;
-	background-size: 70%;
+	background-size: 85%;
 	position: absolute;
-	left:17%;
-	top:9.16rem;
+	left: 11%;
+	top: 11rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -194,7 +202,7 @@ html, body {
 	transform: translateY(-0.3rem);
 	transition: opacity,transform 0.4s;
 	transition-delay: 4s;
-	z-index: 12;
+	z-index: 24;
 }
 .page9.animate .dialogbox {
 	opacity: 1;
@@ -220,6 +228,7 @@ html, body {
 	background-size: 100%;
 	transform: translateY(-4.1rem);
 	transition: transform 0.6s;
+	z-index: 12;
 }
 .page9 .text {
 	width: 7.5rem;
@@ -247,13 +256,30 @@ html, body {
 .page9.animate .text {
 	height: 4.07rem;
 }
+.page9.leave {
+	animation: page9_leave 2s ;
+	animation-fill-mode: forwards;
+}
 
+@keyframes page9_leave {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+/*page10*/
 .page10 {
 	background: url(../img/page9/page10-bg.jpg) no-repeat;
 	background-size: 100%;
-    background-position: 0px -1.2rem;
+    background-position: 0 -1.2rem;
 	opacity: 0;
-	transition: opacity 2s;
+	transition: opacity 3s;
+	z-index: 10;
 }
 .page10.animate {
 	opacity: 1;
@@ -289,10 +315,9 @@ html, body {
 	width: 100%;
 }
 .page11 {
-	/* transition: opacity 2s; */
-	/* opacity: 0; */
-
-	z-index: 1;
+	transition: opacity 3s;
+	opacity: 0;
+	z-index: 15;
 }
 @keyframe bgp {
 	0% {
@@ -387,14 +412,20 @@ html, body {
 	opacity: 1;
 	transform: translateX(0);
 } */
+.page11 .leave {
+	opacity: 0;
+}
 
 /*page12*/
+.page12 {
+	z-index: 20;
+}
 .page12 .plane {
 	position: absolute;
 	top: 3.94rem;
 	left: 1.18rem;
-	width: 5.46rem;
-	height: 2.28rem;
+	width: 4.65rem;
+	height: 2.07rem;
 	z-index: 1;
 }
 .page12 .plane img {
@@ -411,16 +442,55 @@ html, body {
 	opacity: 0;
 }
 .page12 .cloud {
-	position: absolute;
-  width: 11.2rem;
-  height: 10.22rem;
-	top: 0.5rem;
-	background: url(../img/page9/page11-cloud.png) no-repeat;
-	background-size: 100%;
-	transition: transform 3s;
-	transition-delay: 0.5s;
-	transform: translateX(0);
+  	width: 7.5rem;
+  	height: 100%;
 }
+.page12 .cloud > div {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	transform: translateX(7.5rem);
+	transition: transform 1.5s;
+}
+.page12 .cloud .c1 {
+	height: 2.42rem;
+	top: 0.5rem;
+	background: url(../img/page9/cloud-1.png) no-repeat;
+	background-size: 100%;
+	transition-delay: 1s;
+}
+.page12 .cloud .c2 {
+	height: 2.33rem;
+	top: 2.72rem;
+	background: url(../img/page9/cloud-2.png) no-repeat;
+	background-size: 100%;
+	transition-delay: 2.5s;
+
+}
+.page12 .cloud .c3 {
+	height: 2.7rem;
+	top: 5.9rem;
+	background: url(../img/page9/cloud-3.png) no-repeat;
+	background-size: 100%;
+	transition-delay: 4s;
+
+}
+.page12 .cloud .c4 {
+	height: 2.4rem;
+	top: 8.4rem;
+	background: url(../img/page9/cloud-4.png) no-repeat;
+	background-size: 100%;
+	transition-delay: 5.5s;
+
+}
+.page12.animate .cloud .c1, 
+.page12.animate .cloud .c2, 
+.page12.animate .cloud .c3, 
+.page12.animate .cloud .c4 {
+	transform: translateX(0);
+} 
+
+
 .page12 .font {
 	width: 100%;
 	line-height: 0.44rem;
@@ -431,43 +501,49 @@ html, body {
 }
 .page12 .font > p {
 	position: absolute;
-	width: 2.3rem;
-	font-size: 0.24rem;
+	/*width: 2.3rem;*/
+	font-size: 0.3rem;
 	opacity: 0;
 	transition: opacity 0.6s;
 }
 .page12 .font .p1 {
-	top: 1.6rem;
-	left: 0.74rem;
-	transition-delay: 2s;
+	top: 1.4rem;
+    left: 1.24rem;
+	transition-delay: 2.5s;
 }
 .page12 .font .p2 {
-	top: 2.92rem;
-  right: 0.84rem;
-  transition-delay: 3s;
+	top: 3.38rem;
+    right: 1.44rem;
+  	transition-delay: 3.6s;
 }
 .page12 .font .p3 {
-	top: 7.28rem;
-	right: 0.94rem;
-	transition-delay: 4s;
+	top: 6.88rem;
+    left: 1.74rem;
+	transition-delay: 5s;
+}
+.page12 .font.no-font .p3 {
+	top: 6.88rem;
+    left: 2.74rem;
+	transition-delay: 5s;
 }
 .page12 .font .p4 {
-  top: 8.5rem;
-  left: 0.44rem;
-  transition-delay: 5s;
+	top: 9.12rem;
+    right: 1.44rem;
+  	transition-delay: 7s;
 }
 
 .page12 .font strong {
-	font-size: 0.36rem;
-	color: #ebb74f;
+	font-size: 0.42rem;
+	color: #d7006a;
 }
-
+.page12 .font span {
+	font-size: 0.42rem;
+}
 .page12.animate .bg {
 	opacity: 1;
 }
 .page12.animate .cloud {
 	opacity: 1;
-	transform: translateX(-1.85rem);
 }
 .page12.animate .font .p1,
 .page12.animate .font .p2,
@@ -475,3 +551,34 @@ html, body {
 .page12.animate .font .p4 {
 	opacity: 1;
 }
+
+@keyframes page12_plane {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(6.5rem);
+		opacity: 1;
+	}
+}
+@keyframes page12_font {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.page12.leave .plane{
+	animation: page12_plane 2s 1s;
+	animation-fill-mode: forwards;
+
+} 
+.page12.leave .cloud,
+.page12.leave .font {
+	animation: page12_font 2s;
+	animation-fill-mode: forwards;
+}
+

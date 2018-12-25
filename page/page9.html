@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="../js/default.js"></script>
 </head>
 <body>
-	<div class="page page9 hide">
+	<div class="page page9 animate leave">
 		<div class="bg bg1"></div>
 		<div class="bg bg2"></div>
 		<div class="door"></div>
@@ -28,16 +28,20 @@
 			    <p class="note7">坐过的的机型共<strong>3</strong>种</p>
 			</div>
 		</div>
+		<div class="arrow"></div>
+
 	</div>
 	
-	<div class="page page10 animate ">
+	<div class="page page10 animate leave">
 		<div class="plane">
 			<img src="../img/page9/page10-plane.png" alt="">
 		</div>
 		<div class="shd"><img src="../img/page9/page10-shd.png" alt=""></div>
+		<div class="arrow"></div>
+
 	</div>
 
-	<div class="page page11 animate hide">
+	<div class="page page11 ">
  		<div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
 		<div class="bg"></div>
 		<div class="cloud"></div> 
@@ -53,15 +57,20 @@
 		</div>
 	</div>
 
-	<div class="page page12 animate hide">
+	<div class="page page12 ">
 		<div class="plane"><img src="../img/page9/page11-plane.png" alt=""></div>
 		<div class="bg"></div>
-		<div class="cloud"></div>
-		<div class="font">
-			<p class="p1">2018年总飞行时长</br><strong>XXXX</strong>小时</p>
-			<p class="p2">2018年总飞行次数</br><strong>XXXX</strong>次</p>
-			<p class="p3">2018年总消费金额</br><strong>XXXX</strong>元</p>
-			<p class="p4">2018年总飞行里程数</br><strong>XXXX</strong>公里</p>
+		<div class="cloud">
+			<div class="c1"></div>
+		    <div class="c2"></div>
+		    <div class="c3"></div>
+		    <div class="c4"></div>
+		</div>
+		<div class="font ">
+			<p class="p1"><strong>XXXX</strong><span>小时</span></br>2018年总飞行时长</p>
+			<p class="p2"><strong>XXXX</strong><span>次</span></br>2018年总飞行次数</p>
+			<p class="p3"><strong>XXXX</strong><span>元</span></br>2018年总消费金额</p>
+			<p class="p4"><strong>XXXX</strong><span>公里</span></br>2018年总飞行里程数</p>
 		</div>
 		<div class="font no-font hide">
 			<p class="p1"><strong>700+</strong>架</br>2018年机队规模</p>
@@ -71,17 +80,22 @@
 	</div>
 
 
-	<div class="arrow"></div>
 
 	<script>
 		window.onload = function() {
 			setTimeout(function() {
-				document.getElementsByClassName('page10')[0].className = 'page page10 animate';
-				document.getElementsByClassName('page11')[0].className = 'page page11 animate';
-				// document.getElementsByClassName('page12')[0].className = 'page page12 animate';
-				// setTimeout(function () {
-				// 	document.getElementsByClassName('page9')[0].className = 'page page9 out hide';
-				// }, 2000);
+				// document.getElementsByClassName('page9')[0].className = 'page page9 animate leave';
+
+				// document.getElementsByClassName('page10')[0].className = 'page page10 animate leave';
+				// document.getElementsByClassName('page11')[0].className = 'page page11 animate leave';
+				document.getElementsByClassName('page12')[0].className = 'page page12 animate' ;
+				setTimeout(function () {
+					// document.getElementsByClassName('page9')[0].className = 'page page9 out hide';
+				// document.getElementsByClassName('page10')[0].className = 'page page10 animate ';
+				document.getElementsByClassName('page12')[0].className = 'page page12 animate leave' ;
+
+
+				}, 8000);
 				// document.getElementsByClassName('page10')[0].className = 'page page10 animate';
 				// document.getElementsByClassName('page11')[0].className = 'page page11 animate';
 			}, 2000);

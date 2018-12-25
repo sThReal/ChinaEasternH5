@@ -16,6 +16,7 @@
 	<div class="page page15 " >
 		<div class="bg" >
 			<div class="title"></div>
+			<!--<img class="title" src="../img/page_end/page_end_title_03.png" alt="">-->
 			<div class="page15_text">
 				<div class="need_rolate">
 					<div class="person_nick_name">飞行豪门</div>
@@ -96,15 +97,18 @@
 			</div>
 		</div>
 	</div>
-
-
-	<div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background: #000;">
-		<img src="" alt="">
+	<div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background: #ffffff;z-index: 187;overflow: auto">
+		<img src="" alt="" style="width: 100%;">
 	</div>
 	<script type="text/javascript">
 		//生成canvas对应的html
 		$(document).ready(function () {
 			$("#checkout_img").click(function () {
+			    if(window.base64ImgSrcAnother){
+                    $("#page_absolute_4_img").fadeIn(500);
+                    $("#page_absolute_4_img").find('img').attr("src",window.base64ImgSrcAnother);
+                    return;
+				}
                 var canvas = document.createElement("canvas");
                 canvas.width = 750;
                 canvas.height = 1400;
@@ -113,8 +117,8 @@
                     // useCORS: true,                        // 允许图片跨域
                 }
                 html2canvas(document.querySelector("#page_4_img"),opts).then(function (canvas) {
-                    window.base64ImgSrc = canvas.toDataURL("image/jpeg",.72);
-//                console.log(window.base64ImgSrc);
+                    window.base64ImgSrc = canvas.toDataURL("image/jpeg",.92);
+                console.log(window.base64ImgSrc);
                     $("#canvasImg").attr("src",window.base64ImgSrc)
                 }).then(function () {
                     console.log("生成base64图片源码~~!");
@@ -127,14 +131,15 @@
                     }
                     html2canvas(document.querySelector("#page_for_canvas"),opts).then(function (canvas) {
                         window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg",.72);
-                        console.log(window.base64ImgSrcAnother);
-//                    $("#canvasImg").attr("src",window.base64ImgSrc)
+                    }).then(function () {
+                        $("#page_absolute_4_img").fadeIn(500);
+                        $("#page_absolute_4_img").find('img').attr("src",window.base64ImgSrcAnother);
                     })
                 })
 
-
-
-				$("#page_absolute_4_img").fadeIn(1500);
+            });
+			$("#page_absolute_4_img").click(function (e) {
+                $("#page_absolute_4_img").fadeOut(500);
             })
 
         })
