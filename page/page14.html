@@ -9,11 +9,15 @@
 	<link rel="stylesheet" href="../css/darre.css">
 
 	<script type="text/javascript" src="../js/default.js"></script>
-</head>
+	<script type="text/javascript" src="../bower_components/jquery2/jquery.js"></script>
+	<script type="text/javascript" src="../js/hammer.js"></script>
+	<script type="text/javascript" src="../js/html2canvas.js"></script></head>
 <body>
-	<div class="page page14 hide">
+	<div class="page page14">
 		<div class="bg">
-			<div class="aircraft"></div>
+			<div class="aircraft" id="page_14_aircraft">
+				<div class="needClick"></div>
+			</div>
 			<div class="bgsky"></div>
 
 			<!--<div class="earth"></div>-->
@@ -41,5 +45,30 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+		    console.log("aircraft join~");
+			//确保飞机已经进入界面
+			setTimeout(function () {
+				$('.page14 .aircraft').css({
+					'animation':'newAircraftSecond 9s 0s linear forwards infinite',
+					'-webkit-animation':'newAircraftSecond 9s 0s linear forwards infinite',
+				});
+            },1200)
+			$("#page_14_aircraft").click(function () {
+                console.log("aircraft leave~");
+                $('.page14 .aircraft').animate({
+					left:'7.5rem',
+					top:'-0.6rem',
+				},600);
+            })
+			
+			
+        })
+	</script>
+
+
 </body>
 </html>

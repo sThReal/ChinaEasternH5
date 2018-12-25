@@ -305,12 +305,9 @@
     background: url(../img/page_end/page_end_bg.jpg) no-repeat;
     background-size: 7.5rem 14rem;
 }
-
-
-
 .page14 .page14_text{
-    font-size: 0.32rem;
-    line-height: 0.48rem;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
     color: #fff;
     text-align: center;
     font-weight:bolder;
@@ -323,6 +320,8 @@
     opacity: 0;
     animation: earth-of-14 .4s 1.5s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 1.5s linear forwards 1;
+    top: 7.2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.72);
 }
 .page14 .bg{
     position: absolute;
@@ -337,10 +336,10 @@
     width: 30.84rem;
     height: 30.94rem;
     /*background-position: center -5.8rem;*/
-    transform: translateX(-11.67rem) translateY(-6.1rem);
-    -webkit-transform: translateX(-11.67rem) translateY(-6.1rem);
-    animation:  newEarth 10s 0s linear forwards 1;
-    -webkit-animation: newEarth 10s 0s linear forwards 1;
+    transform: translateX(-11.67rem) translateY(-7.1rem);
+    -webkit-transform: translateX(-11.67rem) translateY(-7.1rem);
+    animation:  newEarth 20s 0s linear forwards 1;
+    -webkit-animation: newEarth 20s 0s linear forwards 1;
 }
 .page14 .aircraft{
     width: 3.75rem;
@@ -353,20 +352,35 @@
     z-index: 99;
     transform: translateX(-7.5rem);
     -webkit-transform: translateX(-7.5rem);
-    animation: newAircraft 10s 0s linear forwards 1;
-    -webkit-animation: newAircraft 10s 0s linear   forwards 1;
+    animation: newAircraftAnother 1s 0s linear forwards 1;
+    -webkit-animation: newAircraftAnother 1s 0s linear forwards 1;
     transform-origin: center;
 }
-@keyframes newEarth {
+@keyframes newAircraftAnother{
     0%{
-        transform: translateX(-7.5rem) translateY(-6.1rem);
+        transform: translateX(-4.75rem) scale(0.5) translateY(5.2rem);
     }
     100%{
-        transform: translateX(-15rem) translateY(-6.1rem);
+        transform: translateX(0rem) scale(1) translateY(0);
     }
 }
-
-/*飞机左进入*/
+@keyframes newAircraftSecond{
+    0%{
+        transform: translateY(0rem);
+    }
+    25%{
+        transform: translateY(-0.9rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    75%{
+        transform: translateY(0.9rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
 @keyframes newAircraft{
     0%{
         transform: translateX(-4.75rem) scale(0.5) translateY(5.2rem);
@@ -387,6 +401,30 @@
         transform: translateX(7.5rem) scale(1.6) translateY(-3.4rem);
     }
 }
+
+
+.page14 .aircraft .needClick{
+    width: 2.04rem;
+    height: 0.89rem;
+    background: url(../img/page14/page_14_click_03.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -0.8rem;
+    left: 50%;
+    margin-left: -1.02rem;
+    opacity:0;
+    animation: earth-of-14 .4s 2s linear forwards 1;
+    -webkit-animation: earth-of-14 .4s 2s linear   forwards 1;
+}
+@keyframes newEarth {
+    0%{
+        transform: translateX(-7.5rem) translateY(-7.1rem);
+    }
+    100%{
+        transform: translateX(-15rem) translateY(-7.1rem);
+    }
+}
+/*飞机左进入*/
 .page14 .earth{
     position: absolute;
     width: 100%;
