@@ -251,9 +251,9 @@ html, body {
 .page10 {
 	background: url(../img/page9/page10-bg.jpg) no-repeat;
 	background-size: 100%;
-	transition: opacity 1s;
+    background-position: 0px -1.2rem;
 	opacity: 0;
-	transition: opacity 1s;
+	transition: opacity 2s;
 }
 .page10.animate {
 	opacity: 1;
@@ -264,9 +264,9 @@ html, body {
 
 .page10 .shd {
 	position: absolute;
-	top: 8.2rem;
-    left: 1.06rem;
-    width: 5.46rem;
+	top: 5.4rem;
+    left: 1.56rem;
+    width: 4.46rem;
     height: 2.28rem;
 }
 
@@ -277,16 +277,30 @@ html, body {
 .page11 .plane {
 	position: absolute;
 	top: 4.2rem;
-    left: 1.06rem;
-    width: 5.46rem;
+    left: 1.56rem;
+    width: 4.46rem;
     height: 2.28rem;
-    z-index: 1;
+    z-index: 5;
 }
 .page9 .plane img,
 .page10 .plane img,
 .page10 .shd img,
 .page11 .plane img {
 	width: 100%;
+}
+.page11 {
+	transition: opacity 2s;
+	opacity: 0;
+
+	z-index: 1;
+}
+@keyframe bgp {
+	0% {
+		background-position-x: 0;
+	}
+	98% {
+		background-position-x: 0;
+	}
 }
 .page11 .bg {
 	position: absolute;
@@ -295,8 +309,7 @@ html, body {
 	height: 100%;
 	background: url(../img/page9/page11-bg.jpg) no-repeat;
 	background-size: 100%;
-	transition: opacity 1s;
-	opacity: 0;
+	animation: bgp 2s;
 }
 .page11 .cloud {
 	position: absolute;
@@ -305,18 +318,23 @@ html, body {
 	top: 0.5rem;
 	background: url(../img/page9/page11-cloud.png) no-repeat;
 	background-size: 100%;
+	z-index: 3;
 	opacity: 0;
 	transition: opacity,transform 3s;
 	transition-delay: 1s;
 	transform: translateX(0.2rem);
 }
 .page11 .font {
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 100%;
 	line-height: 0.44rem;
 	font-size: 0.24rem;
 	text-align: center;
 	color: #000;
 	font-weight: bold;
+	z-index: 8;
 }
 .page11 .font .text p {
 	position: absolute;
@@ -341,7 +359,7 @@ html, body {
 	font-size: 0.32rem;
 }
 
-.page11.animate .bg {
+.page11.animate {
 	opacity: 1;
 }
 .page11.animate .cloud {
