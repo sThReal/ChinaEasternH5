@@ -3,8 +3,8 @@ var load = document.getElementById("loading");
 var imgPath = "img/";
 var myVideo = document.getElementById("video");
 var loadingPage = (function () {
-  var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/cloud_1.png',
-  'loading/cloud_2.png','loading/plane_line.png','loading/plane.png'];
+  var imgSources = ['loading/cloud_1.png','loading/cloud_2.png','loading/plane_line.png','loading/plane.png','arrow.png',
+'page5/bg.jpg','page5/buildings.png',];
   for (var i = 0; i < imgSources.length; i++) {
     imgSources[i] = (imgPath + imgSources[i]);
   };
