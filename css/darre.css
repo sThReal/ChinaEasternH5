@@ -9,33 +9,148 @@
     color: #ffffff;
     font-size: 0.16rem;
     line-height: 0.24rem;
+}
+.page15 .page15_text .main_content{
+    overflow: hidden;
+    position: absolute;
+    background: url(../img/page_end/page_end_text_bg_11.png) no-repeat;
+    background-size: 100%;
+    width: 3.58rem;
+    height: 4.74rem;
+    z-index: 123;
+    right: 0.4rem;
+    top: 0;
+    margin-top: 6.2rem;
+}
+
+
+.page15 .page15_text .main_content .second_text{
+    width:100%;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    padding-left: 0.24rem;
+    padding-top: 0.1rem;
+}
+
+.page15 .page15_text .main_content .second_title{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 0.28rem;
+    font-weight:bold;
+}
+
+.page15 .page15_text .main_content .content_text{
+    width: 100%;
+    font-weight:bold;
+    color: #ffffff;
+}
+.page15 .page15_text .main_content .content_text h3{
+    font-size: 0.18rem;
+    padding-left: 0.22rem;
+    line-height: 0.18rem;
+    margin-top: 0.08rem;
+}
+.page15 .page15_text .main_content .content_text p{
+    font-size: 0.28rem;
+    padding-left: 0.22rem;
+    line-height: 0.4rem;
+    margin-top: 0.08rem;
+}
+.page15 .page15_text .main_content .content_text span{
+    font-size: 0.4rem;
 
 }
+
+
+
+.page15 .page15_text .main_content .main_title{
+    width:100%;
+    color: #ffffff;
+    font-size: 0.28rem;
+    font-weight:bolder;
+    margin-top: 0.12rem;
+    text-align: center;
+    height: 0.78rem;
+    line-height: 0.38rem;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+.page15 .page15_text .need_rolate{
+    position: absolute;
+    right:0.5rem;
+    top: 2.36rem;
+    transform-origin: center center;
+    transform: rotate(-12deg);
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-12deg);
+}
+.page15 .page15_text .need_rolate .person_nick_name{
+    width: 3.66rem;
+    height: 1.44rem;
+    background: url(../img/page_end/person_type_07.png) no-repeat;
+    background-size: 100%;
+    font-weight:bolder;
+    text-align: center;
+    font-size:0.8rem;
+    line-height: 1.32rem;
+}
+.page15 .page15_text .need_rolate p{
+    width: 3.36rem;
+    color: #fff;
+    font-size:0.22rem;
+    line-height: 0.4rem;
+    font-weight:bold;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.02rem;
+}
+.page15 .title{
+    width: 6.53rem;
+    height:1.57rem;
+    background: url(../img/page_end/page_end_title_03.png) no-repeat;
+    margin:0 auto;
+    background-size:100%;
+    margin-top: 0.44rem;
+}
+
+
+
 .page15 .btn_left{
     position: absolute;
-    width: 3rem;
-    height: 0.5rem;
-    background: cadetblue;
+    width: 3.34rem;
+    height: 0.79rem;
     color: #000;
-    line-height: 0.5rem;
-    left: 0.2rem;
+    line-height: 0.79rem;
     font-weight:bolder;
     bottom: 0.5rem;
-    font-size: 0.12rem;
+    font-size: 0.3rem;
     text-align: center;
+    left: 0.32rem;
+    background: url(../img/page_end/page_end_btn_03.png) no-repeat;
+    background-size: 100%;
+    color: #ffffff;
 }
 .page15 .btn_right{
     position: absolute;
-    width: 3rem;
-    height: 0.5rem;
-    background: cadetblue;
+    width: 3.34rem;
+    height: 0.79rem;
     color: #000;
-    line-height: 0.5rem;
-    right: 0.2rem;
+    line-height: 0.79rem;
     font-weight:bolder;
     bottom: 0.5rem;
-    font-size: 0.12rem;
+    font-size: 0.3rem;
     text-align: center;
+    right: 0.32rem;
+    background: url(../img/page_end/page_end_btn_03.png) no-repeat;
+    background-size: 100%;
+    color: #ffffff;
 }
 .page15 .bg{
     position: absolute;
@@ -200,3 +315,46 @@
         opacity: 1;
     }
 }
+
+
+.page_for_canvas{
+    width:750px;
+    height:1450px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 999;
+}
+.page_for_canvas .canvas_logo{
+    width:350px;
+    height:126px;
+    position: absolute;
+    right: 0.16rem;
+    bottom: 0.5rem;
+}
+
+.page_for_canvas .remmber_txt{
+    width:64px;
+    height:215px;
+    background: url(../img/page_end/canvas_qrcode_03.png) no-repeat;
+    background-size: 100%;
+    bottom:39px;
+    left:244px;
+    position: absolute;
+}
+
+.page_for_canvas .canvas_logo img{
+    width: 100%;
+}
+.page_for_canvas .canvas_img{
+    width: 740px;
+    overflow: hidden;
+    max-height:1130px;
+    margin:0 auto;
+    margin-top: 0.35rem;
+}
+.page_for_canvas .canvas_img img{
+    width:100%;
+}
+
+
+
