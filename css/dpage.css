@@ -330,11 +330,32 @@ html, body {
 .page11 .bg {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	display: block;
 	height: 100%;
-	background: url(../img/page9/page11-bg.jpg) no-repeat;
-	background-size: 100%;
-	animation: bgp 2s;
+	z-index:1;
+	animation:page11sky 2s linear infinite;
+}
+
+/* .page11 .bg */
+/* .page11 .bg2 {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transform:translateX(61%);
+	animation:page11sky2 5s 1.2s linear infinite;
+} */
+@keyframes page11sky{
+	to{
+		transform:translateX(-63.6%);
+	}
+}
+@keyframes page11sky2{
+	from{
+		transform:translateX(61%);
+	}
+	to{
+		transform:translateX(-100%)
+	}
 }
 .page11 .cloud {
 	position: absolute;
@@ -384,13 +405,13 @@ html, body {
 	font-size: 0.32rem;
 }
 
-.page11.animate {
+/* .page11.animate {
 	opacity: 1;
 }
 .page11.animate .cloud {
 	opacity: 1;
 	transform: translateX(0);
-}
+} */
 .page11 .leave {
 	opacity: 0;
 }

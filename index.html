@@ -35,7 +35,7 @@
       <div class="txt">Loading...</div>
     </div>
     <video id="video" x-webkit-airplay="true" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true"
-      playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video1.mp4"></video>
+      playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video.mp4"></video>
   </div>
   <!-- 视频过度 -->
   <div class="page page5">
@@ -76,10 +76,10 @@
   <!-- 在云端1 -->
   <div class="page page11 hide">
     <div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
-    <div class="bg"></div>
+    <img class="bg" src="img/page9/bg11.jpg">
     <div class="cloud"></div>
     <div class="font">
-      <div class="text1 text ">
+      <div class="text1 text">
         <p class="top">2018年您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过<strong>16</strong>次头等舱</br><strong>8</strong>次商务舱</p>
         <p class="bottom">最常乘坐机型为 <strong>空客A380</strong></p>
       </div>
@@ -175,6 +175,15 @@
               console.log(e, 'page10向上');
               $('.page10').addClass('leave').fadeOut(1000);
               $('.page11').fadeIn().addClass('animate');
+              // $('.page11 .bg').addClass('animation');
+              // var t = 1;
+              // setInterval(function(){
+              //   $('.page11 .bg'+t).after(`<img class="bg bg${++t}" src="img/page9/page11-bg.jpg">`);
+              //   setTimeout(function(){
+              //     $('.page11 .nextbg.bg'+t).addClass('animation');
+              //   },50)
+                
+              // },1900)
               // 在云端1
               setTimeout(function () {
                 var page11 = new Hammer(document.querySelector(".page11"));
