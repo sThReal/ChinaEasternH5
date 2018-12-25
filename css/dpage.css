@@ -13,16 +13,24 @@ html, body {
 }
 .arrow {
 	position: absolute;
-	bottom: 1rem;
+	top: 11.3rem;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 0.38rem;
-	height: 0.3rem;
+	-webkit-transform: translateX(-50%);
+	width: 1.38rem;
+	height: 1.36rem;
 	background: url(../img/arrow.png) no-repeat;
 	background-size: 100%;
 	animation: arrow_up 1s infinite;
 }
-
+.arrow_txt{
+	position:absolute;
+	width:100%;
+	top:13rem;
+	font-size:0.3rem;
+	text-align:center;
+	color:#fff;
+}
 .arrow_demo{
 	position: absolute;
 	bottom: 1rem;
@@ -36,13 +44,20 @@ html, body {
 
 @keyframes arrow_up {
 	0% {
-		transform: translateY(0);
+		transform: translate(-50%,0);
 	}
 	100% {
-		transform: translateY(0.3rem);
+		transform: translate(-50%,0.3rem);
 	}
 }
-
+@-webkit-keyframes arrow_up {
+	0% {
+		transform: translate(-50%,0);
+	}
+	100% {
+		transform: translate(-50%,0.3rem);
+	}
+}
 .hide {
 	display: none;
 }

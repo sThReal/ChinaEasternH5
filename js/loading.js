@@ -3,8 +3,8 @@ var load = document.getElementById("loading");
 var imgPath = "img/";
 var myVideo = document.getElementById("video");
 var loadingPage = (function () {
-  var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/1.png', 'page9-bg.jpg',
-   'page11-cloud.png', 'page11-plane.png'];
+  var imgSources = ['loading/1.png', 'loading/2.png', 'loading/3.png', 'loading/cloud_1.png',
+  'loading/cloud_2.png','loading/plane_line.png','loading/plane.png'];
   for (var i = 0; i < imgSources.length; i++) {
     imgSources[i] = (imgPath + imgSources[i]);
   };
@@ -48,8 +48,8 @@ var loadingPage = (function () {
           myVideo.play();
         }
         var endVideo = function () {
-          $('.loadingAndVideo').hide();
-          $('.page5').show();
+          $('.loadingAndVideo').fadeOut();
+          $('.page5').fadeIn();
         }
         myVideo.addEventListener("ended", endVideo);
       })
