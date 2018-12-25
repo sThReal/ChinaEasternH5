@@ -413,8 +413,8 @@
     left: 50%;
     margin-left: -1.02rem;
     opacity:0;
-    animation: earth-of-14 .4s 2s linear forwards 1;
-    -webkit-animation: earth-of-14 .4s 2s linear   forwards 1;
+    animation: earth-of-14 .4s 4.1s linear forwards 1;
+    -webkit-animation: earth-of-14 .4s 4.1s linear  forwards 1;
 }
 @keyframes newEarth {
     0%{
@@ -523,6 +523,3 @@
 .page_for_canvas .canvas_img img{
     width:100%;
 }
-
-
-
