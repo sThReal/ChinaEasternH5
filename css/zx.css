@@ -55,11 +55,11 @@
   }
 }
 @-webkit-keyframes loadingcloud{
-  0%,100%{
-    transform:translateY(7.5rem)
+  0%{
+    transform:translateX(7.5rem);
   }
-  50%{
-    transform:translateY(-30rem);
+  100%{
+    transform:translateX(-30rem);
   }
 }
 @keyframes plane{

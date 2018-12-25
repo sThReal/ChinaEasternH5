@@ -44,6 +44,7 @@ $.ajax({
   method:'GET',
   success:function(data){
     console.log(data,'server end json');
+    // 值机柜台
     bindDom('name',data.page1.name);
     bindDom('gender',data.gender=='male'?'先生':'小姐');
     bindDom('joinDate',data.page1.joinDate);
@@ -54,6 +55,16 @@ $.ajax({
     bindDom('domesticCityAmount',data.page1.domesticCityAmount);
     bindDom('internationalCityAmount',data.page1.internationalCityAmount);
     bindDom('airplaneModels',data.page1.airplaneModels);
+    // 在云端1
+    bindDom('disney',data.page2.disney);
+    bindDom('firstClass',data.page2.firstClass);
+    bindDom('businessClass',data.page2.businessClass);
+    bindDom('mostOftenModel',data.page2.mostOftenModel);
+    // 在云端2
+    bindDom('totalHours',data.page3.totalHours);
+    bindDom('totalTimes',data.page3.totalTimes);
+    bindDom('totalCost',data.page3.totalCost);
+    bindDom('totalDistance',data.page3.totalDistance);
     //地球页面 判断是否有走过城市
     if(data.page4.citys.length>=1){
         $("#page14_text_has_data").show()
