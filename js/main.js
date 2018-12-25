@@ -49,7 +49,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                     $('.page12 .arrow').css('opacity', 1);
                     page12.on('swipeup', function (e) {
                       console.log(e, 'page12向上');
-                      $('.page12').addClass('leave').fadeOut(1000);
+                      $('.page12').addClass('leave').fadeOut(2000);
                       $('.page14').fadeIn();
                       //确保飞机已经进入界面
                       setTimeout(function () {

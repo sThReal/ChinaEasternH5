@@ -278,7 +278,7 @@ html, body {
 	background-size: 100%;
     background-position: 0 -1.2rem;
 	opacity: 1;
-	transition: opacity 3s;
+	transition: opacity 1.5s;
 	z-index: 20;
 }
 .page10.animate {
@@ -315,10 +315,13 @@ html, body {
 	width: 100%;
 }
 .page11 {
-	transition: opacity 3s;
-	opacity: 1;
+	transition: opacity 1.5s;
+	opacity: 0;
 	z-index: 15;
 }
+.page11.animate {
+	opacity: 1;
+} 
 @keyframe bgp {
 	0% {
 		background-position-x: 0;
@@ -376,9 +379,9 @@ html, body {
 	top: 0;
 	width: 100%;
 	line-height: 0.44rem;
-	font-size: 0.24rem;
+	font-size: 0.32rem;
 	text-align: center;
-	color: #000;
+	color: #fff;
 	font-weight: bold;
 	z-index: 8;
 }
@@ -389,37 +392,42 @@ html, body {
 
 .page11 .font .top {
 	top: 0.8rem;
+	opacity: 0;
+	transition: opacity 0.8s;
+	transition-delay: 2.5s;
+}
+.page11.animate .font .top,
+.page11.animate .font .bottom {
+	opacity: 1;
 }
 
 .page11 .font .bottom {
-	bottom: 3.5rem;
-}
-.page11 .font .text1 {
-
-}
-.page11 .font .bottom {
-	font-size: 0.34rem;
+	top: 7.5rem;
+	line-height: 0.8rem;
+	opacity: 0;
+	transition: opacity 0.8s;
+	transition-delay: 3.2s;
+	font-size: 0.5rem;
 }
 
 .page11 .font strong {
-	font-size: 0.32rem;
+	color: #ff0000;
+}
+.page11 .font .bottom strong {
+	color: #ce003f;
+
 }
 
-/* .page11.animate {
-	opacity: 1;
-}
-.page11.animate .cloud {
-	opacity: 1;
-	transform: translateX(0);
-} */
-.page11 .leave {
+.page11.leave {
 	opacity: 0;
 }
 
 /*page12*/
 .page12 {
-	opacity: 1;
 	z-index: 5;
+}
+.page12.animate {
+	opacity: 1;
 }
 .page12 .plane {
 	position: absolute;
@@ -501,8 +509,9 @@ html, body {
 	text-align: center;
 	color: #000;
 	font-weight: bold;
-	position: relative;
-	z-index: 2;
+	position: absolute;
+    z-index: 2;
+    top: 0;
 }
 .page12 .font > p {
 	position: absolute;
