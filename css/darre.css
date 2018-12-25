@@ -1,6 +1,6 @@
 .page14{
     background: #0b2343;
-
+    overflow: hidden;
 }
 .page15{
     background: #0b2343;
@@ -64,13 +64,13 @@
 
 
 .page14 .page14_text{
-    font-size: 0.26rem;
-    line-height: 0.4rem;
-    color: #000;
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+    color: #fff;
     text-align: center;
-    font-weight:bold;
+    font-weight:bolder;
     position: absolute;
-    bottom: 0.96rem;
+    bottom: 1.56rem;
     z-index:108;
     width: 7.5rem;
     left:50%;
@@ -83,8 +83,19 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(../img/page14/page_14_bg.jpg) no-repeat;
-    background-size: 7.5rem 14rem;
+    /*background: url(../img/page14/page_14_bg.jpg) no-repeat;*/
+    /*background-size: 7.5rem 14rem;*/
+}
+.page14 .bgsky{
+    background: url(../img/page14/bgsky.jpg) no-repeat;
+    background-size: 30.84rem 30.94rem;
+    width: 30.84rem;
+    height: 30.94rem;
+    /*background-position: center -5.8rem;*/
+    transform: translateX(-11.67rem) translateY(-6.1rem);
+    -webkit-transform: translateX(-11.67rem) translateY(-6.1rem);
+    animation:  newEarth 10s 0s linear forwards 1;
+    -webkit-animation: newEarth 10s 0s linear forwards 1;
 }
 .page14 .aircraft{
     width: 3.75rem;
@@ -97,8 +108,39 @@
     z-index: 99;
     transform: translateX(-7.5rem);
     -webkit-transform: translateX(-7.5rem);
-    animation: aircraft 1s .1s ease-in-out forwards 1;
-    -webkit-animation: aircraft 1s .1s ease-in-out forwards 1;
+    animation: newAircraft 10s 0s linear forwards 1;
+    -webkit-animation: newAircraft 10s 0s linear   forwards 1;
+    transform-origin: center;
+}
+@keyframes newEarth {
+    0%{
+        transform: translateX(-7.5rem) translateY(-6.1rem);
+    }
+    100%{
+        transform: translateX(-15rem) translateY(-6.1rem);
+    }
+}
+
+/*飞机左进入*/
+@keyframes newAircraft{
+    0%{
+        transform: translateX(-4.75rem) scale(0.5) translateY(5.2rem);
+    }
+    10%{
+        transform: translateX(0rem) scale(1) translateY(0);
+    }
+    36.7%{
+        transform: translateY(0.9rem);
+    }
+    63.3%{
+        transform: translateY(-0rem);
+    }
+    90%{
+        transform: translateY(-0.9rem);
+    }
+    100%{
+        transform: translateX(7.5rem) scale(1.6) translateY(-3.4rem);
+    }
 }
 .page14 .earth{
     position: absolute;
