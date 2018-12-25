@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/dpage.css">
 	<script type="text/javascript" src="../js/default.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
 </head>
 <body>
-	<div class="page page9 animate leave">
+	<div class="page page9 ">
 		<div class="bg bg1"></div>
 		<div class="bg bg2"></div>
 		<div class="door"></div>
@@ -34,15 +35,15 @@
 	
 	<div class="page page10 animate leave">
 		<div class="plane">
-			<img src="../img/page9/page10-plane.png" alt="">
+			<img src="img/page9/page10-plane.png" alt="">
 		</div>
-		<div class="shd"><img src="../img/page9/page10-shd.png" alt=""></div>
+		<div class="shd"><img src="img/page9/page10-shd.png" alt=""></div>
 		<div class="arrow"></div>
 
 	</div>
 
 	<div class="page page11 ">
- 		<div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
+ 		<div class="plane"><img src="img/page9/page10-plane.png" alt=""></div>
 		<div class="bg"></div>
 		<div class="cloud"></div> 
 		<div class="font">
@@ -73,8 +74,8 @@
 			<p class="p4"><strong>XXXX</strong><span>公里</span></br>2018年总飞行里程数</p>
 		</div>
 		<div class="font no-font hide">
-			<p class="p1"><strong>700+</strong>架</br>2018年机队规模</p>
-			<p class="p2"><strong>174</strong>个</br>通航国家和地区</p>
+			<p class="p1"><strong>700+</strong><span>架</span></br>2018年机队规模</p>
+			<p class="p2"><strong>174</strong><span>个</span></br>通航国家和地区</p>
 			<p class="p3"><strong>1074</strong></br>通航点</p>
 		</div>
 	</div>
@@ -83,16 +84,19 @@
 
 	<script>
 		window.onload = function() {
+
+		
+
 			setTimeout(function() {
-				// document.getElementsByClassName('page9')[0].className = 'page page9 animate leave';
+				document.getElementsByClassName('page9')[0].className = 'page page9 animate';
 
 				// document.getElementsByClassName('page10')[0].className = 'page page10 animate leave';
 				// document.getElementsByClassName('page11')[0].className = 'page page11 animate leave';
-				document.getElementsByClassName('page12')[0].className = 'page page12 animate' ;
+				// document.getElementsByClassName('page12')[0].className = 'page page12 animate' ;
 				setTimeout(function () {
 					// document.getElementsByClassName('page9')[0].className = 'page page9 out hide';
 				// document.getElementsByClassName('page10')[0].className = 'page page10 animate ';
-				document.getElementsByClassName('page12')[0].className = 'page page12 animate leave' ;
+				// document.getElementsByClassName('page12')[0].className = 'page page12 animate leave' ;
 
 
 				}, 8000);
