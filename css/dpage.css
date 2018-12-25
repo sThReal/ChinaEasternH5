@@ -74,16 +74,23 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: 100%;
+}
+.page9 .bg1 {
 	background: url(../img/page9/page9-bg.jpg) no-repeat;
 	background-size: 100%;
 }
-.page .door {
+.page9 .bg2 {
+	background: url(../img/page9/page9-bg2.jpg) no-repeat;
+	background-size: 100%;
+}
+.page9 .door {
 	position: absolute;
 	bottom: 0;
 	width: 7.5rem;
 	height: 9.96rem;
 	background: url(../img/page9/page9-door.png) no-repeat;
 	background-size: 100%;
+	z-index: 10;
 }
 .page9 .light {
 	position: absolute;
@@ -93,7 +100,7 @@ html, body {
 	background: url(../img/page9/page9-light.png) no-repeat;
 	background-position: -0.8rem 0;
 	background-size: 100%;
-	z-index: 2;
+	z-index: 20;
 }
 .page9 .stewardess{
 	width: 3.29rem;
@@ -222,6 +229,7 @@ html, body {
 }
 
 /*飞行*/
+.page9 .plane,
 .page10 .plane,
 .page11 .plane {
 	position: absolute;
@@ -231,6 +239,7 @@ html, body {
 	height: 2.28rem;
 	z-index: 1;
 }
+.page9 .plane img,
 .page10 .plane img,
 .page11 .plane img {
 	width: 100%;
