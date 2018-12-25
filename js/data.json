@@ -1,7 +1,8 @@
 
 {
+  "gender":"male",
   "page1":{
-    "name":"赵先生",
+    "name":"用户",
     "joinDate":"2018年7月18日",
     "totalFlight":100,
     "totalIntegral":54332,

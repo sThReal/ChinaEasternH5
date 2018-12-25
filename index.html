@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/zx.css?">
   <link rel="stylesheet" href="css/dpage.css">
+  <link rel="stylesheet" href="css/darre.css">
 </head>
 
 <body>
@@ -43,9 +44,65 @@
     <div class="arrow"></div>
   </div>
   <!-- 值机登记 -->
-  <div class="page hide page9">
-    值机柜台
+  <div class="page page9 hide">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="door"></div>
+    <div class="light"></div>
+    <div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
+    <div class="stewardess"></div>
+    <div class="dialogbox">
+      <p>尊敬的<span d-name></span><span d-gender></span></p>
+    </div>
+    <div class="panel">
+      <div class="text">
+        <p class="note1"></p>
+        <p class="note2">您 <strong d-joinDate>2018年7月18日</strong> 加入东航会员以来</p>
+        <p class="note3">您在东航直销渠道的累积飞行<strong d-totalFlight>200</strong>次</p>
+        <p class="note4">累积积分<strong d-totalIntegral>1350000</strong>分，消耗积分共<strong d-spentIntegral>111111</strong>分</p>
+        <p class="note5">会员等级为 <strong d-level>小飞人卡</strong></p>
+        <p class="note6">飞行过国内<strong d-domesticCityAmount>111</strong>个城市，国际共<strong d-internationalCityAmount>111</strong>个城市</p>
+        <p class="note7">坐过的的机型共<strong d-airplaneModels>3</strong>种</p>
+      </div>
+    </div>
   </div>
+  <!-- 停机坪 -->
+  <div class="page page10 hide ">
+		<div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
+  </div>
+  <!-- 在云端1 -->
+  <div class="page page11 animate hide">
+    <div class="plane"><img src="../img/page9/page11-plane.png" alt=""></div>
+   <div class="bg"></div>
+   <div class="cloud"></div> 
+   <div class="font">
+     <div class="text1 text ">
+       <p class="top">2018年您搭乘过<strong>22</strong>次迪士尼航班</br>乘坐过<strong>16</strong>次头等舱</br><strong>8</strong>次商务舱</p>
+       <p class="bottom">最常乘坐机型为 <strong>空客A380</strong></p>	
+     </div>
+     <div class="text2 text hide">
+       <p class="top">喜提最新机型A350，B787</br>在法庆祝上海-巴黎航线开通20周年</br>保障在上海举办的首届中国进博会</p>
+       <p class="bottom">2018年东航大事记</p>
+     </div>
+   </div>
+ </div>
+ <!-- 在云端2 -->
+ <div class="page page12 animate hide">
+  <div class="plane"><img src="../img/page9/page11-plane.png" alt=""></div>
+  <div class="bg"></div>
+  <div class="cloud"></div>
+  <div class="font">
+    <p class="p1">2018年总飞行时长</br><strong>XXXX</strong>小时</p>
+    <p class="p2">2018年总飞行次数</br><strong>XXXX</strong>次</p>
+    <p class="p3">2018年总消费金额</br><strong>XXXX</strong>元</p>
+    <p class="p4">2018年总飞行里程数</br><strong>XXXX</strong>公里</p>
+  </div>
+  <div class="font no-font hide">
+    <p class="p1"><strong>700+</strong>架</br>2018年机队规模</p>
+    <p class="p2"><strong>174</strong>个</br>通航国家和地区</p>
+    <p class="p3"><strong>1074</strong></br>通航点</p>
+  </div>
+</div>
   <!-- 停机坪 -->
   <div class="page hide"></div>
   <!-- 在云端1 -->
@@ -69,12 +126,13 @@
     page5.on('swipeup', function (e) {
       console.log(e, 'page5向上');
       $('.page5 img').css({
-        transform:'translateY(200px)',
-        opacity:0
+        transform: 'translateY(200px)',
+        opacity: 0
       })
       $('.page5').fadeOut(1500);
       $('.page9').fadeIn(1500).addClass('animate');
     });
+
     var page9 = new Hammer(document.querySelector(".page9"));
     //启动垂直方向滑动
     page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
