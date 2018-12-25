@@ -41,7 +41,7 @@ var loadingPage = (function () {
         $('.loading').fadeOut();
         $('#video').css({
           width:'7.5rem',
-          height:'15rem',
+          height:'13.34rem',
           'z-index':'2'
         });
         if (myVideo.paused) {
