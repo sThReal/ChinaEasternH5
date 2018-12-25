@@ -9,30 +9,32 @@
 	<script type="text/javascript" src="../js/default.js"></script>
 </head>
 <body>
-	<div class="page page9 animate ">
-		<div class="bg bg1 hide"></div>
+	<div class="page page9">
+		<div class="bg bg1"></div>
 		<div class="bg bg2"></div>
 		<div class="door"></div>
 		<div class="light"></div>
 		<div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
-<!-- 		<div class="stewardess"></div>
-		<div class="dialogbox"><p>尊敬的aaaaaaaaaa先生/小姐</p></div> -->
-		<div class="panel text">
-		    <p class="note1">尊敬的aaaaaaaaaa先生/小姐</p>
-		    <p class="note2">您 <strong>2018年7月18日</strong> 加入东航会员以来</p>
-		    <p class="note3">您在东航直销渠道的累积飞行<strong>200</strong>次</p>
-		    <p class="note4">累积积分<strong>1350000</strong>分，消耗积分共<strong>111111</strong>分</p>
-		    <p class="note5">会员等级为 <strong>小飞人卡</strong></p>
-		    <p class="note6">飞行过国内<strong>111</strong>个城市，国际共<strong>111</strong>个城市</p>
-		    <p class="note7">坐过的的机型共<strong>3</strong>种</p>
+		<div class="stewardess"></div>
+		<div class="dialogbox"><p>尊敬的aaaaaaaaaa先生/小姐</p></div>
+		<div class="panel">
+			<div class="text">
+			    <p class="note1"></p>
+			    <p class="note2">您 <strong>2018年7月18日</strong> 加入东航会员以来</p>
+			    <p class="note3">您在东航直销渠道的累积飞行<strong>200</strong>次</p>
+			    <p class="note4">累积积分<strong>1350000</strong>分，消耗积分共<strong>111111</strong>分</p>
+			    <p class="note5">会员等级为 <strong>小飞人卡</strong></p>
+			    <p class="note6">飞行过国内<strong>111</strong>个城市，国际共<strong>111</strong>个城市</p>
+			    <p class="note7">坐过的的机型共<strong>3</strong>种</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class="page page10 hide">
+	<div class="page page10 animate hide">
 		<div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
 	</div>
 
-	<div class="page page11 hide">
+	<div class="page page11 animate hide">
  		<div class="plane"><img src="../img/page9/page11-plane.png" alt=""></div>
 		<div class="bg"></div>
 		<div class="cloud"></div> 
@@ -48,17 +50,17 @@
 		</div>
 	</div>
 
-	<div class="page page12 hide">
+	<div class="page page12 animate hide">
 		<div class="plane"><img src="../img/page9/page11-plane.png" alt=""></div>
 		<div class="bg"></div>
 		<div class="cloud"></div>
-		<div class="font hide">
+		<div class="font">
 			<p class="p1">2018年总飞行时长</br><strong>XXXX</strong>小时</p>
 			<p class="p2">2018年总飞行次数</br><strong>XXXX</strong>次</p>
 			<p class="p3">2018年总消费金额</br><strong>XXXX</strong>元</p>
 			<p class="p4">2018年总飞行里程数</br><strong>XXXX</strong>公里</p>
 		</div>
-		<div class="font no-font ">
+		<div class="font no-font hide">
 			<p class="p1"><strong>700+</strong>架</br>2018年机队规模</p>
 			<p class="p2"><strong>174</strong>个</br>通航国家和地区</p>
 			<p class="p3"><strong>1074</strong></br>通航点</p>
@@ -71,14 +73,14 @@
 	<script>
 		window.onload = function() {
 			setTimeout(function() {
-				// document.getElementsByClassName('page9')[0].className = 'page page9 out';
+				document.getElementsByClassName('page9')[0].className = 'page page9 animate';
 				// document.getElementsByClassName('page12')[0].className = 'page page12 animate';
 				// setTimeout(function () {
 				// 	document.getElementsByClassName('page9')[0].className = 'page page9 out hide';
 				// }, 2000);
 				// document.getElementsByClassName('page10')[0].className = 'page page10 animate';
 				// document.getElementsByClassName('page11')[0].className = 'page page11 animate';
-			}, 2000);
+			}, 0);
 
 		}
 
