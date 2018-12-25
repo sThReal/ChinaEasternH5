@@ -1,3 +1,15 @@
+
+
+
+
+
+window.nickArr = [
+    {
+        
+    },{
+
+    }
+]
 $.ajax({
   url:'js/data.json',
   method:'GET',
