@@ -9,7 +9,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
         transform: 'translateY(200px)',
         opacity: 0
       })
-      $('.page5').fadeOut(1500);
+      $('.page5').css('opacity',0);
       $('.page9').fadeIn(1500).addClass('animate');
       setTimeout(function () {
         // 值机柜台
@@ -69,7 +69,14 @@ var page5 = new Hammer(document.querySelector(".page5"));
                           $("#main_page_15").fadeIn(800);
                         }, 500)
                       })
+                        $("#eastern_recommend").click(function () {
+                            $("#ad_layer").fadeIn(600);
+                        })
 
+                      $("#ad_layer").click(function () {
+                          $("#ad_layer").fadeOut(600);
+                      })   
+                        
                       $("#checkout_img").click(function () {
                         if (window.base64ImgSrcAnother) {
                           $("#page_absolute_4_img").fadeIn(500);

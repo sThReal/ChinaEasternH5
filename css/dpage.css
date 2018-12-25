@@ -99,7 +99,7 @@ html, body {
 	background: url(../img/page5/bg.jpg) no-repeat;
 	background-size: 100%;
 	opacity: 1;
-	transition: opacity 0.6s;
+	transition: opacity 1s;
 	transition-delay: 0.6s;
 }
 .page9 .bg2 {
@@ -107,8 +107,8 @@ html, body {
 	background-size: 134%;
     background-position: 40% 2.9rem;
 	opacity: 0;
-	transition: opacity 0.8s;
-	transition-delay: 1.2s;
+	transition: opacity 1.5s;
+	transition-delay: 1.5s;
 }
 .page9 .door {
 	position: absolute;
@@ -119,8 +119,9 @@ html, body {
 	background-size: 100%;
 	z-index: 10;
 	opacity: 0;
-	transition: opacity 0.6s;
-	transition-delay: 0.6s;
+	transform:scale(0.9);
+	transition: all 1.5s;
+	transition-delay: 1.5s;
 }
 .page9 .light {
 	position: absolute;
@@ -133,7 +134,7 @@ html, body {
 	z-index: 20;
 	opacity: 0;
 	transition: opacity 1.2s;
-	transition-delay: 1.6s;
+	transition-delay: 3s;
 }
 .page9 .stewardess{
 	width: 3.29rem;
@@ -144,9 +145,9 @@ html, body {
 	left: 0.8rem;
     top: 6.8rem;
 	opacity: 0;
-	transition: opacity 0.6s;
+	transition: opacity 1.5s;
 	z-index: 12;
-	transition-delay: 1.4s;
+	transition-delay: 4s;
 }
 .page9 .plane {
 	position: absolute;
@@ -158,8 +159,8 @@ html, body {
     opacity: 0;
     transform: scale(0.5);
     transform: translateX(0rem) scale(0.6);
-    transition: opacity,transform 0.8s;
-    transition-delay: 1.2s;
+    transition: opacity,transform 1.5s;
+    transition-delay: 2.5s;
 }
 .page .arrow {
 	/* transition-delay: 6s; */
@@ -172,6 +173,7 @@ html, body {
 }
 .page9.animate .door {
 	opacity: 1;
+	transform:scale(1);
 }
 .page9.animate .light {
 	opacity: 1;
@@ -200,8 +202,8 @@ html, body {
 	opacity: 0;
 	overflow: hidden;
 	transform: translateY(-0.3rem);
-	transition: opacity,transform 0.4s;
-	transition-delay: 4s;
+	transition: all 1s;
+	transition-delay: 6.5s;
 	z-index: 24;
 }
 .page9.animate .dialogbox {
@@ -211,9 +213,9 @@ html, body {
 
 .page9 .dialogbox p {
 	opacity: 0;
-	margin-left: 0.65rem;
-    margin-top: 0.8rem;
-	transition: opacity 0.4s;
+	margin-left: 0.75rem;
+    margin-top: 0.9rem;
+	transition: all 0.4s;
 	transition-delay: 4.4ss;
 }
 .page9.animate .dialogbox p {
@@ -227,7 +229,8 @@ html, body {
 	background:url(../img/page9/page9-panel.png) no-repeat;
 	background-size: 100%;
 	transform: translateY(-4.1rem);
-	transition: transform 0.6s;
+	transition: transform 1.8s;
+	transition-delay: 0.5s;
 	z-index: 12;
 }
 .page9 .text {
@@ -238,7 +241,7 @@ html, body {
 	left:0;
 	padding-top:0.57rem;
 	transition: height 2s;
-	transition-delay: 2.8s;
+	transition-delay: 4.5s;
 	overflow: hidden;
 }
 .page9 .text p {

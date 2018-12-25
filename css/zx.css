@@ -88,6 +88,7 @@
 .page5{
   background:url('../img/page5/bg.jpg') top center no-repeat;
   background-size:100%;
+  transition:all 3s linear;
 }
 .page5 img{
   width:100%;
