@@ -61,10 +61,6 @@ html, body {
 }*/
 
 .page9 {
-	/*background: url(../img/page9-bg.jpg) no-repeat;*/
-	background: url(../img/page9/006.jpg) no-repeat;
-	background-size: 100%;
-  transform-origin: 8rem 9.1rem;
   transition: transform 2s;
 
 }
@@ -73,7 +69,32 @@ html, body {
 	/*animation: page9_out 2s;*/
 }
 
-
+.page9 .bg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/page9/page9-bg.jpg) no-repeat;
+	background-size: 100%;
+}
+.page .door {
+	position: absolute;
+	bottom: 0;
+	width: 7.5rem;
+	height: 9.96rem;
+	background: url(../img/page9/page9-door.png) no-repeat;
+	background-size: 100%;
+}
+.page9 .light {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 9.58rem;
+	background: url(../img/page9/page9-light.png) no-repeat;
+	background-position: -0.8rem 0;
+	background-size: 100%;
+	z-index: 2;
+}
 .page9 .stewardess{
 	width: 3.29rem;
 	height: 5.93rem;
@@ -118,6 +139,13 @@ html, body {
 }
 .page9.animate .dialogbox p {
 	opacity: 1;
+}
+.page9 .panel {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background:url(../img/page9/page9-panel.png) no-repeat;
+	background-size: 100%;
 }
 .page9 .text {
 	width: 7.5rem;
