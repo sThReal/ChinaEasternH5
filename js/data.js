@@ -3,6 +3,7 @@
  * 如没有，则传0，但key要传过来
  */
 var data = {
+  "gender":"male",
   "page1":{
     "name":"赵先生",
     "totalFlight":100,

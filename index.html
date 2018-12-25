@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/zx.css?">
   <link rel="stylesheet" href="css/dpage.css">
+  <link rel="stylesheet" href="css/darre.css">
 </head>
 
 <body>
@@ -43,8 +44,27 @@
     <div class="arrow"></div>
   </div>
   <!-- 值机登记 -->
-  <div class="page hide page9">
-    值机柜台
+  <div class="page page9 hide">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="door"></div>
+    <div class="light"></div>
+    <div class="plane"><img src="../img/page9/page10-plane.png" alt=""></div>
+    <div class="stewardess"></div>
+    <div class="dialogbox">
+      <p>尊敬的<span d-name></span><span d-gender></span></p>
+    </div>
+    <div class="panel">
+      <div class="text">
+        <p class="note1"></p>
+        <p class="note2">您 <strong d-joinDate>2018年7月18日</strong> 加入东航会员以来</p>
+        <p class="note3">您在东航直销渠道的累积飞行<strong d-totalFlight>200</strong>次</p>
+        <p class="note4">累积积分<strong d-totalIntegral>1350000</strong>分，消耗积分共<strong d-spentIntegral>111111</strong>分</p>
+        <p class="note5">会员等级为 <strong d-level>小飞人卡</strong></p>
+        <p class="note6">飞行过国内<strong d-domesticCityAmount>111</strong>个城市，国际共<strong d-internationalCityAmount>111</strong>个城市</p>
+        <p class="note7">坐过的的机型共<strong d-airplaneModels>3</strong>种</p>
+      </div>
+    </div>
   </div>
   <!-- 停机坪 -->
   <div class="page hide"></div>
@@ -69,12 +89,13 @@
     page5.on('swipeup', function (e) {
       console.log(e, 'page5向上');
       $('.page5 img').css({
-        transform:'translateY(200px)',
-        opacity:0
+        transform: 'translateY(200px)',
+        opacity: 0
       })
       $('.page5').fadeOut(1500);
       $('.page9').fadeIn(1500).addClass('animate');
     });
+
     var page9 = new Hammer(document.querySelector(".page9"));
     //启动垂直方向滑动
     page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
