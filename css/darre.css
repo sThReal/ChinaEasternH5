@@ -132,7 +132,7 @@
 .page15 .title{
     width: 6.53rem;
     height:1.57rem;
-    overflow: auto;
+    overflow: hidden;
     background: url(../img/page_end/page_end_title_03.png) no-repeat;
     margin:0 auto;
     background-size:100%;
@@ -148,6 +148,16 @@
 }
 
 
+@-webkit-keyframes shadeIn {
+    0%{
+        opacity: 0;
+        -webkit-transform: scale(2.35);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
 @keyframes shadeIn {
     0%{
         opacity: 0;
@@ -160,6 +170,7 @@
 }
 .page15.page15_4_canvas .aircraft_4_15{
     transform: translateX(0rem);
+    -webkit-transform: translateX(0rem);
 }
 .page15 .aircraft_4_15{
     position: absolute;
@@ -282,6 +293,61 @@
 
 
 
+@-webkit-keyframes contentRightIn {
+    0%{
+        opacity:0;
+        -webkit-transform: translateX(4rem);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateX(0rem);
+    }
+}
+
+@-webkit-keyframes ladyIn {
+    0%{
+        opacity:0;
+        -webkit-transform: translateX(-6.78rem);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateX(0rem);
+    }
+}
+
+
+
+@-webkit-keyframes shadeRotateIn {
+    0%{
+        opacity: 0;
+        -webkit-transform: scale(2.35) rotate(-12deg);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(-12deg);
+    }
+}
+@-webkit-keyframes ladyIn {
+    0%{
+        opacity:0;
+        -webkit-transform: translateX(-6.78rem);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateX(0rem);
+    }
+}
+@-webkit-keyframes aircraftLeftIn {
+    0%{
+        -webkit-transform: translateX(-7.5rem);
+    }
+    100%{
+        -webkit-transform: translateX(0rem);
+    }
+}
+
+
+
 
 
 
@@ -380,6 +446,31 @@
     -webkit-animation: newAircraftAnother 1s 0s linear forwards 1;
     transform-origin: center;
 }
+@-webkit-keyframes newAircraftAnother{
+    0%{
+        -webkit-transform: translateX(-4.75rem) scale(0.5) translateY(5.2rem);
+    }
+    100%{
+        -webkit-transform: translateX(0rem) scale(1) translateY(0);
+    }
+}
+@-webkit-keyframes newAircraftSecond{
+    0%{
+        -webkit-transform: translateY(0rem);
+    }
+    25%{
+        -webkit-transform: translateY(-0.9rem);
+    }
+    50%{
+        -webkit-transform: translateY(0rem);
+    }
+    75%{
+        -webkit-transform: translateY(0.9rem);
+    }
+    100%{
+        -webkit-transform: translateY(0rem);
+    }
+}
 @keyframes newAircraftAnother{
     0%{
         transform: translateX(-4.75rem) scale(0.5) translateY(5.2rem);
@@ -448,6 +539,15 @@
         transform: translateX(-15rem) translateY(-7.1rem);
     }
 }
+@-webkit-keyframes newEarth {
+    0%{
+        -webkit-transform: translateX(-7.5rem) translateY(-7.1rem);
+    }
+    100%{
+        -webkit-transform: translateX(-15rem) translateY(-7.1rem);
+    }
+}
+
 /*飞机左进入*/
 .page14 .earth{
     position: absolute;
