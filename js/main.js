@@ -69,7 +69,14 @@ var page5 = new Hammer(document.querySelector(".page5"));
                           $("#main_page_15").fadeIn(800);
                         }, 500)
                       })
+                        $("#eastern_recommend").click(function () {
+                            $("#ad_layer").fadeIn(600);
+                        })
 
+                      $("#ad_layer").click(function () {
+                          $("#ad_layer").fadeOut(600);
+                      })   
+                        
                       $("#checkout_img").click(function () {
                         if (window.base64ImgSrcAnother) {
                           $("#page_absolute_4_img").fadeIn(500);
