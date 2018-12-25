@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="page page15 " >
-		<div class="bg" id="page_4_img">
+		<div class="bg" >
 			<div class="title"></div>
 			<div class="page15_text">
 				<div class="need_rolate">
@@ -51,49 +51,90 @@
 
 
 
-    <div class="page_for_canvas hide" id="page_for_canvas">
-		<div class="canvas_img">
-			<img src="" alt="" id="canvasImg">
+	<div class="page page15 page15_4_canvas" style="z-index: -101;">
+		<div class="bg" id="page_4_img">
+			<div class="title"></div>
+			<div class="page15_text">
+				<div class="need_rolate">
+					<div class="person_nick_name">飞行豪门</div>
+					<p>论飞行，舍你其谁，你就是住在天上的豪门！没有人能阻止你去拥有更好的世界。</p>
+				</div>
+				<div class="main_content">
+					<div class="main_title">
+						王先生的<br>的2018年度飞行报告
+					</div>
+					<div class="content_text" style="height: 2.29rem;overflow: hidden;">
+						<h3>2018总飞行里程</h3>
+						<p><span>888</span>公里</p>
+						<h3>2018总飞行时间</h3>
+						<p><span>888</span>小时</p>
+						<h3>2018总飞行次数</h3>
+						<p><span>888</span>次</p>
+					</div>
+					<div class="second_title">专属报告</div>
+					<div class="second_text">
+						您是白金卡/金卡会员<br>
+						并且乘坐头等舱/公务舱次数5次<br>
+						累积消费金额TOP10%
+					</div>
+				</div>
+			</div>
+			<div class="aircraft"></div>
+			<div class="person lady"></div>
 		</div>
-		<div class="canvas_logo">
-			<img src="../img/page_end/canvas_logo_03.png" alt="">
-		</div>
-		<div class="remmber_txt">
-			<img src="../img/page_end/canvas_qrcode_03.png" alt="">
+	</div>
+	<div class="page_for_canvas_wrap page" style="z-index: -99;">
+		<div class="page_for_canvas" id="page_for_canvas" >
+			<div class="canvas_img">
+				<img src="" alt="" id="canvasImg">
+			</div>
+			<div class="canvas_logo">
+				<img src="../img/page_end/canvas_logo_03.png" alt="">
+			</div>
+			<div class="remmber_txt">
+				<img src="../img/page_end/canvas_qrcode_03.png" alt="">
+			</div>
 		</div>
 	</div>
 
+
+	<div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background: #000;">
+		<img src="" alt="">
+	</div>
 	<script type="text/javascript">
 		//生成canvas对应的html
 		$(document).ready(function () {
-            var canvas = document.createElement("canvas");
-            canvas.width = 400;
-            canvas.height = 400;
-            var opts = {
-                canvas: canvas,                       // 将自定义canvas作为配置项
-                // useCORS: true,                        // 允许图片跨域
-            }
-            html2canvas(document.querySelector("#page_4_img"),opts).then(function (canvas) {
-                window.base64ImgSrc = canvas.toDataURL("image/jpeg",.92);
-            $("#canvasImg").attr("src",window.base64ImgSrc)
-            })
-
 			$("#checkout_img").click(function () {
-				console.log("生成base64图片源码~~!");
                 var canvas = document.createElement("canvas");
                 canvas.width = 750;
-                canvas.height = 1450;
+                canvas.height = 1400;
                 var opts = {
                     canvas: canvas,                       // 将自定义canvas作为配置项
-                     useCORS: true,                        // 允许图片跨域
+                    // useCORS: true,                        // 允许图片跨域
                 }
-                html2canvas(document.querySelector("#page_for_canvas"),opts).then(function (canvas) {
-                    window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg",.72);
-                    console.log(window.base64ImgSrcAnother);
+                html2canvas(document.querySelector("#page_4_img"),opts).then(function (canvas) {
+                    window.base64ImgSrc = canvas.toDataURL("image/jpeg",.72);
+//                console.log(window.base64ImgSrc);
+                    $("#canvasImg").attr("src",window.base64ImgSrc)
+                }).then(function () {
+                    console.log("生成base64图片源码~~!");
+                    var canvas = document.createElement("canvas");
+                    canvas.width = 750;
+                    canvas.height = 1450;
+                    var opts = {
+                        canvas: canvas,                       // 将自定义canvas作为配置项
+//                     useCORS: true,                        // 允许图片跨域
+                    }
+                    html2canvas(document.querySelector("#page_for_canvas"),opts).then(function (canvas) {
+                        window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg",.72);
+                        console.log(window.base64ImgSrcAnother);
 //                    $("#canvasImg").attr("src",window.base64ImgSrc)
+                    })
                 })
 
 
+
+				$("#page_absolute_4_img").fadeIn(1500);
             })
 
         })

@@ -82,15 +82,7 @@
 
 
 
-.page15 .page15_text .need_rolate{
-    position: absolute;
-    right:0.5rem;
-    top: 2.36rem;
-    transform-origin: center center;
-    transform: rotate(-12deg);
-    -webkit-transform-origin: center center;
-    -webkit-transform: rotate(-12deg);
-}
+
 .page15 .page15_text .need_rolate .person_nick_name{
     width: 3.66rem;
     height: 1.44rem;
@@ -111,6 +103,9 @@
     padding-right: 0.2rem;
     padding-top: 0.02rem;
 }
+.page15.page15_4_canvas .title{
+    opacity: 1;
+}
 .page15 .title{
     width: 6.53rem;
     height:1.57rem;
@@ -118,7 +113,151 @@
     margin:0 auto;
     background-size:100%;
     margin-top: 0.44rem;
+    animation: shadeIn .3s .05s linear forwards 1;
+    -webkit-animation: shadeIn .3s .05s linear forwards 1;
+    opacity: 0;
 }
+
+.page15.page15_4_canvas .aircraft{
+    opacity: 1;
+}
+
+
+@keyframes shadeIn {
+    0%{
+        opacity: 0;
+        transform: scale(2.35);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.page15.page15_4_canvas .aircraft{
+    transform: translateX(0rem);
+}
+.page15 .aircraft{
+    position: absolute;
+    width: 7.5rem;
+    height: 5.6rem;
+    background: url(../img/page_end/page_end_aircraft_02.png) no-repeat;
+    background-size: 7.5rem 5.6rem;
+    background-position: center;
+    left:0;
+    top: 4.92rem;
+    animation: aircraftLeftIn .9s .3s linear forwards 1;
+    -webkit-animation: aircraftLeftIn .9s .3s linear forwards 1;
+    transform: translateX(-7.5rem);
+
+}
+.page15.page15_4_canvas .person.lady{
+    transform: translateX(0rem);
+    opacity: 1;
+}
+.page15 .person.lady{
+    position: absolute;
+    width: 6.78rem;
+    height: 9.59rem;
+    background: url(../img/page_end/page_end_lady_02.png) no-repeat;
+    background-size: 100%;
+    top: 2.84rem;
+    opacity: 0;
+    animation: ladyIn .5s 1.3s linear forwards 1;
+    -webkit-animation: ladyIn .5s 1.3s linear forwards 1;
+    transform: translateX(-6.78rem);
+}
+.page15.page15_4_canvas .page15_text .need_rolate{
+    /*transform: translateX(0rem);*/
+    opacity: 1;
+}
+.page15 .page15_text .need_rolate{
+    position: absolute;
+    right:0.1rem;
+    top: 2.36rem;
+    transform-origin: center center;
+    transform: rotate(-12deg);
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-12deg);
+    animation: shadeRotateIn .2s 1.6s linear forwards 1;
+    -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
+    opacity:0;
+}
+
+.page15.page15_4_canvas .page15_text .main_content{
+    opacity: 1;
+}
+.page15 .page15_text .main_content{
+    overflow: hidden;
+    position: absolute;
+    background: url(../img/page_end/page_end_text_bg_11.png) no-repeat;
+    background-size: 100%;
+    width: 3.58rem;
+    height: 4.74rem;
+    z-index: 123;
+    right: 0.4rem;
+    top: 0;
+    margin-top: 6.2rem;
+    animation: contentRightIn .2s 1.8s linear forwards 1;
+    -webkit-animation: contentRightIn .2s 1.8s linear forwards 1;
+    opacity:0;
+}
+@keyframes contentRightIn {
+    0%{
+        opacity:0;
+        transform: translateX(4rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes ladyIn {
+    0%{
+        opacity:0;
+        transform: translateX(-6.78rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0rem);
+    }
+}
+
+
+
+@keyframes shadeRotateIn {
+    0%{
+        opacity: 0;
+        transform: scale(2.35) rotate(-12deg);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) rotate(-12deg);
+    }
+}
+@keyframes ladyIn {
+    0%{
+        opacity:0;
+        transform: translateX(-6.78rem);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0rem);
+    }
+}
+@keyframes aircraftLeftIn {
+    0%{
+        transform: translateX(-7.5rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
+
+
+
 
 
 
@@ -136,6 +275,9 @@
     background: url(../img/page_end/page_end_btn_03.png) no-repeat;
     background-size: 100%;
     color: #ffffff;
+    opacity:0;
+    animation: earth-of-14 .2s 2.2s linear forwards 1;
+    -webkit-animation: earth-of-14 .2s 2.2s linear forwards 1;
 }
 .page15 .btn_right{
     position: absolute;
@@ -148,9 +290,13 @@
     font-size: 0.3rem;
     text-align: center;
     right: 0.32rem;
+    opacity:0;
     background: url(../img/page_end/page_end_btn_03.png) no-repeat;
     background-size: 100%;
     color: #ffffff;
+    opacity:0;
+    animation: earth-of-14 .2s 2.4s linear forwards 1;
+    -webkit-animation: earth-of-14 .2s 2.4s linear forwards 1;
 }
 .page15 .bg{
     position: absolute;
@@ -159,23 +305,7 @@
     background: url(../img/page_end/page_end_bg.jpg) no-repeat;
     background-size: 7.5rem 14rem;
 }
-.page15 .aircraft{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/page_end/page_end_aircraft_02.png) no-repeat;
-    background-size: 7.5rem 5.6rem;
-    background-position: 0 4.65rem;
-}
-.page15 .person.lady{
-    position: absolute;
-    width: 6.78rem;
-    height: 9.59rem;
-    background: url(../img/page_end/page_end_lady_02.png) no-repeat;
-    background-size: 100%;
-    /*background-position: 0 4.65rem;*/
-    top: 2.98rem;
-}
+
 
 
 .page14 .page14_text{
