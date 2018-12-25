@@ -137,8 +137,8 @@
     margin:0 auto;
     background-size:100%;
     margin-top: 0.44rem;
-    animation: shadeIn .3s .15s linear forwards 1;
-    -webkit-animation: shadeIn .3s .15s linear forwards 1;
+    animation: shadeIn .3s .2s linear forwards 1;
+    -webkit-animation: shadeIn .3s .2s linear forwards 1;
     opacity: 0;
     display: block;
 }
@@ -158,8 +158,6 @@
         transform: scale(1);
     }
 }
-
-
 .page15.page15_4_canvas .aircraft_4_15{
     transform: translateX(0rem);
 }
@@ -549,4 +547,36 @@
 .page_for_canvas .canvas_img img{
     width:100%;
     display: block;
+}
+.layerBg.page{
+    background: rgba(0,0,0,.4);
+}
+.layerBg.page .reco{
+    width: 7.5rem;
+    height: 9.85rem;
+    background: url(../img/page_end/page_end_reco_02.png) no-repeat;
+    background-size: 100%;
+    position:absolute;
+    left:0;
+    bottom: 0.48rem;
+}
+/*}*/
+.layerBg.page .reco .ad{
+    width: 6.97rem;
+    height: 4.66rem;
+    margin:0 auto;
+    overflow: hidden;
+    margin-top: 1.26rem;
+}
+.layerBg.page .reco .ad img{
+    width:100%;
+}
+.layerBg.page .watch{
+    width: 3rem;
+    height: 0.69rem;
+    line-height: 0.69rem;
+    background: url(../img/page_end/page_end_watch_05.png) no-repeat;
+    background-size: 100%;
+    margin:0 auto;
+    margin-top: 0.24rem;
 }
