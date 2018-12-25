@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 .page15{
-    background: #0b2343;
+    /*background: #0b2343;*/
 }
 .page15 .page15_text{
     color: #ffffff;
@@ -160,10 +160,10 @@
 }
 
 
-.page15.page15_4_canvas .aircraft{
+.page15.page15_4_canvas .aircraft_4_15{
     transform: translateX(0rem);
 }
-.page15 .aircraft{
+.page15 .aircraft_4_15{
     position: absolute;
     width: 7.5rem;
     height: 5.6rem;
@@ -208,6 +208,7 @@
     animation: shadeRotateIn .2s 1.6s linear forwards 1;
     -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
     opacity:0;
+    z-index:11;
 }
 
 .page15.page15_4_canvas .page15_text .main_content{
