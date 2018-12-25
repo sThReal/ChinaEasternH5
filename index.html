@@ -23,7 +23,7 @@
     </source>
   </audio>
   <!-- loading -->
-  <div class="page loadingAndVideo hide">
+  <div class="page loadingAndVideo">
     <div class="page loading">
       <img src="img/loading/cloud_1.png">
       <img src="img/loading/cloud_2.png">
@@ -38,13 +38,14 @@
       playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video.mp4"></video>
   </div>
   <!-- 视频过度 -->
-  <div class="page page5">
+  <div class="page page5 hide">
     <img src="img/page5/buildings.png" alt="">
     <div class="arrow_txt">向上滑动，开启盛典之旅</div>
     <div class="arrow"></div>
   </div>
   <!-- 值机登记 -->
   <div class="page page9 hide">
+    <div class="arrow"></div>
     <div class="bg bg1"></div>
     <div class="bg bg2"></div>
     <div class="door"></div>
@@ -72,6 +73,7 @@
       <img src="img/page9/page10-plane.png" alt="">
     </div>
     <div class="shd"><img src="img/page9/page10-shd.png" alt=""></div>
+    <div class="arrow"></div>
   </div>
   <!-- 在云端1 -->
   <div class="page page11 hide">
@@ -88,16 +90,17 @@
         <p class="bottom">2018年东航大事记</p>
       </div>
     </div>
+    <div class="arrow"></div>
   </div>
   <!-- 在云端2 -->
   <div class="page page12 animate hide">
     <div class="plane"><img src="img/page9/page11-plane.png" alt=""></div>
-    <div class="bg"></div>
+    <img class="bg" src="img/page9/bg11.jpg">
     <div class="cloud">
       <div class="c1"></div>
-        <div class="c2"></div>
-        <div class="c3"></div>
-        <div class="c4"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+      <div class="c4"></div>
     </div>
     <div class="font ">
       <p class="p1"><strong>XXXX</strong><span>小时</span></br>2018年总飞行时长</p>
@@ -110,13 +113,53 @@
       <p class="p2"><strong>174</strong><span>个</span></br>通航国家和地区</p>
       <p class="p3"><strong>1074</strong></br>通航点</p>
     </div>
+    <div class="arrow"></div>
   </div>
   <!-- 在云端3 -->
   <div class="page page14 hide">
     <div class="bg">
-      <div class="aircraft"></div>
+      <div class="aircraft when_15_appear" id="page_14_aircraft">
+        <div class="needClick"></div>
+      </div>
       <div class="bgsky"></div>
-      <div class="page14_text">
+      <div class="page page15 " id="main_page_15" style="display: none;">
+        <div class="bg" style="background: none;">
+          <div class="title"></div>
+          <!--<img class="title" src="../img/page_end/page_end_title_03.png" alt="">-->
+          <div class="page15_text">
+            <div class="need_rolate">
+              <div class="person_nick_name">飞行豪门</div>
+              <p>论飞行，舍你其谁，你就是住在天上的豪门！没有人能阻止你去拥有更好的世界。</p>
+            </div>
+            <div class="main_content">
+              <div class="main_title">
+                王先生的<br>的2018年度飞行报告
+              </div>
+              <div class="content_text" style="height: 2.29rem;overflow: hidden;">
+                <h3>2018总飞行里程</h3>
+                <p><span>888</span>公里</p>
+                <h3>2018总飞行时间</h3>
+                <p><span>888</span>小时</p>
+                <h3>2018总飞行次数</h3>
+                <p><span>888</span>次</p>
+              </div>
+              <div class="second_title">专属报告</div>
+              <div class="second_text">
+                您是白金卡/金卡会员<br>
+                并且乘坐头等舱/公务舱次数5次<br>
+                累积消费金额TOP10%
+              </div>
+            </div>
+          </div>
+          <div class="aircraft_4_15"></div>
+          <div class="person lady"></div>
+        </div>
+        <div class="btn btn_left" id="checkout_img">分享你的报告</div>
+        <div class="btn btn_right" id="eastern_recommend">2019东东推荐</div>
+      </div>
+      <!--<div class="earth"></div>-->
+      <!--<div class="building"></div>-->
+      <div class="page14_text hide when_15_appear" id="page14_text_has_data">
         <p>2018年东航和您一起走过了</p>
         <p>西安</p>
         <p>大理</p>
@@ -125,7 +168,7 @@
         <p>xxxxxxx</p>
         <p>等XX座城市</p>
       </div>
-      <div class="page14_text hide">
+      <div class="page14_text hide when_15_appear" id="page14_text_no_data">
         <p class="title">最新国际通航点</p>
         <p>斯德哥尔摩</p>
         <p>迪拜</p>
@@ -135,98 +178,64 @@
         <p>年复一年，东航期待陪你探索更多</p>
       </div>
     </div>
+    <div class="arrow"></div>
   </div>
-  <!-- 在云端3，和过渡页 -->
-  <div class="page hide"></div>
-  <!-- 盛典形象 -->
-  <div class="pages hide"></div>
+  <!-- 海报页 -->
+  <div class="page page15 page15_4_canvas" style="z-index: -101;">
+    <div class="bg" id="page_4_img">
+      <div class="title"></div>
+      <div class="page15_text">
+        <div class="need_rolate">
+          <div class="person_nick_name">飞行豪门</div>
+          <p>论飞行，舍你其谁，你就是住在天上的豪门！没有人能阻止你去拥有更好的世界。</p>
+        </div>
+        <div class="main_content">
+          <div class="main_title">
+            王先生的<br>的2018年度飞行报告
+          </div>
+          <div class="content_text" style="height: 2.29rem;overflow: hidden;">
+            <h3>2018总飞行里程</h3>
+            <p><span>888</span>公里</p>
+            <h3>2018总飞行时间</h3>
+            <p><span>888</span>小时</p>
+            <h3>2018总飞行次数</h3>
+            <p><span>888</span>次</p>
+          </div>
+          <div class="second_title">专属报告</div>
+          <div class="second_text">
+            您是白金卡/金卡会员<br>
+            并且乘坐头等舱/公务舱次数5次<br>
+            累积消费金额TOP10%
+          </div>
+        </div>
+      </div>
+      <div class="aircraft_4_15"></div>
+      <div class="person lady"></div>
+    </div>
+  </div>
+  <div class="page_for_canvas_wrap page" style="z-index: -99;">
+    <div class="page_for_canvas" id="page_for_canvas">
+      <div class="canvas_img">
+        <img src="" alt="" id="canvasImg">
+      </div>
+      <div class="canvas_logo">
+        <img src="../img/page_end/canvas_logo_03.png" alt="">
+      </div>
+      <div class="remmber_txt">
+        <img src="../img/page_end/canvas_qrcode_03.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background: #ffffff;z-index: 187;overflow: auto">
+    <img src="" alt="" style="width: 100%;">
+  </div>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/loading.js"></script>
   <script type="text/javascript" src="js/handleData.js"></script>
   <script type="text/javascript" src="js/hammer.js"></script>
-  <script>
-    var page5 = new Hammer(document.querySelector(".page5"));
-    page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    page5.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-    page5.on('swipeup', function (e) {
-      console.log(e, 'page5向上');
-      $('.page5 img').css({
-        transform: 'translateY(200px)',
-        opacity: 0
-      })
-      $('.page5').fadeOut(1500);
-      $('.page9').fadeIn(1500).addClass('animate');
-      setTimeout(function () {
-        // 值机柜台
-        var page9 = new Hammer(document.querySelector(".page9"));
-        page9.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-        page9.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-        page9.on('swipeup', function (e) {
-          console.log(e, 'page9向上');
-          $('.page9').addClass('leave').fadeOut(1000);
-          $('.page10').fadeIn().addClass('animate');
-          // 停机坪
-          setTimeout(function () {
-            var page10 = new Hammer(document.querySelector(".page10"));
-            page10.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-            page10.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-            page10.on('swipeup', function (e) {
-              console.log(e, 'page10向上');
-              $('.page10').addClass('leave').fadeOut(1000);
-              $('.page11').fadeIn().addClass('animate');
-              // $('.page11 .bg').addClass('animation');
-              // var t = 1;
-              // setInterval(function(){
-              //   $('.page11 .bg'+t).after(`<img class="bg bg${++t}" src="img/page9/page11-bg.jpg">`);
-              //   setTimeout(function(){
-              //     $('.page11 .nextbg.bg'+t).addClass('animation');
-              //   },50)
-                
-              // },1900)
-              // 在云端1
-              setTimeout(function () {
-                var page11 = new Hammer(document.querySelector(".page11"));
-                page11.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-                page11.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-                page11.on('swipeup', function (e) {
-                  console.log(e, 'page11向上');
-                  $('.page11').addClass('leave').fadeOut(1000);
-                  $('.page12').fadeIn().addClass('animate');
-                  // 在云端2
-                  setTimeout(function () {
-                    var page12 = new Hammer(document.querySelector(".page12"));
-                    page12.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-                    page12.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-                    page12.on('swipeup', function (e) {
-                      console.log(e, 'page12向上');
-                      $('.page12').addClass('leave').fadeOut(1000);
-                      $('.page14').fadeIn();
-                      // 在云端3
-                      setTimeout(function () {
-                        var page14 = new Hammer(document.querySelector(".page14"));
-                        page14.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-                        page14.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-                        page14.on('swipeup', function (e) {
-                          console.log(e, 'page14向上');
-                          $('.page14').addClass('leave').fadeOut(1000);
-                          $('.page15').fadeIn().addClass('animate');
-
-                        });
-                      }, 1000)
-                    });
-                  }, 1000)
-                });
-              }, 1000)
-            });
-          }, 1000)
-
-        });
-      }, 1000)
-    });
-
-
-  </script>
+  <script type="text/javascript" src="js/html2canvas.js"></script></head>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
