@@ -57,6 +57,12 @@ $.ajax({
     //地球页面 判断是否有走过城市
     if(data.page4.citys.length>=1){
         $("#page14_text_has_data").show()
+        $("#page14_text_has_data").find(".num").html(data.page4.citys.length)
+        var _t = data.page4.citys.slice(0,5);
+        var _st = _t.join("</br>");
+        // alert(_st)
+        $("#page14_text_has_data").find("._ht").html(_st)
+
     }else{
         $("#page14_text_no_data").show()
     }
