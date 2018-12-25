@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
@@ -8,18 +9,20 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>东航年度账单</title>
+  <script type="text/javascript" src="js/default.js"></script>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/zx.css">
+  <link rel="stylesheet" href="css/zx.css?">
   <link rel="stylesheet" href="css/dpage.css">
-  <script type="text/javascript" src="bower_components/jquery2/jquery.min.js"></script>
 </head>
+
 <body>
   <!-- 音频 -->
   <audio loop="true" sytle="display:none" id="BGM">
-    <source src="bgm.mp3" type="audio/mpeg"></source>
+    <source src="bgm.mp3" type="audio/mpeg">
+    </source>
   </audio>
   <!-- loading -->
-  <div class="page loadingAndVideo">
+  <div class="page loadingAndVideo hide">
     <div class="page loading">
       <img src="img/loading/cloud_1.png">
       <img src="img/loading/cloud_2.png">
@@ -30,14 +33,17 @@
       <div class="percent"></div>
       <div class="txt">Loading...</div>
     </div>
-    <video id="video" x-webkit-airplay="true" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true" playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video1.mp4"></video>
+    <video id="video" x-webkit-airplay="true" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+      playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video1.mp4"></video>
   </div>
   <!-- 视频过度 -->
-  <div class="page page5 hide">
+  <div class="page page5">
     <img src="img/page5/buildings.png" alt="">
+    <div class="arrow_txt">向上滑动，开启盛典之旅</div>
+    <div class="arrow"></div>
   </div>
   <!-- 值机登记 -->
-  <div class="page hide page6">
+  <div class="page hide page9">
     值机柜台
   </div>
   <!-- 停机坪 -->
@@ -50,28 +56,34 @@
   <div class="page hide"></div>
   <!-- 盛典形象 -->
   <div class="pages hide"></div>
-  <script src="js/default.js"></script>
-  <!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>-->
-  <script src="js/loading.js"></script>
-  <script src="js/handleData.js"></script>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/loading.js"></script>
+  <script type="text/javascript" src="js/handleData.js"></script>
+  <script type="text/javascript" src="js/hammer.js"></script>
   <script>
-    ;(function(){
-      var startY = 0;
-      $('.page5').on('touchstart',function(e){
-        startY = e.touches[0].clientY;
+    var page5 = new Hammer(document.querySelector(".page5"));
+    //启动垂直方向滑动
+    page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+    page5.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+    page5.on('swipeup', function (e) {
+      console.log(e, 'page5向上');
+      $('.page5 img').css({
+        transform:'translateY(200px)',
+        opacity:0
       })
-      $('.page5').on('touchmove',function(e){
-        if(startY-e.touches[0].clientY>50){
-          $('.page5 img').css({
-            transform:'translateY(200px)',
-            opacity:0
-          })
-          $('.page5').fadeOut();
-          $('.page6').fadeIn(1000);
-        }
-      })
-    })()
-    
+      $('.page5').fadeOut(1500);
+      $('.page9').fadeIn(1500).addClass('animate');
+    });
+    var page9 = new Hammer(document.querySelector(".page9"));
+    //启动垂直方向滑动
+    page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+    page5.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+    page5.on('swipeup', function (e) {
+      console.log(e, 'page9向上');
+      $('.page5').addClass('leave');
+    });
   </script>
 </body>
+
 </html>
