@@ -9,7 +9,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
         transform: 'translateY(200px)',
         opacity: 0
       })
-      $('.page5').fadeOut(1500);
+      $('.page5').css('opacity',0);
       $('.page9').fadeIn(1500).addClass('animate');
       setTimeout(function () {
         // 值机柜台
