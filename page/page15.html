@@ -74,16 +74,15 @@
                 // useCORS: true,                        // 允许图片跨域
             }
             html2canvas(document.querySelector("#page_4_img"),opts).then(function (canvas) {
-                var  base64ImgSrc = canvas.toDataURL("image/jpeg",.72);
-                console.log(base64ImgSrc);
-            $("#canvasImg").attr("src",base64ImgSrc)
+                window.base64ImgSrc = canvas.toDataURL("image/jpeg",.72);
+                console.log(window.ase64ImgSrc);
+            $("#canvasImg").attr("src",window.base64ImgSrc)
             })
 
 			$("#checkout_img").click(function () {
 				console.log("生成base64图片源码~~!");
+				
             })
-
-
 
         })
 	</script>

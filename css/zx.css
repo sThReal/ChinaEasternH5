@@ -22,7 +22,9 @@
 .loading .plane{
   position:absolute;
   width:2.79rem;height:0.66rem;
-  top:43%;left:2.3rem;
+  top:38%;
+  left: 50%;
+	transform: translateX(-50%);
   animation: plane 6s linear infinite;
 }
 .loading .plane img{
@@ -46,34 +48,34 @@
 }
 @keyframes loadingcloud{
   0%{
-    transform:translateX(22rem);
+    transform:translateX(7.5rem);
   }
   100%{
-    transform:translateX(-60rem);
+    transform:translateX(-30rem);
   }
 }
 @-webkit-keyframes loadingcloud{
   0%,100%{
-    transform:translateY(22rem)
+    transform:translateY(7.5rem)
   }
   50%{
-    transform:translateY(-60rem);
+    transform:translateY(-30rem);
   }
 }
 @keyframes plane{
   0%,100%{
-    transform:translateY(0);
+    transform:translate(-50%,0);
   }
   50%{
-    transform:translateY(1rem);
+    transform:translate(-50%,1rem);
   }
 }
 @-webkit-keyframes plane{
   0%,100%{
-    transform:scale(1)
+    transform:translate(-50%,0);
   }
   50%{
-    transform:scale(1.1);
+    transform:translate(-50%,1rem);
   }
 }
 /* 视频 */
@@ -90,5 +92,5 @@
 .page5 img{
   width:100%;
   opacity:1;
-  transition:all 1s linear;
+  transition:all 2s linear;
 }
