@@ -13,6 +13,7 @@
     "airplaneModels":5
   },
   "page2":{
+    "hasData":true,
     "disney":2,
     "firstClass":10,
     "businessClass":20,
