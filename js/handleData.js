@@ -3,40 +3,48 @@ window.nickArr = [
     type: 1,
     name: '飞行豪门',
     desc: '人是行走的向日葵,盛开是对理想的最大犒赏。为工作飞了这么多次，是时候为自己起飞了！',
+      url:'https://shopping.ceair.com/app/act/a9161/index.html'
   }, {
     type: 2,
     name: '工作狂人',
     desc: '人是行走的向日葵,盛开是对理想的最大犒赏。为工作飞了这么多次，是时候为自己起飞了！',
+        url:'https://vacations.ceair.com/App/Home/Activity?activityId=127&c=00013&Entry=1&c=81224'
   },
   {
     type: 3,
     name: '“一带一路”践行者',
     desc: '用旅程撰，写一部穿梭于一带一路间的史诗。先人用文明征服世界，咱用美食试试？',
+      url:'https://shopping.ceair.com/NewHome/ChangeFoods',
   },
   {
     type: 4,
     name: '尝鲜大侠',
     desc: '不错过新的航线，不错过新的机型,好奇的世界不容错过，每一刻都在感受新生。',
+      url:'https://vacations.ceair.com/app/home/ProductDetails?ProductID=310014688&c=81224',
   },
   {
     type: 5,
     name: '海岛达人',
     desc: '带上爱人，带上相机，带上18岁那年的思绪，飞向大海，春暖花开。',
+      url:'http://shopping.ceair.com/detail/159303.html'
   },
   {
     type: 6,
     name: '和风旅人',
     desc: '晴空塔上的夜景，奈良小鹿的身影,在一衣带水的近邻，欣赏不一样的风景。',
+    url:'https://vacations.ceair.com/app/home/ProductDetails?ProductID=310012403&utm_source=portal&utm_medium=banner&utm_term=&utm_content=&utm_campaign=guangfa&c=81224'
   },
   {
     type: 7,
     name: '御宅一族',
     desc: '2018，只想待在家；2019，快乐要出发！旅行能让你遇上更好的自己。',
+      url:'https://hotels.ceair.com/',
   },
   {
     type: 8,
     name: '简单王者',
     desc: '说走就走，想飞就飞，要踏上旅途就会收获感动。选一条不平凡的路，找一个与众不同的自己把！',
+      url:'http://shopping.ceair.com/act/a906/index.html',
   }
 ]
 $.ajax({
@@ -44,6 +52,7 @@ $.ajax({
   method: 'GET',
   success: function (data) {
     console.log(data, 'server end json');
+    window.type = data.page5.type;
     // 值机柜台
     bindDom('name', data.page1.name);
     bindDom('gender', data.gender == 'male' ? '先生' : '小姐');
@@ -129,6 +138,7 @@ $.ajax({
             <p>并且乘坐头等舱/公务舱次数${data.page5.extra.firstClassTimes}次</p>
             <p>累积消费金额TOP${data.page5.extra.consumptionRatio*100}%</p>
           </div>`;
+        $(".need_rolate .type_1").show();
         break;
       // 工作狂人
       case 2:
@@ -138,7 +148,8 @@ $.ajax({
             <p>2018年度最常⻜⾏目的地${data.page5.extra.mostOftenLine[0]}-${data.page5.extra.mostOftenLine[1]}</p>
             <p>乘坐该航线${data.page5.extra.times}次</p>
           </div>`;
-        break;
+          $(".need_rolate .type_2").show();
+          break;
       // 一带一路
       case 3:
         personalDom = `
@@ -146,7 +157,8 @@ $.ajax({
         <div class="second_text">
           <p>2018年度，⻜抵⼀带⼀路沿线城市${data.page5.extra.times}次</p>
         </div>`;
-        break;
+          $(".need_rolate .type_3").show();
+          break;
       // 尝鲜大侠
       case 4:
         personalDom = `
@@ -156,7 +168,8 @@ $.ajax({
           <p>目的地为${data.page5.extra.destination}</p>
           <p>去过${data.page5.extra.destination.numbers}个国家</p>
         </div>`;
-        break;
+          $(".need_rolate .type_4").show();
+          break;
       // 海岛达人
       case 5:
         let islandDom = function(name){
@@ -180,7 +193,8 @@ $.ajax({
           <p>去过的海岛有</p>
           ${tempDom}
         </div>`;
-        break;
+          $(".need_rolate .type_5").show();
+          break;
       // 和风旅人
       case 6:
         personalDom = `
@@ -188,7 +202,8 @@ $.ajax({
         <div class="second_text">
           <p>2018年度共⻜往⽇本${data.page5.extra.times}次</p>
         </div>`;
-        break;
+          $(".need_rolate .type_6").show();
+          break;
       // 御宅一族
       case 7:
         personalDom = `
@@ -196,7 +211,8 @@ $.ajax({
         <div class="second_text">
           <p>2018您的⻜⾏次数为0次</p>
         </div>`;
-        break;
+          $(".need_rolate .type_7").show();
+          break;
       // 简单王者
       case 8:
         personalDom = `
@@ -204,12 +220,14 @@ $.ajax({
         <div class="second_text">
           <p>2018您的⻜行次数为${data.page5.extra.flightTimes}次</p>
         </div>`;
-        break;
+          $(".need_rolate .type_8").show();
+          break;
     }
     // 赋值到页面
-    $('#page4_img .main_content').html('').append(commonDom+personalDom);
+    // $('#page4_img .main_content').html('').append(commonDom+personalDom);
     $('#main_page_15 .main_content').html('').append(commonDom+personalDom);
-
+    var _html = $("#cloneDom").html();
+    $("#page_4_img").html(_html);
   }
 })
 function bindDom(name, val) {
