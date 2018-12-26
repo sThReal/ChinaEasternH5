@@ -24,9 +24,9 @@ html, body {
 	opacity: 0;
 	transition: opacity 1s;
 }
-.animate .arrow{
+/*.animate .arrow{
 	opacity: 1;
-}
+}*/
 .arrow_txt{
 	position:absolute;
 	width:100%;
@@ -141,8 +141,8 @@ html, body {
 	height: 14.23rem;
 	background: url(../img/page9/page9-light.png) no-repeat;
 	background-position: 0 -0.7rem;
-  background-size: 100%;
-	z-index: 20;
+  	background-size: 100%;
+	z-index: 11;
 	opacity: 0;
 	-webkit-transition: opacity 1.2s;
 	transition: opacity 1.2s;
@@ -160,7 +160,7 @@ html, body {
 	opacity: 0;
 	-webkit-transition: opacity 1.5s;
 	transition: opacity 1.5s;
-	z-index: 12;
+	z-index: 14;
 	-webkit-transition-delay: 4s;
 	transition-delay: 4s;
 }
@@ -219,7 +219,7 @@ html, body {
 	background-position: 60% 0;
 	position: absolute;
 	left: 0;
-  top: 10.9rem;
+  	top: 9.4rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -263,7 +263,7 @@ html, body {
 	transition: transform 1.8s;
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
-	z-index: 12;
+	z-index: 10;
 }
 .page9 .text {
 	width: 7.5rem;
@@ -320,14 +320,22 @@ html, body {
 		opacity: 0;
 	}
 }
+.page9 .arrow {
+	transition-delay: 8s;
+}
+.page9.animate .arrow {
+	opacity: 1;
+}
+
+
 /*page10*/
 .page10 {
 	background: url(../img/page9/page10-bg.jpg) no-repeat;
 	background-size: 100%;
     background-position: 0 -1.2rem;
 	opacity: 1;
-	transition: opacity 1.5s;
-	-webkit-transition: opacity 1.5s;
+	/*transition: opacity 1.5s;*/
+	/*-webkit-transition: opacity 1.5s;*/
 	z-index: 20;
 }
 .page10.animate {
@@ -345,9 +353,21 @@ html, body {
     height: 2.28rem;
 }
 .page10 .arrow_txt {
-	top: 10.8rem;
+	top: 10.4rem;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+	transition-delay: 2s;
 }
-
+.page10.animate .arrow_txt {
+	opacity: 1;
+}
+.page10 .arrow {
+	transition-delay: 2s;
+}
+.page10.animate .arrow {
+	opacity: 1;
+}
 
 /*飞行*/
 .page10 .plane,
@@ -368,21 +388,19 @@ html, body {
 	width: 100%;
 }
 .page11 {
-	-webkit-transition: opacity 1.5s;
-	transition: opacity 1.5s;
+	/*-webkit-transition: opacity 1.5s;*/
+	/*transition: opacity 1.5s;*/
 	opacity: 0;
 	z-index: 15;
 }
 .page11.animate {
 	opacity: 1;
 } 
-@keyframe bgp {
-	0% {
-		background-position-x: 0;
-	}
-	98% {
-		background-position-x: 0;
-	}
+
+.page11 ,.page12 {
+	background: url(../img/page9/bg11.jpg) no-repeat;
+	background-size: 19.82rem;
+    background-position-x: -12.32rem;
 }
 .page11 .bg,.page12 .bg  {
 	position: absolute;
@@ -403,21 +421,38 @@ html, body {
 	animation:page11sky2 5s 1.2s linear infinite;
 } */
 @-webkit-keyframes page11sky{
-	to{
-		-webkit-transform:translateX(-63.6%);
+	0%{
+		-webkit-transform:translateX(0%);
+		opacity: 1;
+	}
+	/*2%{
+		-webkit-transform:translateX(-1%);
+		opacity: 1;
+	}*/
+	98% {
+		-webkit-transform:translateX(-60%);
+		opacity: 1;
+	}
+	99% {
+		-webkit-transform:translateX(-60%);
+		opacity: 0.8;
+	}
+	100% {
+		-webkit-transform:translateX(0%);
+		opacity: 0;
 	}
 }
+/*@keyframes page11sky{
+	to{
+		transform:translateX(-63.6%);
+	}
+}*/
 @-webkit-keyframes page11sky2{
 	from{
-		-webkit-transform:translateX(61%);
+		-webkit-transform:translateX(60%);
 	}
 	to{
 		-webkit-transform:translateX(-100%)
-	}
-}
-@keyframes page11sky{
-	to{
-		transform:translateX(-63.6%);
 	}
 }
 @keyframes page11sky2{
@@ -447,7 +482,7 @@ html, body {
 	position: absolute;
 	width: 21.9rem;
     height: 6.1rem;
-    top: 0;
+    top: 2.62rem;
     animation: loadingcloud 11s linear infinite;
 }
 .page11 .font {
@@ -468,7 +503,7 @@ html, body {
 }
 
 .page11 .font .top {
-	top: 0.8rem;
+	top: 1rem;
 	opacity: 0;
 	-webkit-transition: opacity 0.8s;
 	-webkit-transition-delay: 2.5s;
@@ -500,6 +535,12 @@ html, body {
 
 .page11.leave {
 	opacity: 0;
+}
+.page11 .arrow {
+	transition-delay: 5s;
+}
+.page11.animate .arrow {
+	opacity: 1;
 }
 
 /*page12*/
@@ -715,4 +756,10 @@ html, body {
 	/*!*-webkit-animation-fill-mode: forwards;*!*/
 	/*animation: page12_font 0.6s 1.5s;*/
 	/*!*animation-fill-mode: forwards;*!*/
+}
+.page12 .arrow {
+	transition-delay: 8s;
+}
+.page12.animate .arrow {
+	opacity: 1;
 }
