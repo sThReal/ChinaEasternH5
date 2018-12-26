@@ -441,14 +441,17 @@
 }
 .page14 .bgsky{
     background: url(../img/page14/bgsky.jpg) no-repeat;
+
+    animation:  newEarth 20s 0s linear forwards 1;
+    -webkit-animation: newEarth 20s 0s linear forwards 1;
+}
+.page14 .bgsky.bgsky4rem{
     background-size: 30.84rem 30.94rem;
     width: 30.84rem;
     height: 30.94rem;
     /*background-position: center -5.8rem;*/
     transform: translateX(-11.67rem) translateY(-7.1rem);
     -webkit-transform: translateX(-11.67rem) translateY(-7.1rem);
-    animation:  newEarth 20s 0s linear forwards 1;
-    -webkit-animation: newEarth 20s 0s linear forwards 1;
 }
 .page14 .aircraft{
     width: 3.75rem;
