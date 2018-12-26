@@ -397,12 +397,22 @@ html, body {
 	opacity: 1;
 } 
 
-.page11 ,.page12 {
+/*.page11 .bg,.page12 .bg  {
+	position: absolute;
+	top: 0;
+	display: block;
+	height: 100%;
+	z-index:1;
+	-webkit-animation:page11sky 8s linear infinite;
+	animation:page11sky 8s linear infinite;
+}*/
+
+.page11_12 {
 	background: url(../img/page9/bg11.jpg) no-repeat;
 	background-size: 19.82rem;
     background-position-x: -12.32rem;
 }
-.page11 .bg,.page12 .bg  {
+.page11_12 img {
 	position: absolute;
 	top: 0;
 	display: block;
@@ -411,7 +421,6 @@ html, body {
 	-webkit-animation:page11sky 8s linear infinite;
 	animation:page11sky 8s linear infinite;
 }
-
 /* .page11 .bg */
 /* .page11 .bg2 {
 	position: absolute;
