@@ -16,7 +16,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
         var page9 = new Hammer(document.querySelector(".page9"));
         page9.get('pan').set({ direction: Hammer.DIRECTION_ALL });
         page9.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-        $('.page9 .arrow').css('opacity', 1);
+        // $('.page9 .arrow').css('opacity', 1);
         page9.on('swipeup', function (e) {
           console.log(e, 'page9向上');
           $('.page9').addClass('leave').fadeOut(1000);
@@ -26,7 +26,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
             var page10 = new Hammer(document.querySelector(".page10"));
             page10.get('pan').set({ direction: Hammer.DIRECTION_ALL });
             page10.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-            $('.page10 .arrow').css('opacity', 1);
+            // $('.page10 .arrow').css('opacity', 1);
             page10.on('swipeup', function (e) {
               console.log(e, 'page10向上');
               $('.page10').addClass('leave').fadeOut(1000);
@@ -36,7 +36,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                 var page11 = new Hammer(document.querySelector(".page11"));
                 page11.get('pan').set({ direction: Hammer.DIRECTION_ALL });
                 page11.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-                $('.page11 .arrow').css('opacity', 1);
+                // $('.page11 .arrow').css('opacity', 1);
                 page11.on('swipeup', function (e) {
                   console.log(e, 'page11向上');
                   $('.page11').addClass('leave').fadeOut(1000);
@@ -46,7 +46,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                     var page12 = new Hammer(document.querySelector(".page12"));
                     page12.get('pan').set({ direction: Hammer.DIRECTION_ALL });
                     page12.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
-                    $('.page12 .arrow').css('opacity', 1);
+                    // $('.page12 .arrow').css('opacity', 1);
                     page12.on('swipeup', function (e) {
                       console.log(e, 'page12向上');
                       $('.page12').addClass('leave');
@@ -120,11 +120,11 @@ var page5 = new Hammer(document.querySelector(".page5"));
                         $("#page_absolute_4_img").fadeOut(500);
                       })
                     });
-                  }, 1000)
+                  }, 5000)
                 });
-              }, 1000)
+              }, 3000)
             });
-          }, 1000)
+          }, 3000)
 
         });
       }, 8000)
