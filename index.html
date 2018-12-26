@@ -9,11 +9,12 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>东航年度账单</title>
-  <script type="text/javascript" src="js/default.js?ks=1"></script>
+  <script type="text/javascript" src="js/default.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/zx.css?ws=2">
   <link rel="stylesheet" href="css/dpage.css?s=2">
   <link rel="stylesheet" href="css/darre.css">
+  <link rel="stylesheet" href="js/layer_mobile/need/layer.css">
 </head>
 
 <body>
@@ -34,11 +35,11 @@
       <div class="percent"></div>
       <div class="txt">Loading...</div>
     </div>
-    <video id="video" x-webkit-airplay="true" preload="auto" playsinline="true" 
-    webkit-playsinline="true" src="video.mp4"></video>
+    <video id="video" x-webkit-airplay="true" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true"
+      playsinline="true" webkit-playsinline="true" x5-video-orientation="portrait" src="video.mp4"></video>
   </div>
   <!-- 视频过度 -->
-  <div class="page page5 hide">
+  <div class="page page5">
     <img src="img/page5/buildings.png" alt="">
     <div class="arrow_txt">向上滑动，开启盛典之旅</div>
     <div class="arrow"></div>
@@ -103,7 +104,7 @@
       <div class="c3"></div>
       <div class="c4"></div>
     </div>
-    <div class="font has-data">
+    <div class="font ">
       <p class="p1"><strong d-totalHours>XXXX</strong><span>小时</span></br>2018年总飞行时长</p>
       <p class="p2"><strong d-totalTimes>XXXX</strong><span>次</span></br>2018年总飞行次数</p>
       <p class="p3"><strong d-totalCost>XXXX</strong><span>元</span></br>2018年总消费金额</p>
@@ -242,6 +243,7 @@
   <script type="text/javascript" src="js/hammer.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script></head>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/layer_mobile/layer.js"></script>
 </body>
 
 </html>
