@@ -57,7 +57,7 @@ var loadingPage = (function () {
         }
         var endVideo = function () {
           $('.loadingAndVideo').fadeOut(1500);
-          $('.page5').fadeIn();
+          $('.page5').fadeIn(1500);
         }
         myVideo.addEventListener("ended", endVideo);
       })

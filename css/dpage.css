@@ -411,7 +411,7 @@ html, body {
 	/* -webkit-animation: page11sky 2s linear infinite; */
 }
 .page11_12 img.animation{
-	animation: page11sky 2s linear infinite;
+	animation: page11sky 8s linear infinite;
 }
 @keyframes page11sky{
 	to{
