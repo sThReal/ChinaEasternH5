@@ -86,5 +86,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
     // console.log(111)
   }
-  // audioAutoPlay();
+  audioAutoPlay();
 })
