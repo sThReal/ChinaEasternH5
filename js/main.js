@@ -53,14 +53,15 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       setTimeout(function(){
                         $('.page14').fadeIn();
                         $('.page12').hide();
+                          setTimeout(function () {
+                              $('.page14 .aircraft').css({
+                                  'animation': 'newAircraftSecond 9s 0s linear forwards infinite',
+                                  '-webkit-animation': 'newAircraftSecond 9s 0s linear forwards infinite',
+                              });
+                          }, 1200)
                       },2000)
                       //确保飞机已经进入界面
-                      setTimeout(function () {
-                        $('.page14 .aircraft').css({
-                          'animation': 'newAircraftSecond 9s 0s linear forwards infinite',
-                          '-webkit-animation': 'newAircraftSecond 9s 0s linear forwards infinite',
-                        });
-                      }, 1200)
+
                       $("#page_14_aircraft").click(function () {
                         console.log("aircraft leave~");
                         $('.page14 .aircraft').animate({
