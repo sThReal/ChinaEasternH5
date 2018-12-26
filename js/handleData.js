@@ -154,7 +154,7 @@ $.ajax({
         <div class="second_text">
           <p>2018年度，乘坐新开目的地${data.page5.extra.newPlaceTimes}次</p>
           <p>目的地为${data.page5.extra.destination}</p>
-          <p>去过${data.page5.extra.destination.numbers}个国家</p>
+          <p>去过${data.page5.extra.numbers}个国家</p>
         </div>`;
         break;
       // 海岛达人
