@@ -4,7 +4,7 @@ var imgPath = "img/";
 var myVideo = document.getElementById("video");
 var loadingPage = (function () {
   var imgSources = ['loading/cloud_1.png','loading/cloud_2.png','loading/plane_line.png','loading/plane.png','arrow.png',
-'page5/bg.jpg','page5/buildings.png','page_end/ad_04.jpg','page_end/bottom_end_btn_07.png','page_end/canvas_logo_03.png',
+'page5/bg.jpg','page5/buildings.png','page_end/bottom_end_btn_07.png','page_end/canvas_logo_03.png',
 'page_end/page_end_aircraft_02.png','page_end/page_end_bg.jpg','page_end/page_end_btn_03.png',
 'page_end/page_end_lady_02.png','page_end/page_end_reco_02.png','page_end/page_end_text_bg_11.png','page_end/page_end_title_03.png',
 'page_end/page_end_watch_05.png','page_end/person_type_07.png','page9/bg11.jpg','page9/cloud-1.png','page9/cloud-2.png',

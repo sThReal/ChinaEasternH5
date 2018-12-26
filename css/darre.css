@@ -220,9 +220,9 @@
     right:0.1rem;
     top: 2.36rem;
     transform-origin: center center;
-    transform: rotate(-12deg) scale(0.86);
+    transform: rotate(0deg) scale(0.86);
     -webkit-transform-origin: center center;
-    -webkit-transform: rotate(-12deg) scale(0.86);
+    -webkit-transform: rotate(0deg) scale(0.86);
     animation: shadeRotateIn .2s 1.6s linear forwards 1;
     -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
     opacity:0;
@@ -283,11 +283,11 @@
 @keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        transform: scale(2.35) rotate(-12deg) scale(0.86);
+        transform: scale(2.35) rotate(0deg) scale(0.86);
     }
     100%{
         opacity: 1;
-        transform: scale(1) rotate(-12deg) scale(0.86);
+        transform: scale(1) rotate(0deg) scale(0.86);
     }
 }
 @keyframes ladyIn {
@@ -338,11 +338,11 @@
 @-webkit-keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        -webkit-transform: scale(2.35) rotate(-12deg) scale(0.86);
+        -webkit-transform: scale(2.35) rotate(0deg) scale(0.86);
     }
     100%{
         opacity: 1;
-        -webkit-transform: scale(1) rotate(-12deg) scale(0.86);
+        -webkit-transform: scale(1) rotate(0deg) scale(0.86);
     }
 }
 @-webkit-keyframes ladyIn {
