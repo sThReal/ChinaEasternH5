@@ -141,8 +141,8 @@ html, body {
 	height: 14.23rem;
 	background: url(../img/page9/page9-light.png) no-repeat;
 	background-position: 0 -0.7rem;
-  background-size: 100%;
-	z-index: 20;
+  	background-size: 100%;
+	z-index: 11;
 	opacity: 0;
 	-webkit-transition: opacity 1.2s;
 	transition: opacity 1.2s;
@@ -160,7 +160,7 @@ html, body {
 	opacity: 0;
 	-webkit-transition: opacity 1.5s;
 	transition: opacity 1.5s;
-	z-index: 12;
+	z-index: 14;
 	-webkit-transition-delay: 4s;
 	transition-delay: 4s;
 }
@@ -263,7 +263,7 @@ html, body {
 	transition: transform 1.8s;
 	-webkit-transition-delay: 0.5s;
 	transition-delay: 0.5s;
-	z-index: 12;
+	z-index: 10;
 }
 .page9 .text {
 	width: 7.5rem;
@@ -396,14 +396,7 @@ html, body {
 .page11.animate {
 	opacity: 1;
 } 
-@keyframe bgp {
-	0% {
-		background-position-x: 0;
-	}
-	98% {
-		background-position-x: 0;
-	}
-}
+
 .page11 ,.page12 {
 	background: url(../img/page9/bg11.jpg) no-repeat;
 	background-size: 19.82rem;
@@ -432,13 +425,17 @@ html, body {
 		-webkit-transform:translateX(0%);
 		opacity: 1;
 	}
-	95% {
-		-webkit-transform:translateX(-55%);
+	/*2%{
+		-webkit-transform:translateX(-1%);
+		opacity: 1;
+	}*/
+	98% {
+		-webkit-transform:translateX(-60%);
 		opacity: 1;
 	}
 	99% {
 		-webkit-transform:translateX(-60%);
-		opacity: 0;
+		opacity: 0.8;
 	}
 	100% {
 		-webkit-transform:translateX(0%);
@@ -485,7 +482,7 @@ html, body {
 	position: absolute;
 	width: 21.9rem;
     height: 6.1rem;
-    top: 2rem;
+    top: 2.62rem;
     animation: loadingcloud 11s linear infinite;
 }
 .page11 .font {
