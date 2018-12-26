@@ -101,6 +101,7 @@ $.ajax({
     } else {
       $('.page12 .no-font').show();
       $('.page12 .has-data').hide();
+      $('.page12 .cloud > div').eq(3).hide();
     }
 
     //地球页面 判断是否有走过城市

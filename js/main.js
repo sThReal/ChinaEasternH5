@@ -11,6 +11,7 @@
         opacity: 0
       })
       $('.page5').css('opacity',0);
+      $('.page5 .arrow').css('opacity', 0);
       $('.page9').fadeIn(1500).addClass('animate');
       setTimeout(function () {
         // 值机柜台
@@ -22,6 +23,8 @@
           console.log(e, 'page9向上');
           $('.page9').addClass('leave').fadeOut(1000);
           $('.page10').fadeIn().addClass('animate');
+          $('.page10_12_plane').show();
+
           // 停机坪
           setTimeout(function () {
             var page10 = new Hammer(document.querySelector(".page10"));
@@ -32,6 +35,7 @@
               console.log(e, 'page10向上');
               $('.page10').fadeOut(1000);
               $('.page11').fadeIn(500).addClass('animate');
+              $('.page10_12_plane .shd').fadeOut(500);
               $('.page11_12').show();
               $('.page11_12 img').addClass('animation')
               // 在云端1
@@ -52,11 +56,11 @@
                     // $('.page12 .arrow').css('opacity', 1);
                     page12.on('swipeup', function (e) {
                       console.log(e, 'page12向上');
-                      $('.page12').addClass('leave');
+                      $('.page12').fadeOut(1000);
+                      $('.page10_12_plane').addClass('leave');
                       setTimeout(function(){
                         $('.page14').fadeIn(1000);
                         $('.page11_12').fadeOut(1000);
-                        $('.page12').fadeOut(1000);
                           setTimeout(function () {
                               $('.page14 .aircraft').css({
                                   'animation': 'newAircraftSecond 9s 0s linear forwards infinite',
