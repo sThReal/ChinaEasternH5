@@ -366,10 +366,8 @@ html, body {
 	opacity: 1;
 }
 
-/*飞行*/
-.page10 .plane,
-.page11 .plane,
-.page12 .plane {
+/*飞机*/
+.page10_12_plane .plane {
 	position: absolute;
 	top: 4.2rem;
     left: 1.56rem;
@@ -377,11 +375,7 @@ html, body {
     height: 2.28rem;
     z-index: 5;
 }
-.page9 .plane img,
-.page10 .plane img,
-.page10 .shd img,
-.page11 .plane img,
-.page12 .plane img {
+.page10_12_plane .plane img {
 	width: 100%;
 }
 .page11 {
