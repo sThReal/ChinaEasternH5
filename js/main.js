@@ -82,7 +82,15 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       })   
                         
                       $("#checkout_img").click(function () {
+                          window.loading = layer.open({
+                              type: 2,
+                              content: '生成中',
+                              shadeClose:false,
+                          });
                         if (window.base64ImgSrcAnother) {
+                            setTimeout(function () {
+                                layer.close(window.loading);
+                            },200)
                           $("#page_absolute_4_img").fadeIn(500);
                           $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           return;
@@ -110,7 +118,10 @@ var page5 = new Hammer(document.querySelector(".page5"));
                           html2canvas(document.querySelector("#page_for_canvas"), opts).then(function (canvas) {
                             window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg", .72);
                           }).then(function () {
-                            $("#page_absolute_4_img").fadeIn(500);
+                            setTimeout(function () {
+                                layer.close(window.loading);
+                            },200)
+                              $("#page_absolute_4_img").fadeIn(500);
                             $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           })
                         })
