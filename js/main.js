@@ -104,7 +104,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                         }
                         html2canvas(document.querySelector("#page_4_img"), opts).then(function (canvas) {
                           window.base64ImgSrc = canvas.toDataURL("image/jpeg", .92);
-                          console.log(window.base64ImgSrc);
+                          // console.log(window.base64ImgSrc);
                           $("#canvasImg").attr("src", window.base64ImgSrc)
                         }).then(function () {
                           console.log("生成base64图片源码~~!");
