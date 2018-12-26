@@ -405,64 +405,23 @@ html, body {
 }*/
 
 .page11_12 {
-	background: url(../img/page9/bg11.jpg) no-repeat;
-	background-size: 19.82rem;
-    background-position-x: -12.32rem;
+	overflow:hidden;
+	transform:translate3d(0,0,0);
 }
 .page11_12 img {
 	position: absolute;
 	top: 0;
 	display: block;
-	height: 100%;
 	z-index:1;
-	-webkit-animation:page11sky 8s linear infinite;
-	animation:page11sky 8s linear infinite;
+	width:18.92rem;
+	/* -webkit-animation: page11sky 2s linear infinite; */
 }
-/* .page11 .bg */
-/* .page11 .bg2 {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	transform:translateX(61%);
-	animation:page11sky2 5s 1.2s linear infinite;
-} */
-/* @-webkit-keyframes page11sky{
-	0%{
-		-webkit-transform:translateX(0%);
-		opacity: 1;
-	}
-	98% {
-		-webkit-transform:translateX(-59.5%);
-		opacity: 1;
-	}
-	99% {
-		-webkit-transform:translateX(-60%);
-		opacity: 0;
-	}
-	100% {
-		-webkit-transform:translateX(0%);
-		opacity: 0;
-	}
-} */
+.page11_12 img.animation{
+	animation: page11sky 2s linear infinite;
+}
 @keyframes page11sky{
 	to{
-		transform:translateX(-63.6%);
-	}
-}
-@-webkit-keyframes page11sky2{
-	from{
-		-webkit-transform:translateX(60%);
-	}
-	to{
-		-webkit-transform:translateX(-100%)
-	}
-}
-@keyframes page11sky2{
-	from{
-		transform:translateX(61%);
-	}
-	to{
-		transform:translateX(-100%)
+		transform:translateX(-60%);
 	}
 }
 .page11 .cloud {
