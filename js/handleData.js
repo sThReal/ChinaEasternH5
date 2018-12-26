@@ -48,7 +48,7 @@ window.nickArr = [
   }
 ]
 $.ajax({
-  url: '../js/data.json',
+  url: '../js/data/data3.json',
   method: 'GET',
   success: function (data) {
     console.log(data, 'server end json');
@@ -166,7 +166,7 @@ $.ajax({
         <div class="second_text">
           <p>2018年度，乘坐新开目的地${data.page5.extra.newPlaceTimes}次</p>
           <p>目的地为${data.page5.extra.destination}</p>
-          <p>去过${data.page5.extra.destination.numbers}个国家</p>
+          <p>去过${data.page5.extra.numbers}个国家</p>
         </div>`;
           $(".need_rolate .type_4").show();
           break;
