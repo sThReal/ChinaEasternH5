@@ -20,6 +20,7 @@
     "mostOftenModel":"波音757"
   },
   "page3":{
+    "hasData":false,
     "totalHours":453,
     "totalTimes":30,
     "totalCost":9870,
