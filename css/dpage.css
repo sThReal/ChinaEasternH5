@@ -17,11 +17,10 @@ html, body {
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
-	width: 100%;
+	width: 1.38rem;
 	height: 1.36rem;
 	background: url(../img/arrow.png) no-repeat;
-	background-size: auto 100%;
-	background-position:center;
+	background-size: 100%;
 	z-index: 30;
 	animation: arrow_up 1s infinite;
 	opacity: 0;
@@ -33,7 +32,7 @@ html, body {
 .arrow_txt{
 	position:absolute;
 	width:100%;
-	top:11rem;
+	top:13rem;
 	font-size:0.3rem;
 	text-align:center;
 	color:#fff;
@@ -218,7 +217,7 @@ html, body {
 	background-size: 85%;
 	position: absolute;
 	left: 11%;
-	top: 10rem;
+	top: 11rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -433,7 +432,6 @@ html, body {
 	background: url(../img/loading/cloud_2.png) no-repeat;
 	background-size: 100%;
 	z-index: 3;
-	opacity: 0;
 	-webkit-transition: opacity,transform 3s;
 	-webkit-transition-delay: 1s;
 	-webkit-transform: translateX(0.2rem);
@@ -445,7 +443,7 @@ html, body {
 	position: absolute;
 	width: 21.9rem;
     height: 6.1rem;
-    top: 6rem;
+    top: 0;
     animation: loadingcloud 11s linear infinite;
 }
 .page11 .font {
