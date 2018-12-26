@@ -4,6 +4,7 @@
       var clientWidth = docEl.clientWidth;
       if (!clientWidth) return;
       console.log('-------', clientWidth);
+      // alert(clientWidth);
       if (clientWidth >= 750) {
         docEl.style.fontSize = '100px';
       } else {

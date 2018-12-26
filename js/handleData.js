@@ -56,15 +56,27 @@ $.ajax({
     bindDom('internationalCityAmount',data.page1.internationalCityAmount);
     bindDom('airplaneModels',data.page1.airplaneModels);
     // 在云端1
-    bindDom('disney',data.page2.disney);
-    bindDom('firstClass',data.page2.firstClass);
-    bindDom('businessClass',data.page2.businessClass);
-    bindDom('mostOftenModel',data.page2.mostOftenModel);
+    if(data,page2.hasData){
+        bindDom('disney',data.page2.disney);
+        bindDom('firstClass',data.page2.firstClass);
+        bindDom('businessClass',data.page2.businessClass);
+        bindDom('mostOftenModel',data.page2.mostOftenModel);
+    }else{
+        $('.page11 .text2').show();
+        $('.page11 .text1').hide();
+    }
+    
     // 在云端2
-    bindDom('totalHours',data.page3.totalHours);
-    bindDom('totalTimes',data.page3.totalTimes);
-    bindDom('totalCost',data.page3.totalCost);
-    bindDom('totalDistance',data.page3.totalDistance);
+    if(data.page3.hasData){
+        bindDom('totalHours',data.page3.totalHours);
+        bindDom('totalTimes',data.page3.totalTimes);
+        bindDom('totalCost',data.page3.totalCost);
+        bindDom('totalDistance',data.page3.totalDistance);
+    }else{
+        $('.page12 .no-font').show();
+        $('.page12 .has-data').hide();
+    }
+    
     //地球页面 判断是否有走过城市
     if(data.page4.citys.length>=1){
         $("#page14_text_has_data").show()

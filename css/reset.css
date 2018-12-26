@@ -7,6 +7,17 @@ html, body, div, p, img, ul, ol, li, label, span, dl, dt, dd, h1, h2, h3, h4, h5
 	vertical-align: baseline;
 	font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }
+html,body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none; 
+  user-select: none;
+  overflow: hidden;
+}
+
+
 ul, ol {
 	outline: none;
 	list-style:none;
