@@ -202,13 +202,13 @@ $.ajax({
         personalDom = `
         <div class="second_title">专属报告</div>
         <div class="second_text">
-          <p>2018您的⻜行次数为${data.page5.extra.times}次</p>
+          <p>2018您的⻜行次数为${data.page5.extra.flightTimes}次</p>
         </div>`;
         break;
     }
     // 赋值到页面
-    $('#page4_img .main_content').append(commonDom+personalDom);
-    $('#main_page_15 .main_content').append(commonDom+personalDom);
+    $('#page4_img .main_content').html('').append(commonDom+personalDom);
+    $('#main_page_15 .main_content').html('').append(commonDom+personalDom);
 
   }
 })
