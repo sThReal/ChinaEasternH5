@@ -51,8 +51,8 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       console.log(e, 'page12向上');
                       $('.page12').addClass('leave');
                       setTimeout(function(){
-                        $('.page14').fadeIn();
-                        $('.page12').hide();
+                        $('.page14').fadeIn(1000);
+                        $('.page12').fadeOut(1000);
                           setTimeout(function () {
                               $('.page14 .aircraft').css({
                                   'animation': 'newAircraftSecond 9s 0s linear forwards infinite',
@@ -82,7 +82,15 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       })   
                         
                       $("#checkout_img").click(function () {
+                          window.loading = layer.open({
+                              type: 2,
+                              content: '生成中',
+                              shadeClose:false,
+                          });
                         if (window.base64ImgSrcAnother) {
+                            setTimeout(function () {
+                                layer.close(window.loading);
+                            },200)
                           $("#page_absolute_4_img").fadeIn(500);
                           $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           return;
@@ -96,7 +104,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                         }
                         html2canvas(document.querySelector("#page_4_img"), opts).then(function (canvas) {
                           window.base64ImgSrc = canvas.toDataURL("image/jpeg", .92);
-                          console.log(window.base64ImgSrc);
+                          // console.log(window.base64ImgSrc);
                           $("#canvasImg").attr("src", window.base64ImgSrc)
                         }).then(function () {
                           console.log("生成base64图片源码~~!");
@@ -110,7 +118,10 @@ var page5 = new Hammer(document.querySelector(".page5"));
                           html2canvas(document.querySelector("#page_for_canvas"), opts).then(function (canvas) {
                             window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg", .72);
                           }).then(function () {
-                            $("#page_absolute_4_img").fadeIn(500);
+                            setTimeout(function () {
+                                layer.close(window.loading);
+                            },200)
+                              $("#page_absolute_4_img").fadeIn(500);
                             $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           })
                         })

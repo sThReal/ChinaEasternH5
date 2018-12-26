@@ -56,7 +56,7 @@ $.ajax({
     bindDom('internationalCityAmount',data.page1.internationalCityAmount);
     bindDom('airplaneModels',data.page1.airplaneModels);
     // 在云端1
-    if(data,page2.hasData){
+    if(data.page2.hasData){
         bindDom('disney',data.page2.disney);
         bindDom('firstClass',data.page2.firstClass);
         bindDom('businessClass',data.page2.businessClass);

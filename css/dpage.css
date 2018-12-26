@@ -752,10 +752,10 @@ html, body {
 	animation-fill-mode: forwards;
 }
 .page12.leave {
-	-webkit-animation: page12_font 0.6s 1.5s;
-	-webkit-animation-fill-mode: forwards;
-	animation: page12_font 0.6s 1.5s;
-	animation-fill-mode: forwards;
+	/*-webkit-animation: page12_font 0.6s 1.5s;*/
+	/*!*-webkit-animation-fill-mode: forwards;*!*/
+	/*animation: page12_font 0.6s 1.5s;*/
+	/*!*animation-fill-mode: forwards;*!*/
 }
 .page12 .arrow {
 	transition-delay: 8s;

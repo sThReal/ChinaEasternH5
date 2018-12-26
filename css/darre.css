@@ -173,6 +173,8 @@
 .page15.page15_4_canvas .aircraft_4_15{
     transform: translateX(0rem);
     -webkit-transform: translateX(0rem);
+    animation: inherit;
+    -webkit-animation: inherit;
 }
 .page15 .aircraft_4_15{
     position: absolute;
@@ -218,9 +220,9 @@
     right:0.1rem;
     top: 2.36rem;
     transform-origin: center center;
-    transform: rotate(-12deg) scale(0.76);
+    transform: rotate(-12deg) scale(0.86);
     -webkit-transform-origin: center center;
-    -webkit-transform: rotate(-12deg) scale(0.76);
+    -webkit-transform: rotate(-12deg) scale(0.86);
     animation: shadeRotateIn .2s 1.6s linear forwards 1;
     -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
     opacity:0;
@@ -242,21 +244,21 @@
     z-index: 123;
     right: 0.25rem;
     top: 0;
-    margin-top: 5.02rem;
+    margin-top: 5.72rem;
     animation: contentRightIn .2s 1.8s linear forwards 1;
     -webkit-animation: contentRightIn .2s 1.8s linear forwards 1;
-    transform: scale(0.76);
-    -webkit-transform: scale(0.76);
+    transform: scale(0.86);
+    -webkit-transform: scale(0.86);
     opacity:0;
 }
 @keyframes contentRightIn {
     0%{
         opacity:0;
-        transform: translateX(4rem) scale(0.76);
+        transform: translateX(4rem) scale(0.86);
     }
     100%{
         opacity:1;
-        transform: translateX(0rem) scale(0.76);
+        transform: translateX(0rem) scale(0.86);
     }
 }
 
@@ -276,11 +278,11 @@
 @keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        transform: scale(2.35) rotate(-12deg) scale(0.76);
+        transform: scale(2.35) rotate(-12deg) scale(0.86);
     }
     100%{
         opacity: 1;
-        transform: scale(1) rotate(-12deg) scale(0.76);
+        transform: scale(1) rotate(-12deg) scale(0.86);
     }
 }
 @keyframes ladyIn {
@@ -307,11 +309,11 @@
 @-webkit-keyframes contentRightIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(4rem) scale(0.76);
+        -webkit-transform: translateX(4rem) scale(0.86);
     }
     100%{
         opacity:1;
-        -webkit-transform: translateX(0rem) scale(0.76);
+        -webkit-transform: translateX(0rem) scale(0.86);
     }
 }
 
@@ -331,11 +333,11 @@
 @-webkit-keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        -webkit-transform: scale(2.35) rotate(-12deg) scale(0.76);
+        -webkit-transform: scale(2.35) rotate(-12deg) scale(0.86);
     }
     100%{
         opacity: 1;
-        -webkit-transform: scale(1) rotate(-12deg) scale(0.76);
+        -webkit-transform: scale(1) rotate(-12deg) scale(0.86);
     }
 }
 @-webkit-keyframes ladyIn {
