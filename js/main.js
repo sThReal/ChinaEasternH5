@@ -29,8 +29,8 @@ var page5 = new Hammer(document.querySelector(".page5"));
             $('.page10 .arrow').css('opacity', 1);
             page10.on('swipeup', function (e) {
               console.log(e, 'page10向上');
-              $('.page10').addClass('leave').fadeOut(1000);
-              $('.page11').fadeIn().addClass('animate');
+              $('.page10').fadeOut(1000);
+              $('.page11').fadeIn(500).addClass('animate');
               // 在云端1
               setTimeout(function () {
                 var page11 = new Hammer(document.querySelector(".page11"));

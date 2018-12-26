@@ -326,8 +326,8 @@ html, body {
 	background-size: 100%;
     background-position: 0 -1.2rem;
 	opacity: 1;
-	transition: opacity 1.5s;
-	-webkit-transition: opacity 1.5s;
+	/*transition: opacity 1.5s;*/
+	/*-webkit-transition: opacity 1.5s;*/
 	z-index: 20;
 }
 .page10.animate {
@@ -368,8 +368,8 @@ html, body {
 	width: 100%;
 }
 .page11 {
-	-webkit-transition: opacity 1.5s;
-	transition: opacity 1.5s;
+	/*-webkit-transition: opacity 1.5s;*/
+	/*transition: opacity 1.5s;*/
 	opacity: 0;
 	z-index: 15;
 }
