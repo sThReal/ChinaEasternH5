@@ -441,7 +441,11 @@ html, body {
 	transform: translateX(0.2rem);
 }
 .page11.animate .cloud {
-
+	position: absolute;
+	width: 21.9rem;
+    height: 6.1rem;
+    top: 6rem;
+    animation: loadingcloud 11s linear infinite;
 }
 .page11 .font {
 	position: absolute;
@@ -704,8 +708,8 @@ html, body {
 	animation-fill-mode: forwards;
 }
 .page12.leave {
-	-webkit-animation: page12_font 0.6s 2s;
+	-webkit-animation: page12_font 0.6s 1.8s;
 	-webkit-animation-fill-mode: forwards;
-	animation: page12_font 0.6s 2s;
+	animation: page12_font 0.6s 1.8s;
 	animation-fill-mode: forwards;
 }
