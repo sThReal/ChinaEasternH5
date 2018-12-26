@@ -33,7 +33,7 @@
 
 .page15 .page15_text .main_content .second_text{
     width:100%;
-    font-size: 0.2rem;
+    font-size: 0.18rem;
     line-height: 0.3rem;
     padding-left: 0.24rem;
     padding-top: 0.1rem;
@@ -210,15 +210,17 @@
 .page15.page15_4_canvas .page15_text .need_rolate{
     /*transform: translateX(0rem);*/
     opacity: 1;
+    animation: inherit;
+    -webkit-animation: inherit;
 }
 .page15 .page15_text .need_rolate{
     position: absolute;
     right:0.1rem;
     top: 2.36rem;
     transform-origin: center center;
-    transform: rotate(-12deg);
+    transform: rotate(-12deg) scale(0.76);
     -webkit-transform-origin: center center;
-    -webkit-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg) scale(0.76);
     animation: shadeRotateIn .2s 1.6s linear forwards 1;
     -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
     opacity:0;
@@ -227,6 +229,8 @@
 
 .page15.page15_4_canvas .page15_text .main_content{
     opacity: 1;
+    animation: inherit;
+    -webkit-animation: inherit;
 }
 .page15 .page15_text .main_content{
     overflow: hidden;
@@ -236,21 +240,23 @@
     width: 3.58rem;
     height: 4.74rem;
     z-index: 123;
-    right: 0.4rem;
+    right: 0.25rem;
     top: 0;
-    margin-top: 6.2rem;
+    margin-top: 5.02rem;
     animation: contentRightIn .2s 1.8s linear forwards 1;
     -webkit-animation: contentRightIn .2s 1.8s linear forwards 1;
+    transform: scale(0.76);
+    -webkit-transform: scale(0.76);
     opacity:0;
 }
 @keyframes contentRightIn {
     0%{
         opacity:0;
-        transform: translateX(4rem);
+        transform: translateX(4rem) scale(0.76);
     }
     100%{
         opacity:1;
-        transform: translateX(0rem);
+        transform: translateX(0rem) scale(0.76);
     }
 }
 
@@ -270,11 +276,11 @@
 @keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        transform: scale(2.35) rotate(-12deg);
+        transform: scale(2.35) rotate(-12deg) scale(0.76);
     }
     100%{
         opacity: 1;
-        transform: scale(1) rotate(-12deg);
+        transform: scale(1) rotate(-12deg) scale(0.76);
     }
 }
 @keyframes ladyIn {
@@ -301,11 +307,11 @@
 @-webkit-keyframes contentRightIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(4rem);
+        -webkit-transform: translateX(4rem) scale(0.76);
     }
     100%{
         opacity:1;
-        -webkit-transform: translateX(0rem);
+        -webkit-transform: translateX(0rem) scale(0.76);
     }
 }
 
@@ -325,11 +331,11 @@
 @-webkit-keyframes shadeRotateIn {
     0%{
         opacity: 0;
-        -webkit-transform: scale(2.35) rotate(-12deg);
+        -webkit-transform: scale(2.35) rotate(-12deg) scale(0.76);
     }
     100%{
         opacity: 1;
-        -webkit-transform: scale(1) rotate(-12deg);
+        -webkit-transform: scale(1) rotate(-12deg) scale(0.76);
     }
 }
 @-webkit-keyframes ladyIn {
@@ -536,6 +542,8 @@
     opacity:0;
     animation: earth-of-14 .4s 4.1s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 4.1s linear  forwards 1;
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
 }
 @keyframes newEarth {
     0%{
