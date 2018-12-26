@@ -85,6 +85,12 @@
                           $("#ad_layer").fadeOut(600);
                       })   
                         
+                      $("#activity_watch").click(function (e) {
+                          e = e ||event;
+                          e.stopPropagation();
+                          window.location.href = window.nickArr[window.type - 1].url;
+                      })  
+                        
                       $("#checkout_img").click(function () {
                           window.loading = layer.open({
                               type: 2,
@@ -134,6 +140,9 @@
                       $("#page_absolute_4_img").click(function (e) {
                         $("#page_absolute_4_img").fadeOut(500);
                       })
+                        
+                        
+                        
                     });
                   }, 5000)
                 });

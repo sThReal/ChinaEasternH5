@@ -227,6 +227,11 @@
     -webkit-animation: shadeRotateIn .2s 1.6s linear forwards 1;
     opacity:0;
     z-index:11;
+    width: 3.6rem;
+    height: 2.88rem;
+}
+.page15 .page15_text .need_rolate img{
+    width:100%;
 }
 
 .page15.page15_4_canvas .page15_text .main_content{
