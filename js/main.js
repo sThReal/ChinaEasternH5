@@ -53,8 +53,8 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       $('.page12').addClass('leave');
                       setTimeout(function(){
                         $('.page14').fadeIn(1000);
+                        $('.page11_12').fadeOut(1000);
                         $('.page12').fadeOut(1000);
-                        $('.page11_12').hide();
                           setTimeout(function () {
                               $('.page14 .aircraft').css({
                                   'animation': 'newAircraftSecond 9s 0s linear forwards infinite',
