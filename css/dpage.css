@@ -13,11 +13,11 @@ html, body {
 }
 .arrow {
 	position: absolute;
-	top: 10.8rem;
+	top: 10.6rem;
 	width:100%;
 	height: 1.36rem;
 	background: url(../img/arrow.png) no-repeat;
-	background-size: auto 1.36rem;
+	background-size: auto 0.8rem;
 	background-position:center;
 	z-index: 30;
 	animation: arrow_up 1s infinite;
@@ -410,6 +410,7 @@ html, body {
 	display: block;
 	z-index:1;
 	width:18.92rem;
+	height:15.52rem;
 	/* -webkit-animation: page11sky 2s linear infinite; */
 }
 .page11_12 img.animation{

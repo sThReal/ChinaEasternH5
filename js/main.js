@@ -4,6 +4,13 @@
     page5.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
     $('.page5 .arrow').css('opacity', 1);
     $('.page5 .txt').css('opacity', 1);
+
+$(".page14").find(".bgsky").addClass("bgsky4rem");
+
+
+// .page14 .bgsky.bgsky4rem{
+//     setTimeout(function () {
+    // },200)
     page5.on('swipeup', function (e) {
       console.log(e, 'page5向上');
       $('.page5 img').css({
