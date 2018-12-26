@@ -59,7 +59,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
                                   '-webkit-animation': 'newAircraftSecond 9s 0s linear forwards infinite',
                               });
                           }, 1200)
-                      },2000)
+                      },1500)
                       //确保飞机已经进入界面
 
                       $("#page_14_aircraft").click(function () {
