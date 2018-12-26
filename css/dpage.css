@@ -127,10 +127,8 @@ html, body {
 	background-size: 100%;
 	z-index: 10;
 	opacity: 0;
-	-webkit-transform:scale(0.9);
-	transform:scale(0.9);
-	-webkit-transition: all 1.5s;
-	transition: all 1.5s;
+	-webkit-transition: opacity 1.5s;
+	transition: opacity 1.5s;
 	-webkit-transition-delay: 1.5s;
 	transition-delay: 1.5s;
 }
@@ -192,8 +190,6 @@ html, body {
 }
 .page9.animate .door {
 	opacity: 1;
-	-webkit-transform:scale(1);
-	transform:scale(1);
 }
 .page9.animate .light {
 	opacity: 1;
@@ -285,6 +281,7 @@ html, body {
 	font-size: 0.22rem;
 	line-height: 0.44rem;
 	height: 0.44rem;
+	font-weight: normal;
 }
 .page9 .text strong {
 	font-size: 0.32rem;
