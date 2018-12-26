@@ -1,4 +1,5 @@
-var page5 = new Hammer(document.querySelector(".page5"));
+
+;var page5 = new Hammer(document.querySelector(".page5"));
     page5.get('pan').set({ direction: Hammer.DIRECTION_ALL });
     page5.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
     $('.page5 .arrow').css('opacity', 1);
@@ -32,6 +33,7 @@ var page5 = new Hammer(document.querySelector(".page5"));
               $('.page10').fadeOut(1000);
               $('.page11').fadeIn(500).addClass('animate');
               $('.page11_12').show();
+              $('.page11_12 img').addClass('animation')
               // 在云端1
               setTimeout(function () {
                 var page11 = new Hammer(document.querySelector(".page11"));
@@ -83,6 +85,12 @@ var page5 = new Hammer(document.querySelector(".page5"));
                           $("#ad_layer").fadeOut(600);
                       })   
                         
+                      $("#activity_watch").click(function (e) {
+                          e = e ||event;
+                          e.stopPropagation();
+                          window.location.href = window.nickArr[window.type - 1].url;
+                      })  
+                        
                       $("#checkout_img").click(function () {
                           window.loading = layer.open({
                               type: 2,
@@ -132,6 +140,9 @@ var page5 = new Hammer(document.querySelector(".page5"));
                       $("#page_absolute_4_img").click(function (e) {
                         $("#page_absolute_4_img").fadeOut(500);
                       })
+                        
+                        
+                        
                     });
                   }, 5000)
                 });

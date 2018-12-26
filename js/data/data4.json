@@ -1,0 +1,47 @@
+
+{
+  "gender":"male",
+  "page1":{
+    "name":"用户",
+    "joinDate":"2018年7月18日",
+    "totalFlight":100,
+    "totalIntegral":54332,
+    "spentIntegral":23456,
+    "level":"黄金",
+    "domesticCityAmount":20,
+    "internationalCityAmount":10,
+    "airplaneModels":5
+  },
+  "page2":{
+    "hasData":true,
+    "disney":2,
+    "firstClass":10,
+    "businessClass":20,
+    "mostOftenModel":"波音757"
+  },
+  "page3":{
+    "hasData":false,
+    "totalHours":453,
+    "totalTimes":30,
+    "totalCost":9870,
+    "totalDistance":29384
+  },
+  "page4":{
+    "citys":["西安","大理","墨尔本","纽约"]
+  },
+  "page5":{
+    "type":4,
+    "common":{
+      "distance":200,
+      "flightTime":28,
+      "times":9
+    },
+    "extra":{
+      "newPlaceTimes":5,
+      "destination":"上海",
+      "numbers":5
+    },
+    "qrcodeUrl":""
+  }
+
+}
