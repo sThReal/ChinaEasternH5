@@ -24,7 +24,8 @@
   width:2.79rem;height:0.66rem;
   top:38%;
   left: 50%;
-	transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transform:translateX(-50%);
   animation: plane 6s linear infinite;
 }
 .loading .plane img{
