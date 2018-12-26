@@ -536,6 +536,8 @@
     opacity:0;
     animation: earth-of-14 .4s 4.1s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 4.1s linear  forwards 1;
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
 }
 @keyframes newEarth {
     0%{
