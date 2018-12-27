@@ -2,6 +2,7 @@
 var load = document.getElementById("loading");
 var imgPath = "img/";
 var myVideo = document.getElementById("video");
+var audio = document.getElementById('BGM');
 var loadingPage = (function () {
   var imgSources = ['loading/cloud_1.png','loading/cloud_2.png','loading/plane_line.png','loading/plane.png','arrow.png',
 'page5/bg.jpg','page5/buildings.png','page_end/bottom_end_btn_07.png','page_end/canvas_logo_03.png',
@@ -79,12 +80,24 @@ var loadingInterval = setInterval(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   function audioAutoPlay() {
-    var audio = document.getElementById('BGM');
     audio.play();
+    $(".music_play").show().addClass("xz");
     document.addEventListener("WeixinJSBridgeReady", function () {
       audio.play();
+      $(".music_play").show().addClass("xz");
     }, false);
     // console.log(111)
   }
   audioAutoPlay();
+})
+$(".music_play").on("click",function () {
+  if(window.musicStart){
+    audio.pause();
+    $(".music_play").removeClass("xz");
+    window.musicStart = false;
+  }else{
+    audio.play();
+    $(".music_play").addClass("xz");
+    window.musicStart = true;
+  }
 })
