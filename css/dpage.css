@@ -111,7 +111,22 @@ html, body {
 .page9 .bg2 {
 	background: url(../img/page9/page9-bg2.jpg) no-repeat;
 	background-size: 134%;
-    background-position: 40% 2.9rem;
+  background-position: 40% 2.9rem;
+	z-index: 6;
+	opacity: 0;
+	-webkit-transition: opacity 1.5s;
+	transition: opacity 1.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.5s;
+}
+.page9 .title {
+	position: absolute;
+	top: 5.64rem;
+	width: 7.5rem;
+	height: 0.69rem;
+	background: url(../img/page9/page9-tit.png) no-repeat;
+	background-size: 100%;
+	z-index: 15;
 	opacity: 0;
 	-webkit-transition: opacity 1.5s;
 	transition: opacity 1.5s;
@@ -168,7 +183,7 @@ html, body {
     left: 1.26rem;
     width: 5.46rem;
     height: 2.28rem;
-    z-index: 1;
+    z-index: 8;
     opacity: 0;
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
@@ -182,15 +197,10 @@ html, body {
 .page .arrow {
 	/* transition-delay: 6s; */
 }
-.page9.animate .bg1 {
-	opacity: 1;
-}
-.page9.animate .bg2 {
-	opacity: 1;
-}
-.page9.animate .door {
-	opacity: 1;
-}
+.page9.animate .bg1,
+.page9.animate .bg2,
+.page9.animate .door,
+.page9.animate .title,
 .page9.animate .light {
 	opacity: 1;
 }
@@ -215,7 +225,7 @@ html, body {
 	background-position: 60% 0;
 	position: absolute;
 	left: 0;
-  	top: 9.4rem;
+  top: 9.2rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -237,7 +247,8 @@ html, body {
 .page9 .dialogbox p {
 	opacity: 0;
 	margin-left: 1.65rem;
-    margin-top: 0.9rem;
+    margin-top: 0.8rem;
+    line-height: 0.36rem;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	-webkit-transition-delay: 4.4ss;
@@ -449,7 +460,7 @@ html, body {
 	top: 0;
 	width: 100%;
 	line-height: 0.6rem;
-	font-size: 0.4rem;
+	font-size: 0.26rem;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -484,6 +495,7 @@ html, body {
 }
 
 .page11 .font strong {
+	font-size: 0.4rem;
 	color: #d7006a;
 }
 /*.page11 .font .bottom strong {
@@ -602,7 +614,7 @@ html, body {
 .page12 .font > p {
 	position: absolute;
 	/*width: 2.3rem;*/
-	font-size: 0.3rem;
+	font-size: 0.26rem;
 	opacity: 0;
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
@@ -626,8 +638,8 @@ html, body {
 	transition-delay: 5s;
 }
 .page12 .font.no-font .p3 {
-	top: 6.88rem;
-    left: 2.54rem;
+	top: 6.94rem;
+  left: 2.44rem;
 	-webkit-transition-delay: 5s;
 	transition-delay: 5s;
 }
@@ -639,9 +651,9 @@ html, body {
 }
 
 .page12 .font strong {
-	font-size: 0.42rem;
 	color: #d7006a;
 }
+.page12 .font strong,
 .page12 .font span {
 	font-size: 0.42rem;
 }
