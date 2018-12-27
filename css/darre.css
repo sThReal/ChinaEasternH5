@@ -1,3 +1,19 @@
+.pinkred{
+    color:#d7006a;
+}
+
+div.pop_close{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../img/page_end/close.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.3rem;
+    z-index: 203;
+    opacity: .8;
+;
+}
 .page14{
     background: #0b2343;
     overflow: hidden;
@@ -429,8 +445,8 @@
     opacity: 0;
     animation: earth-of-14 .4s 1.5s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 1.5s linear forwards 1;
-    top: 7.26rem;
-    text-shadow: 1px 1px 4px rgba(0,0,0,.72);
+    top: 7.6rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.4);
 }
 .page14 .bg{
     position: absolute;
@@ -552,8 +568,8 @@
     opacity:0;
     animation: earth-of-14 .4s 4.1s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 4.1s linear  forwards 1;
-    -webkit-transform: scale(1.24);
-    transform: scale(1.24);
+    -webkit-transform: scale(1.32);
+    transform: scale(1.32);
 }
 @keyframes newEarth {
     0%{
