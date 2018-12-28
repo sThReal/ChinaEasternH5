@@ -4,12 +4,17 @@
       var clientWidth = docEl.clientWidth;
       if (!clientWidth) return;
       console.log('-------', clientWidth);
+
+
       // alert(clientWidth);
       if (clientWidth >= 750) {
         docEl.style.fontSize = '100px';
       } else {
         docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
       }
+
+
+      // alert(docEl.style.fontSize);
     };
   if (!doc.addEventListener) return;
   win.addEventListener('resize', size, false);
