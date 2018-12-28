@@ -202,7 +202,7 @@ div.pop_close{
     background-size: 7.5rem 5.6rem;
     background-position: center;
     left:0;
-    top: 4.92rem;
+    top: 4.6rem;
     animation: aircraftLeftIn .9s .3s linear forwards 1;
     -webkit-animation: aircraftLeftIn .9s .3s linear forwards 1;
     transform: translateX(-7.5rem);
@@ -237,7 +237,7 @@ div.pop_close{
 .page15 .page15_text .need_rolate{
     position: absolute;
     right:0.1rem;
-    top: 2.36rem;
+    top: 2.1rem;
     transform-origin: center center;
     transform: rotate(0deg) scale(0.86);
     -webkit-transform-origin: center center;
@@ -268,7 +268,7 @@ div.pop_close{
     z-index: 123;
     right: 0.25rem;
     top: 0;
-    margin-top: 5.72rem;
+    margin-top: 5.5rem;
     animation: contentRightIn .2s 1.8s linear forwards 1;
     -webkit-animation: contentRightIn .2s 1.8s linear forwards 1;
     transform: scale(0.86);
