@@ -60,6 +60,9 @@ var loadingPage = (function () {
         var endVideo = function () {
           $('.loadingAndVideo').fadeOut(1500);
           $('.page5').fadeIn();
+          if (myVideo.paused) {
+            myVideo.play();
+          }
         }
         myVideo.addEventListener("ended", endVideo);
       })
