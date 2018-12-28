@@ -122,7 +122,7 @@ $.ajax({
             commonDom = `
       <div class="main_title">
         <p>${data.page1.name}的</p>
-        <p>的2018年度飞行足迹</p>
+        <p>的2018年度飞行报告</p>
       </div>
       <div class="content_text" style="height: 2.29rem;overflow: hidden;">
         <h3>2018总飞行里程</h3>
@@ -136,7 +136,7 @@ $.ajax({
             commonDom = `
       <div class="main_title">
         <p>${data.page1.name}的</p>
-        <p>2018年度飞行足迹</p>
+        <p>2018年度飞行报告</p>
       </div>
       <div class="content_text" style="height: 2.29rem;overflow: hidden;">
         <h3>2018东航会员平均飞行里程</h3>
@@ -264,7 +264,7 @@ $.ajax({
           <p>2018您的飞行次数为0次</p>
         </div>`;
                 $(".need_rolate .type_7").show();
-                // $(".need_rolate .type_1").show();
+                $(".need_rolate .type_1").show();
                 if(data.gender == 'male'){
                     $('.lady .type_7_m').show()
                 }else{
@@ -279,7 +279,7 @@ $.ajax({
           <p>2018您的飞行次数为${data.page5.extra.flightTimes}次</p>
         </div>`;
                 $(".need_rolate .type_8").show();
-                // $(".need_rolate .type_1").show();
+                $(".need_rolate .type_1").show();
                 if(data.gender == 'male'){
                     $('.lady .type_8_m').show()
                 }else{
