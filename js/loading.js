@@ -48,6 +48,7 @@ var loadingPage = (function () {
       $('.loading .txt').html(`点击进入`);
       $('.loading').on('click',function(e){
         $('.loading').fadeOut();
+        audioAutoPlay();
         $('#video').css({
           width:'7.5rem',
           height:'13.34rem',
@@ -59,6 +60,9 @@ var loadingPage = (function () {
         var endVideo = function () {
           $('.loadingAndVideo').fadeOut(1500);
           $('.page5').fadeIn();
+          if (myVideo.paused) {
+            myVideo.play();
+          }
         }
         myVideo.addEventListener("ended", endVideo);
       })
@@ -78,7 +82,6 @@ var loadingInterval = setInterval(function () {
   }
 }, 800)
 
-document.addEventListener('DOMContentLoaded', function () {
   function audioAutoPlay() {
     audio.play();
     $(".music_play").show().addClass("xz");
@@ -88,8 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
     // console.log(111)
   }
-  audioAutoPlay();
-})
+  
 $(".music_play").on("click",function () {
   if(window.musicStart){
     audio.pause();
