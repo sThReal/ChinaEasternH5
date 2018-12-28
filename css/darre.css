@@ -657,11 +657,14 @@ div.pop_close{
     z-index: 999;
 }
 .page_for_canvas .canvas_logo{
-    width:350px;
-    height:126px;
+    width:300px;
+    height:auto;
     position: absolute;
-    right: 48px;
-    bottom: 48px;
+    right: 30px;
+    bottom: 30px;
+}
+.page_for_canvas .canvas_logo img{
+    width: 100%;
 }
 
 .page_for_canvas .remmber_txt{
@@ -674,9 +677,7 @@ div.pop_close{
     position: absolute;
 }
 
-.page_for_canvas .canvas_logo img{
-    width: 100%;
-}
+
 .page_for_canvas .canvas_img{
     width: 690px;
     overflow: hidden;
@@ -707,6 +708,7 @@ div.pop_close{
     margin:0 auto;
     overflow: hidden;
     margin-top: 1.26rem;
+    text-align: center;
 }
 .layerBg.page .reco .ad img{
     width:90%;
