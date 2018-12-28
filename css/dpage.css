@@ -247,16 +247,23 @@ html, body {
 
 .page9 .dialogbox p {
 	opacity: 0;
-	margin-left: 0.2rem;
+	margin-left: 1rem;
   margin-top: 0.94rem;
   line-height: 0.4rem;
+  color:#000;
+  font-weight: bold;
+
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	-webkit-transition-delay: 4.4ss;
 	transition-delay: 4.4ss;
 }
-.page9 .dialogbox p .t {
-	margin-left: 1rem;
+.page9 .dialogbox .username {
+	display: inline-block;
+    max-width: 1.7rem;
+    overflow: hidden;
+    height: 0.4rem;
+    vertical-align: top;
 }
 .page9.animate .dialogbox p {
 	opacity: 1;
@@ -558,9 +565,9 @@ html, body {
 	left: 0;
 	width: 100%;
 	-webkit-transform: translateX(7.5rem);
-	-webkit-transition: transform 1.5s;
+	-webkit-transition: transform 1s;
 	transform: translateX(7.5rem);
-	transition: transform 1.5s;
+	transition: transform 1s;
 }
 .page12 .cloud .c1 {
 	height: 2.42rem;
@@ -575,8 +582,8 @@ html, body {
 	top: 2.72rem;
 	background: url(../img/page9/cloud-2.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 2.5s;
-	transition-delay: 2.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.5s;
 
 }
 .page12 .cloud .c3 {
@@ -584,8 +591,8 @@ html, body {
 	top: 5.9rem;
 	background: url(../img/page9/cloud-3.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 4s;
-	transition-delay: 4s;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
 
 }
 .page12 .cloud .c4 {
@@ -593,8 +600,8 @@ html, body {
 	top: 8.4rem;
 	background: url(../img/page9/cloud-4.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 5.5s;
-	transition-delay: 5.5s;
+	-webkit-transition-delay: 2.5s;
+	transition-delay: 2.5s;
 
 }
 .page12.animate .cloud .c1, 
@@ -628,32 +635,32 @@ html, body {
 .page12 .font .p1 {
 	top: 1.4rem;
     left: 1.24rem;
-	-webkit-transition-delay: 2.5s;
-	transition-delay: 2.5s;
+	-webkit-transition-delay: 1.2s;
+	transition-delay: 1.2s;
 }
 .page12 .font .p2 {
 	top: 3.38rem;
     right: 1.44rem;
-  	-webkit-transition-delay: 3.6s;
-  	transition-delay: 3.6s;
+  	-webkit-transition-delay: 2s;
+  	transition-delay: 2s;
 }
 .page12 .font .p3 {
 	top: 6.88rem;
     left: 1.74rem;
-	-webkit-transition-delay: 5s;
-	transition-delay: 5s;
+	-webkit-transition-delay: 2.7s;
+	transition-delay: 2.7s;
 }
 .page12 .font.no-font .p3 {
 	top: 6.94rem;
   left: 2.34rem;
-	-webkit-transition-delay: 5s;
-	transition-delay: 5s;
+	-webkit-transition-delay: 2.7s;
+	transition-delay: 2.7s;
 }
 .page12 .font .p4 {
 	top: 9.12rem;
     right: 1.44rem;
-  	-webkit-transition-delay: 7s;
-  	transition-delay: 7s;
+  	-webkit-transition-delay: 3.5s;
+  	transition-delay: 3.5s;
 }
 
 .page12 .font strong {
@@ -734,7 +741,7 @@ html, body {
 	/*!*animation-fill-mode: forwards;*!*/
 }
 .page12 .arrow {
-	transition-delay: 8s;
+	transition-delay: 4s;
 }
 .page12.animate .arrow {
 	opacity: 1;
