@@ -48,11 +48,13 @@ div.pop_close{
 }
 
 .page15 .page15_text .main_content .second_text{
-    width:100%;
+    width: 100%;
     font-size: 0.18rem;
     line-height: 0.3rem;
     padding-left: 0.24rem;
     padding-top: 0.1rem;
+    padding-right: 0.12rem;
+    box-sizing: border-box;
 }
 
 .page15 .page15_text .main_content .second_title{
@@ -657,11 +659,14 @@ div.pop_close{
     z-index: 999;
 }
 .page_for_canvas .canvas_logo{
-    width:350px;
-    height:126px;
+    width:300px;
+    height:auto;
     position: absolute;
-    right: 48px;
-    bottom: 48px;
+    right: 30px;
+    bottom: 30px;
+}
+.page_for_canvas .canvas_logo img{
+    width: 100%;
 }
 
 .page_for_canvas .remmber_txt{
@@ -674,9 +679,7 @@ div.pop_close{
     position: absolute;
 }
 
-.page_for_canvas .canvas_logo img{
-    width: 100%;
-}
+
 .page_for_canvas .canvas_img{
     width: 690px;
     overflow: hidden;
@@ -707,6 +710,7 @@ div.pop_close{
     margin:0 auto;
     overflow: hidden;
     margin-top: 1.26rem;
+    text-align: center;
 }
 .layerBg.page .reco .ad img{
     width:90%;
