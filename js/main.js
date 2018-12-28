@@ -30,7 +30,7 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
           console.log(e, 'page9向上');
           $('.page9').addClass('leave').fadeOut(1000);
           $('.page10').fadeIn().addClass('animate');
-          $('.page10_12_plane').show();
+          $('.page10_12_plane').fadeIn(800);
 
           // 停机坪
           setTimeout(function () {

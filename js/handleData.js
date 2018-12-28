@@ -122,7 +122,7 @@ $.ajax({
             commonDom = `
       <div class="main_title">
         <p>${data.page1.name}的</p>
-        <p>的2018年度飞行报告</p>
+        <p>2018飞行足迹</p>
       </div>
       <div class="content_text" style="height: 2.29rem;overflow: hidden;">
         <h3>2018总飞行里程</h3>
@@ -136,7 +136,7 @@ $.ajax({
             commonDom = `
       <div class="main_title">
         <p>${data.page1.name}的</p>
-        <p>2018年度飞行报告</p>
+        <p>2018飞行足迹</p>
       </div>
       <div class="content_text" style="height: 2.29rem;overflow: hidden;">
         <h3>2018东航会员平均飞行里程</h3>
