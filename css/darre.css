@@ -275,6 +275,28 @@ div.pop_close{
     -webkit-transform: scale(0.86);
     opacity:0;
 }
+.page15 .page15_text .guest {
+    position: absolute;
+    top:  9rem;
+    right: 0.25rem;
+    width: 3.08rem;
+    height: 1.5rem;
+    line-height: 0.48rem;
+    text-align: center;
+    z-index: 123;
+    opacity: 0;
+    color:#fff;
+    font-size: 0.3rem;
+    font-weight: bold;
+    transition: opacity 0.8s;
+    transition-delay: 1.8s;  
+
+}
+.page15 .page15_text .guest p {
+    width: 100%;
+    height: 0.48rem;
+    overflow: hidden;
+}
 @keyframes contentRightIn {
     0%{
         opacity:0;
