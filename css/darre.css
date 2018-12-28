@@ -685,8 +685,8 @@ div.pop_close{
     width:300px;
     height:auto;
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    left: 30px;
+    bottom: 120px;
 }
 .page_for_canvas .canvas_logo img{
     width: 100%;
@@ -698,10 +698,19 @@ div.pop_close{
     background: url(../img/page_end/canvas_qrcode_03.png) no-repeat;
     background-size: 100%;
     bottom:39px;
-    left:244px;
+    right:244px;
     position: absolute;
 }
 
+
+.page_for_canvas .dh_txt{
+    font-size:20px;
+    color: #666666;
+    position: absolute;
+    left:30px;
+    bottom: 30px;
+    line-height:30px;
+}
 
 .page_for_canvas .canvas_img{
     width: 690px;

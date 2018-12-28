@@ -103,6 +103,8 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
                       })  
                         
                       $("#checkout_img").click(function () {
+                        $(".page_for_canvas_wrap").show();
+                        $(".page15_4_canvas").show();
                           window.loading = layer.open({
                               type: 2,
                               content: '生成中',
@@ -113,6 +115,7 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
                                 layer.close(window.loading);
                             },200)
                           $("#page_absolute_4_img").fadeIn(500);
+                            // $("#page_absolute_4_img").find('img').show();
                           $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           return;
                         }
@@ -126,6 +129,8 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
                         html2canvas(document.querySelector("#page_4_img"), opts).then(function (canvas) {
                           window.base64ImgSrc = canvas.toDataURL("image/jpeg", .92);
                           // console.log(window.base64ImgSrc);
+                          $("#canvasImg").show();
+                          $(".qrCode img").show();
                           $("#canvasImg").attr("src", window.base64ImgSrc)
                         }).then(function () {
                           console.log("生成base64图片源码~~!");
@@ -143,6 +148,7 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
                                 layer.close(window.loading);
                             },200)
                               $("#page_absolute_4_img").fadeIn(500);
+                              $("#page_absolute_4_img").find('img').show();
                             $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
                           })
                         })
