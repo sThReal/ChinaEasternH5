@@ -247,16 +247,23 @@ html, body {
 
 .page9 .dialogbox p {
 	opacity: 0;
-	margin-left: 0.2rem;
+	margin-left: 1rem;
   margin-top: 0.94rem;
   line-height: 0.4rem;
+  color:#000;
+  font-weight: bold;
+
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	-webkit-transition-delay: 4.4ss;
 	transition-delay: 4.4ss;
 }
-.page9 .dialogbox p .t {
-	margin-left: 1rem;
+.page9 .dialogbox .username {
+	display: inline-block;
+    max-width: 1.7rem;
+    overflow: hidden;
+    height: 0.4rem;
+    vertical-align: top;
 }
 .page9.animate .dialogbox p {
 	opacity: 1;
