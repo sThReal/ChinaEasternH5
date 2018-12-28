@@ -157,6 +157,11 @@ $.ajax({
             <p>累积消费金额TOP${data.page5.extra.consumptionRatio*100}%</p>
           </div>`;
                 $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_1_m').show()
+                }else{
+                    $('.lady .type_1_w').show()
+                }
                 break;
             // 工作狂人
             case 2:
@@ -167,6 +172,11 @@ $.ajax({
             <p>乘坐该航线${data.page5.extra.times}次</p>
           </div>`;
                 $(".need_rolate .type_2").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_2_m').show()
+                }else{
+                    $('.lady .type_2_w').show()
+                }
                 break;
             // 一带一路
             case 3:
@@ -176,6 +186,12 @@ $.ajax({
           <p>2018年度，飞抵一带一路沿线城市${data.page5.extra.times}次</p>
         </div>`;
                 $(".need_rolate .type_3").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_3_m').show()
+                }else{
+                    $('.lady .type_3_w').show()
+                }
                 break;
             // 尝鲜大侠
             case 4:
@@ -187,6 +203,12 @@ $.ajax({
           <p>去过${data.page5.extra.numbers}个国家</p>
         </div>`;
                 $(".need_rolate .type_4").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_4_m').show()
+                }else{
+                    $('.lady .type_4_w').show()
+                }
                 break;
             // 海岛达人
             case 5:
@@ -212,6 +234,12 @@ $.ajax({
           ${tempDom}
         </div>`;
                 $(".need_rolate .type_5").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_5_m').show()
+                }else{
+                    $('.lady .type_5_w').show()
+                }
                 break;
             // 和风旅人
             case 6:
@@ -221,6 +249,12 @@ $.ajax({
           <p>2018年度共飞往日本${data.page5.extra.times}次</p>
         </div>`;
                 $(".need_rolate .type_6").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_6_m').show()
+                }else{
+                    $('.lady .type_6_w').show()
+                }
                 break;
             // 御宅一族
             case 7:
@@ -230,6 +264,12 @@ $.ajax({
           <p>2018您的飞行次数为0次</p>
         </div>`;
                 $(".need_rolate .type_7").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_7_m').show()
+                }else{
+                    $('.lady .type_7_w').show()
+                }
                 break;
             // 简单王者
             case 8:
@@ -239,6 +279,12 @@ $.ajax({
           <p>2018您的飞行次数为${data.page5.extra.flightTimes}次</p>
         </div>`;
                 $(".need_rolate .type_8").show();
+                // $(".need_rolate .type_1").show();
+                if(data.gender == 'male'){
+                    $('.lady .type_8_m').show()
+                }else{
+                    $('.lady .type_8_w').show()
+                }
                 break;
         }
         // 赋值到页面

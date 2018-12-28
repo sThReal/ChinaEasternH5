@@ -216,16 +216,17 @@ div.pop_close{
 }
 .page15 .person.lady{
     position: absolute;
-    width: 6.78rem;
-    height: 9.59rem;
-    background: url(../img/page_end/page_end_lady_02.png) no-repeat;
-    background-size: 100%;
+    width: 7.5rem;
+    height: 10.04rem;
     top: 2.84rem;
     opacity: 0;
     animation: ladyIn .5s 1.3s linear forwards 1;
     -webkit-animation: ladyIn .5s 1.3s linear forwards 1;
-    transform: translateX(-6.78rem);
-    -webkit-transform: translateX(-6.78rem);
+    transform: translateX(-7.5rem);
+    -webkit-transform: translateX(-7.5rem);
+}
+.page15 .person.lady img{
+    width:100%;
 }
 .page15.page15_4_canvas .page15_text .need_rolate{
     /*transform: translateX(0rem);*/
@@ -288,7 +289,7 @@ div.pop_close{
 @keyframes ladyIn {
     0%{
         opacity:0;
-        transform: translateX(-6.78rem);
+        transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -311,7 +312,7 @@ div.pop_close{
 @keyframes ladyIn {
     0%{
         opacity:0;
-        transform: translateX(-6.78rem);
+        transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -343,7 +344,7 @@ div.pop_close{
 @-webkit-keyframes ladyIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(-6.78rem);
+        -webkit-transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -366,7 +367,7 @@ div.pop_close{
 @-webkit-keyframes ladyIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(-6.78rem);
+        -webkit-transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
