@@ -223,9 +223,10 @@ html, body {
 	background:url(../img/page9/page9-box.png) no-repeat;
 	background-size: 80%;
 	background-position: 60% 0;
+	text-align: center;
 	position: absolute;
 	left: 0;
-  top: 9.2rem;
+  top: 8.6rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -246,13 +247,16 @@ html, body {
 
 .page9 .dialogbox p {
 	opacity: 0;
-	margin-left: 1.65rem;
-    margin-top: 0.8rem;
-    line-height: 0.36rem;
+	margin-left: 0.2rem;
+  margin-top: 0.94rem;
+  line-height: 0.4rem;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	-webkit-transition-delay: 4.4ss;
 	transition-delay: 4.4ss;
+}
+.page9 .dialogbox p .t {
+	margin-left: 1rem;
 }
 .page9.animate .dialogbox p {
 	opacity: 1;
@@ -278,7 +282,7 @@ html, body {
 	position: absolute;
 	top:0;
 	left:0;
-	padding-top:0.57rem;
+	padding-top: 1.2rem;
 	-webkit-transition: height 2s;
 	transition: height 2s;
 	-webkit-transition-delay: 4.5s;
@@ -286,10 +290,10 @@ html, body {
 	overflow: hidden;
 }
 .page9 .text p {
-	margin:0;
+	margin: 0.15rem 0;
 	color: #fff;
 	text-align: center;
-	font-size: 0.22rem;
+	font-size: 0.24rem;
 	line-height: 0.44rem;
 	height: 0.44rem;
 	font-weight: normal;
@@ -379,9 +383,11 @@ html, body {
     z-index: 23;
 }
 .page9 .plane img,
-.page10_12_plane .plane img,
-.page10_12_plane .shd img {
+.page10_12_plane .plane img {
 	width: 100%;
+}
+.page10_12_plane .shd img {
+	width: 110%;
 }
 .page10_12_plane .shd {
 	position: absolute;
