@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <div class="music_play"><img src="img/music_play_03.png"></div>
   <!-- 音频 -->
   <audio loop="true" sytle="display:none" id="BGM">
     <source src="bgm.mp3" type="audio/mpeg">
@@ -51,21 +52,28 @@
     <div class="bg bg1"></div>
     <div class="bg bg2"></div>
     <div class="door"></div>
+    <div class="title"></div>
     <div class="light"></div>
     <div class="plane"><img src="img/page9/page10-plane.png" alt=""></div>
     <div class="stewardess"></div>
     <div class="dialogbox">
-      <p>尊敬的<span d-name></span><span d-gender></span>，欢迎乘坐东方航空。</p>
+      <p>尊敬的<span d-name></span><span d-gender></span>，</br>
+        <span class="t">感谢您乘坐东方航空。</span>
+      </p>
     </div>
     <div class="panel">
       <div class="text">
-        <p class="note1"></p>
+        <p>2018年<strong d-name></strong>在东航直销渠道飞行<strong d-totalFlight>200</strong>次</p>
+        <p>积分累积<strong d-totalIntegral>1350000</strong>分，消耗<strong d-spentIntegral>111111</strong>分</p>
+        <p>会员等级为 <strong d-level>小飞人卡</strong>，飞行过<strong d-domesticCityAmount>111</strong>个城市</p>
+
+       <!--  <p class="note1"></p>
         <p class="note2">您于<strong d-joinDate>2018年7月18日</strong> 加入东航会员以来</p>
         <p class="note3">2018年在东航直销渠道的累积飞行<strong d-totalFlight>200</strong>次</p>
-        <p class="note4">累积积分<strong d-totalIntegral>1350000</strong>分，消耗积分<strong d-spentIntegral>111111</strong>分</p>
-        <p class="note5">会员等级为 <strong d-level>小飞人卡</strong></p>
+        <p class="note4"></p>
+        <p class="note5"></p>
         <p class="note6">飞行过国内<strong d-domesticCityAmount>111</strong>个城市，国际<strong d-internationalCityAmount>111</strong>个城市</p>
-        <p class="note7">坐过的的机型共<strong d-airplaneModels>3</strong>种</p>
+        <p class="note7">坐过的的机型共<strong d-airplaneModels>3</strong>种</p> -->
       </div>
     </div>
   </div>
@@ -127,7 +135,7 @@
     <div class="font no-font hide">
       <p class="p1"><strong>700+</strong><span>架</span></br>2018年机队规模</p>
       <p class="p2"><strong>174</strong><span>个</span></br>通航国家和地区</p>
-      <p class="p3"><strong>1074</strong></br>通航点</p>
+      <p class="p3"><strong>1074</strong><span>个</span></br>通航点</p>
     </div>
     <div class="arrow"></div>
   </div>
@@ -156,18 +164,35 @@
             <div class="main_content"></div>
           </div>
           <div class="aircraft_4_15"></div>
-          <div class="person lady"></div>
+          <div class="person lady">
+            <img src="img/person/1_m.png" class="hide type_1_m" alt="">
+            <img src="img/person/1_w.png" class="hide type_1_w" alt="">
+            <img src="img/person/2_m.png" class="hide type_2_m" alt="">
+            <img src="img/person/2_w.png" class="hide type_2_w" alt="">
+            <img src="img/person/3_m.png" class="hide type_3_m" alt="">
+            <img src="img/person/3_w.png" class="hide type_3_w" alt="">
+            <img src="img/person/4_m.png" class="hide type_4_m" alt="">
+            <img src="img/person/4_w.png" class="hide type_4_w" alt="">
+            <img src="img/person/5_m.png" class="hide type_5_m" alt="">
+            <img src="img/person/5_w.png" class="hide type_5_w" alt="">
+            <img src="img/person/6_m.png" class="hide type_6_m" alt="">
+            <img src="img/person/6_w.png" class="hide type_6_w" alt="">
+            <img src="img/person/7_m.png" class="hide type_7_m" alt="">
+            <img src="img/person/7_w.png" class="hide type_7_w" alt="">
+            <img src="img/person/8_m.png" class="hide type_8_m" alt="">
+            <img src="img/person/8_w.png" class="hide type_8_w" alt="">
+          </div>
         </div>
-        <div class="btn btn_left" id="checkout_img">生成您的达人时刻</div>
+        <div class="btn btn_left" id="checkout_img">分享我的旅行</div>
         <div class="btn btn_right" id="eastern_recommend">2019东东推荐</div>
       </div>
       <!--<div class="earth"></div>-->
       <!--<div class="building"></div>-->
       <!-- 地球页 -->
       <div class="page14_text hide when_15_appear hide" id="page14_text_has_data">
-        <p>2018年东航和您一起走过了</p>
+        <p class="pinkred">2018年东航和我一起走过了</p>
         <p class="_ht"></p>
-        <p>等<span class="num"></span>座城市</p>
+        <p>等<span class="num pinkred"></span>座城市</p>
       </div>
       <div class="page14_text hide when_15_appear" id="page14_text_no_data">
         <p class="title">最新国际通航点</p>
@@ -189,6 +214,9 @@
       <div class="canvas_img">
         <img src="" alt="" id="canvasImg">
       </div>
+      <div class="qrCode" style="width: 200px;height: 200px;position: absolute;left: 25px;bottom: 40px;">
+        <img src="" alt="">
+      </div>
       <div class="canvas_logo">
         <img src="img/page_end/canvas_logo_03.png" alt="">
       </div>
@@ -197,11 +225,16 @@
       </div>
     </div>
   </div>
-  <div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background: #ffffff;z-index: 187;overflow: auto">
-    <img src="" alt="" style="width: 100%;">
+  <div class="page_absolute_4_img page" id="page_absolute_4_img" style="display: none;background:rgba(0,0,0,0.4);z-index: 187;overflow: hidden;text-align: center;">
+    <div class="pop_close" style="top: 0.7rem;right: 0.7rem;"></div>
+    <div class="page_absolute_4_img_wrap page" style="width: 80%;height: 90%;left: 10%;top: 5%;overflow: auto;background: #ffffff;border-radius:8px ;">
+      <img src="" alt="" style="width: 100%;">
+    </div>
   </div>
+
   <div class="page layerBg hide" id="ad_layer" style="z-index: 199;">
     <div class="reco">
+      <div class="pop_close" ></div>
       <div class="ad" id="ad">
         <img src="" alt="">
       </div>
@@ -213,7 +246,7 @@
   <script type="text/javascript" src="js/loading.js"></script>
   <script type="text/javascript" src="js/handleData.js"></script>
   <script type="text/javascript" src="js/hammer.js"></script>
-  <script type="text/javascript" src="js/html2canvas.js"></script></head>
+  <script type="text/javascript" src="js/html2canvas.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/layer_mobile/layer.js"></script>
 </body>

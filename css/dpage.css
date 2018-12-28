@@ -111,7 +111,22 @@ html, body {
 .page9 .bg2 {
 	background: url(../img/page9/page9-bg2.jpg) no-repeat;
 	background-size: 134%;
-    background-position: 40% 2.9rem;
+  background-position: 40% 2.9rem;
+	z-index: 6;
+	opacity: 0;
+	-webkit-transition: opacity 1.5s;
+	transition: opacity 1.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.5s;
+}
+.page9 .title {
+	position: absolute;
+	top: 5.64rem;
+	width: 7.5rem;
+	height: 0.69rem;
+	background: url(../img/page9/page9-tit.png) no-repeat;
+	background-size: 100%;
+	z-index: 15;
 	opacity: 0;
 	-webkit-transition: opacity 1.5s;
 	transition: opacity 1.5s;
@@ -168,7 +183,7 @@ html, body {
     left: 1.26rem;
     width: 5.46rem;
     height: 2.28rem;
-    z-index: 1;
+    z-index: 8;
     opacity: 0;
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
@@ -182,15 +197,10 @@ html, body {
 .page .arrow {
 	/* transition-delay: 6s; */
 }
-.page9.animate .bg1 {
-	opacity: 1;
-}
-.page9.animate .bg2 {
-	opacity: 1;
-}
-.page9.animate .door {
-	opacity: 1;
-}
+.page9.animate .bg1,
+.page9.animate .bg2,
+.page9.animate .door,
+.page9.animate .title,
 .page9.animate .light {
 	opacity: 1;
 }
@@ -213,9 +223,10 @@ html, body {
 	background:url(../img/page9/page9-box.png) no-repeat;
 	background-size: 80%;
 	background-position: 60% 0;
+	text-align: center;
 	position: absolute;
 	left: 0;
-  	top: 9.4rem;
+  top: 8.6rem;
 	font-size: 0.24rem;
 	color: #000;
 	opacity: 0;
@@ -236,12 +247,16 @@ html, body {
 
 .page9 .dialogbox p {
 	opacity: 0;
-	margin-left: 1.65rem;
-    margin-top: 0.9rem;
+	margin-left: 0.2rem;
+  margin-top: 0.94rem;
+  line-height: 0.4rem;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	-webkit-transition-delay: 4.4ss;
 	transition-delay: 4.4ss;
+}
+.page9 .dialogbox p .t {
+	margin-left: 1rem;
 }
 .page9.animate .dialogbox p {
 	opacity: 1;
@@ -267,7 +282,7 @@ html, body {
 	position: absolute;
 	top:0;
 	left:0;
-	padding-top:0.57rem;
+	padding-top: 1.2rem;
 	-webkit-transition: height 2s;
 	transition: height 2s;
 	-webkit-transition-delay: 4.5s;
@@ -275,10 +290,10 @@ html, body {
 	overflow: hidden;
 }
 .page9 .text p {
-	margin:0;
+	margin: 0.15rem 0;
 	color: #fff;
 	text-align: center;
-	font-size: 0.22rem;
+	font-size: 0.24rem;
 	line-height: 0.44rem;
 	height: 0.44rem;
 	font-weight: normal;
@@ -368,9 +383,11 @@ html, body {
     z-index: 23;
 }
 .page9 .plane img,
-.page10_12_plane .plane img,
-.page10_12_plane .shd img {
+.page10_12_plane .plane img {
 	width: 100%;
+}
+.page10_12_plane .shd img {
+	width: 110%;
 }
 .page10_12_plane .shd {
 	position: absolute;
@@ -449,7 +466,7 @@ html, body {
 	top: 0;
 	width: 100%;
 	line-height: 0.6rem;
-	font-size: 0.4rem;
+	font-size: 0.26rem;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
@@ -484,6 +501,7 @@ html, body {
 }
 
 .page11 .font strong {
+	font-size: 0.4rem;
 	color: #d7006a;
 }
 /*.page11 .font .bottom strong {
@@ -540,9 +558,9 @@ html, body {
 	left: 0;
 	width: 100%;
 	-webkit-transform: translateX(7.5rem);
-	-webkit-transition: transform 1.5s;
+	-webkit-transition: transform 1s;
 	transform: translateX(7.5rem);
-	transition: transform 1.5s;
+	transition: transform 1s;
 }
 .page12 .cloud .c1 {
 	height: 2.42rem;
@@ -557,8 +575,8 @@ html, body {
 	top: 2.72rem;
 	background: url(../img/page9/cloud-2.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 2.5s;
-	transition-delay: 2.5s;
+	-webkit-transition-delay: 1.5s;
+	transition-delay: 1.5s;
 
 }
 .page12 .cloud .c3 {
@@ -566,8 +584,8 @@ html, body {
 	top: 5.9rem;
 	background: url(../img/page9/cloud-3.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 4s;
-	transition-delay: 4s;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
 
 }
 .page12 .cloud .c4 {
@@ -575,8 +593,8 @@ html, body {
 	top: 8.4rem;
 	background: url(../img/page9/cloud-4.png) no-repeat;
 	background-size: 100%;
-	-webkit-transition-delay: 5.5s;
-	transition-delay: 5.5s;
+	-webkit-transition-delay: 2.5s;
+	transition-delay: 2.5s;
 
 }
 .page12.animate .cloud .c1, 
@@ -602,7 +620,7 @@ html, body {
 .page12 .font > p {
 	position: absolute;
 	/*width: 2.3rem;*/
-	font-size: 0.3rem;
+	font-size: 0.26rem;
 	opacity: 0;
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
@@ -610,38 +628,38 @@ html, body {
 .page12 .font .p1 {
 	top: 1.4rem;
     left: 1.24rem;
-	-webkit-transition-delay: 2.5s;
-	transition-delay: 2.5s;
+	-webkit-transition-delay: 1.2s;
+	transition-delay: 1.2s;
 }
 .page12 .font .p2 {
 	top: 3.38rem;
     right: 1.44rem;
-  	-webkit-transition-delay: 3.6s;
-  	transition-delay: 3.6s;
+  	-webkit-transition-delay: 2s;
+  	transition-delay: 2s;
 }
 .page12 .font .p3 {
 	top: 6.88rem;
     left: 1.74rem;
-	-webkit-transition-delay: 5s;
-	transition-delay: 5s;
+	-webkit-transition-delay: 2.7s;
+	transition-delay: 2.7s;
 }
 .page12 .font.no-font .p3 {
-	top: 6.88rem;
-    left: 2.54rem;
-	-webkit-transition-delay: 5s;
-	transition-delay: 5s;
+	top: 6.94rem;
+  left: 2.34rem;
+	-webkit-transition-delay: 2.7s;
+	transition-delay: 2.7s;
 }
 .page12 .font .p4 {
 	top: 9.12rem;
     right: 1.44rem;
-  	-webkit-transition-delay: 7s;
-  	transition-delay: 7s;
+  	-webkit-transition-delay: 3.5s;
+  	transition-delay: 3.5s;
 }
 
 .page12 .font strong {
-	font-size: 0.42rem;
 	color: #d7006a;
 }
+.page12 .font strong,
 .page12 .font span {
 	font-size: 0.42rem;
 }
@@ -716,7 +734,7 @@ html, body {
 	/*!*animation-fill-mode: forwards;*!*/
 }
 .page12 .arrow {
-	transition-delay: 8s;
+	transition-delay: 4s;
 }
 .page12.animate .arrow {
 	opacity: 1;

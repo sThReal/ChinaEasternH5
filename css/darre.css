@@ -1,3 +1,19 @@
+.pinkred{
+    color:#d7006a;
+}
+
+div.pop_close{
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../img/page_end/close.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.3rem;
+    z-index: 203;
+    opacity: .8;
+;
+}
 .page14{
     background: #0b2343;
     overflow: hidden;
@@ -32,11 +48,13 @@
 }
 
 .page15 .page15_text .main_content .second_text{
-    width:100%;
+    width: 100%;
     font-size: 0.18rem;
     line-height: 0.3rem;
     padding-left: 0.24rem;
     padding-top: 0.1rem;
+    padding-right: 0.12rem;
+    box-sizing: border-box;
 }
 
 .page15 .page15_text .main_content .second_title{
@@ -184,7 +202,7 @@
     background-size: 7.5rem 5.6rem;
     background-position: center;
     left:0;
-    top: 4.92rem;
+    top: 4.6rem;
     animation: aircraftLeftIn .9s .3s linear forwards 1;
     -webkit-animation: aircraftLeftIn .9s .3s linear forwards 1;
     transform: translateX(-7.5rem);
@@ -198,16 +216,17 @@
 }
 .page15 .person.lady{
     position: absolute;
-    width: 6.78rem;
-    height: 9.59rem;
-    background: url(../img/page_end/page_end_lady_02.png) no-repeat;
-    background-size: 100%;
+    width: 7.5rem;
+    height: 10.04rem;
     top: 2.84rem;
     opacity: 0;
     animation: ladyIn .5s 1.3s linear forwards 1;
     -webkit-animation: ladyIn .5s 1.3s linear forwards 1;
-    transform: translateX(-6.78rem);
-    -webkit-transform: translateX(-6.78rem);
+    transform: translateX(-7.5rem);
+    -webkit-transform: translateX(-7.5rem);
+}
+.page15 .person.lady img{
+    width:100%;
 }
 .page15.page15_4_canvas .page15_text .need_rolate{
     /*transform: translateX(0rem);*/
@@ -218,7 +237,7 @@
 .page15 .page15_text .need_rolate{
     position: absolute;
     right:0.1rem;
-    top: 2.36rem;
+    top: 2.1rem;
     transform-origin: center center;
     transform: rotate(0deg) scale(0.86);
     -webkit-transform-origin: center center;
@@ -249,7 +268,7 @@
     z-index: 123;
     right: 0.25rem;
     top: 0;
-    margin-top: 5.72rem;
+    margin-top: 5.5rem;
     animation: contentRightIn .2s 1.8s linear forwards 1;
     -webkit-animation: contentRightIn .2s 1.8s linear forwards 1;
     transform: scale(0.86);
@@ -270,7 +289,7 @@
 @keyframes ladyIn {
     0%{
         opacity:0;
-        transform: translateX(-6.78rem);
+        transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -293,7 +312,7 @@
 @keyframes ladyIn {
     0%{
         opacity:0;
-        transform: translateX(-6.78rem);
+        transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -325,7 +344,7 @@
 @-webkit-keyframes ladyIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(-6.78rem);
+        -webkit-transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -348,7 +367,7 @@
 @-webkit-keyframes ladyIn {
     0%{
         opacity:0;
-        -webkit-transform: translateX(-6.78rem);
+        -webkit-transform: translateX(-7.5rem);
     }
     100%{
         opacity:1;
@@ -415,7 +434,7 @@
     background-position: left top;
 }
 .page14 .page14_text{
-    font-size: 0.28rem;
+    font-size: 0.3rem;
     line-height: 0.5rem;
     color: #fff;
     text-align: center;
@@ -429,8 +448,8 @@
     opacity: 0;
     animation: earth-of-14 .4s 1.5s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 1.5s linear forwards 1;
-    top: 7.2rem;
-    text-shadow: 1px 1px 4px rgba(0,0,0,.72);
+    top: 7.6rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.4);
 }
 .page14 .bg{
     position: absolute;
@@ -552,8 +571,8 @@
     opacity:0;
     animation: earth-of-14 .4s 4.1s linear forwards 1;
     -webkit-animation: earth-of-14 .4s 4.1s linear  forwards 1;
-    -webkit-transform: scale(1.24);
-    transform: scale(1.24);
+    -webkit-transform: scale(1.32);
+    transform: scale(1.32);
 }
 @keyframes newEarth {
     0%{
@@ -641,11 +660,14 @@
     z-index: 999;
 }
 .page_for_canvas .canvas_logo{
-    width:350px;
-    height:126px;
+    width:300px;
+    height:auto;
     position: absolute;
-    right: 48px;
-    bottom: 48px;
+    right: 30px;
+    bottom: 30px;
+}
+.page_for_canvas .canvas_logo img{
+    width: 100%;
 }
 
 .page_for_canvas .remmber_txt{
@@ -658,9 +680,7 @@
     position: absolute;
 }
 
-.page_for_canvas .canvas_logo img{
-    width: 100%;
-}
+
 .page_for_canvas .canvas_img{
     width: 690px;
     overflow: hidden;
@@ -691,9 +711,10 @@
     margin:0 auto;
     overflow: hidden;
     margin-top: 1.26rem;
+    text-align: center;
 }
 .layerBg.page .reco .ad img{
-    width:100%;
+    width:90%;
 }
 .layerBg.page .watch{
     width: 3rem;

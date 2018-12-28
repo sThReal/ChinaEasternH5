@@ -1,6 +1,44 @@
 .hide{
   display:none;
 }
+.music_play{
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  overflow: hidden;
+
+  display:none;
+  z-index: 99;
+}
+.music_play.xz{
+  -moz-backface-visibility: visible;
+  -moz-transform-origin: center center;
+  -moz-animation: musicanimate 2s 0s infinite linear normal backwards;
+  -webkit-backface-visibility: visible;
+  -webkit-transform-origin: center center;
+  -webkit-animation: musicanimate 2s 0s infinite linear normal backwards;
+}
+@-webkit-keyframes musicanimate {
+  0% {
+      -webkit-transform: rotate(0deg) rotate(180deg);
+  }
+  100% {
+      -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes musicanimate {
+  0% {
+      -moz-transform: rotate(0deg) rotate(180deg);
+  }
+  100% {
+      -moz-transform: rotate(360deg);
+  }
+}
+.music_play img{
+  width:100%;
+}
 .loading{
   background-color:#3391c9;
   width:100%;height:100%;
@@ -43,7 +81,7 @@
   text-align:center;
 }
 .loading .txt{
-  font-size:0.22rem;
+  font-size:0.34rem;
   color:#fff;
   width:100%;
   position:absolute;top:55%;
