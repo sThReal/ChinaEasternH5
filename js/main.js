@@ -30,7 +30,7 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
           console.log(e, 'page9向上');
           $('.page9').addClass('leave').fadeOut(1000);
           $('.page10').fadeIn().addClass('animate');
-          $('.page10_12_plane').show();
+          $('.page10_12_plane').fadeIn(800);
 
           // 停机坪
           setTimeout(function () {
@@ -170,3 +170,78 @@ $(".page14").find(".bgsky").addClass("bgsky4rem");
         });
       }, 8000)
     });
+
+    function noUser(){
+      $('.page14').fadeIn();
+      $('.page14 .main_content').hide();
+      $('.page14 .guest').css('opacity',1).show();
+      $('.page15 .main_content').hide();
+      $('.page15 .guest').css('opacity',1).show();
+      $(".page14").find('.when_15_appear').fadeOut(500);
+      setTimeout(function () {
+        $("#main_page_15").fadeIn(800);
+      }, 500)
+      $("#eastern_recommend").click(function () {
+          $("#ad_layer").fadeIn(600);
+      })
+
+    $("#ad_layer").click(function () {
+        $("#ad_layer").fadeOut(600);
+    })   
+      
+    $("#activity_watch").click(function (e) {
+        e = e ||event;
+        e.stopPropagation();
+        window.location.href = window.nickArr[window.type - 1].url;
+    })  
+      
+    $("#checkout_img").click(function () {
+        window.loading = layer.open({
+            type: 2,
+            content: '生成中',
+            shadeClose:false,
+        });
+      if (window.base64ImgSrcAnother) {
+          setTimeout(function () {
+              layer.close(window.loading);
+          },200)
+        $("#page_absolute_4_img").fadeIn(500);
+        $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
+        return;
+      }
+      var canvas = document.createElement("canvas");
+      canvas.width = 750;
+      canvas.height = 1400;
+      var opts = {
+        canvas: canvas,                       // 将自定义canvas作为配置项
+        // useCORS: true,                        // 允许图片跨域
+      }
+      html2canvas(document.querySelector("#page_4_img"), opts).then(function (canvas) {
+        window.base64ImgSrc = canvas.toDataURL("image/jpeg", .92);
+        // console.log(window.base64ImgSrc);
+        $("#canvasImg").attr("src", window.base64ImgSrc)
+      }).then(function () {
+        console.log("生成base64图片源码~~!");
+        var canvas = document.createElement("canvas");
+        canvas.width = 750;
+        canvas.height = 1450;
+        var opts = {
+          canvas: canvas,                       // 将自定义canvas作为配置项
+          //                     useCORS: true,                        // 允许图片跨域
+        }
+        html2canvas(document.querySelector("#page_for_canvas"), opts).then(function (canvas) {
+          window.base64ImgSrcAnother = canvas.toDataURL("image/jpeg", .72);
+        }).then(function () {
+          setTimeout(function () {
+              layer.close(window.loading);
+          },200)
+            $("#page_absolute_4_img").fadeIn(500);
+          $("#page_absolute_4_img").find('img').attr("src", window.base64ImgSrcAnother);
+        })
+      })
+
+    });
+    $("#page_absolute_4_img").click(function (e) {
+      $("#page_absolute_4_img").fadeOut(500);
+    })
+    }

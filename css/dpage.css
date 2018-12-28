@@ -289,7 +289,7 @@ html, body {
 	position: absolute;
 	top:0;
 	left:0;
-	padding-top: 1.2rem;
+	padding-top: 1rem;
 	-webkit-transition: height 2s;
 	transition: height 2s;
 	-webkit-transition-delay: 4.5s;

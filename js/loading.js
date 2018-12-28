@@ -47,6 +47,11 @@ var loadingPage = (function () {
       clearInterval(loadingInterval);
       $('.loading .txt').html(`点击进入`);
       $('.loading').on('click',function(e){
+        if(getQueryString('type')=='jin'){
+          $('.loadingAndVideo').fadeOut(1500);
+          noUser();
+          return;
+        }
         $('.loading').fadeOut();
         audioAutoPlay();
         $('#video').css({
