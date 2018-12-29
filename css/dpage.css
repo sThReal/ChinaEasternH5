@@ -301,12 +301,13 @@ html, body {
 	color: #fff;
 	text-align: center;
 	font-size: 0.24rem;
+	font-weight: bold;
 	line-height: 0.44rem;
 	height: 0.44rem;
 	font-weight: normal;
 }
 .page9 .text strong {
-	font-size: 0.32rem;
+	font-size: 0.24rem;
 	font-weight: bold;
 }
 .page9.animate .text {
@@ -483,7 +484,12 @@ html, body {
 	position: absolute;
 	width: 100%;
 }
-
+.page11 .text2{
+	font-size:0.26rem;
+}
+.page11 .text2 span{
+	color:#d7006a;
+}
 .page11 .font .top {
 	top: 1rem;
 	opacity: 0;
